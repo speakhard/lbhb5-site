@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #050813;
+  color: #f4f4f8;
+}
+
+a { color: #ffb347; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.site-header, .site-footer {
+  background: #101528;
+}
+
+.site-title a {
+  color: #ffffff;
+}
+
+.site-tagline {
+  color: #c4c6dd;
+  margin-top: 0.25rem;
+}
+
+.hero {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  background: radial-gradient(circle at top left, #233a72, #060918);
+}
+
+.episodes-preview {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #22263a;
+}
+

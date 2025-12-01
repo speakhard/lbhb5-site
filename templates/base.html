@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ site.title }}{% if page_title %} – {{ page_title }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="stylesheet" href="/static/site.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="site-title">
+          <a href="/">{{ site.title }}</a>
+        </h1>
+        <p class="site-tagline">{{ site.tagline }}</p>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <div class="container">
+        {% block content %}{% endblock %}
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; {{ site.title }} – Built with a very tired human and a less tired AI.</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
