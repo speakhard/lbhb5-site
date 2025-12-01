@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<article class="episode-page">
+  <h2>{{ episode.title }}</h2>
+  <p class="date">{{ episode.date }}</p>
+
+  <p>{{ episode.description }}</p>
+
+  <p>
+    <a href="{{ episode.audio_url }}">▶ Listen</a>
+  </p>
+</article>
+{% endblock %}
+
