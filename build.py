@@ -22,27 +22,25 @@ def render(template_name, context, out_path: Path):
 
 FEED_URL = "https://pinecast.com/feed/last-best-hope"
 
-
 def slugify(value: str) -> str:
-    """
-    Turn an episode title into a URL-safe slug.
-    """
-    value = value.lower().strip()
-    value = re.sub(r"[^a-z0-9]+", "-", value)
-    value = re.sub(r"-+", "-", value).strip("-")
-    return value or "episode"
+  value = value.lower().strip()
+  value = re.sub(r"[^a-z0-9]+", "-", value)
+  value = re.sub(r"-+", "-", value).strip("-")
+  return value or "episode"
 
 
-def load_episodes_from_rss(url: str, limit: int = 20):
-    """
-    Fetch episodes from the RSS feed and convert them into the dicts
-    our templates already expect.
-    """
+def strip_html(text: str) -> str:
+  if not text:
+      return ""
+  # crude but effective HTML stripper
+  return re.sub(r"<[^>]+>", "", text)
+
+
+def load_episodes_from_rss(url: str, limit: int = 50):
     feed = feedparser.parse(url)
 
     episodes = []
     for entry in feed.entries[:limit]:
-        # Title
         title = entry.get("title", "Untitled episode")
 
         # Date
@@ -53,20 +51,19 @@ def load_episodes_from_rss(url: str, limit: int = 20):
         else:
             date_str = entry.get("published", "") or entry.get("updated", "")
 
-        # Audio URL (first enclosure, if any)
+        # Audio URL
         audio_url = "#"
         enclosures = getattr(entry, "enclosures", []) or entry.get("enclosures", [])
         if enclosures:
             audio_url = enclosures[0].get("href", "#")
 
-        # Prefer a short tagline / subtitle if available, fall back to full description
+        # Tagline / description
         tagline = getattr(entry, "itunes_subtitle", None) or entry.get("itunes_subtitle")
-        description = tagline or entry.get("summary", "") or entry.get("description", "")
+        raw_desc = entry.get("summary", "") or entry.get("description", "")
+        description = strip_html(tagline or raw_desc)
 
-        # Episode artwork (if present)
+        # Episode artwork
         image_url = None
-
-        # Common locations for artwork in podcast feeds
         if getattr(entry, "itunes_image", None):
             image_url = entry.itunes_image
         elif isinstance(entry.get("image"), dict) and entry["image"].get("href"):
@@ -77,20 +74,18 @@ def load_episodes_from_rss(url: str, limit: int = 20):
         if not image_url:
             image_url = "/static/placeholder.jpg"
 
-
         episodes.append(
             {
                 "title": title,
                 "slug": slugify(title),
                 "date": date_str,
                 "description": description,
-                "image": image_url
+                "image": image_url,
                 "audio_url": audio_url,
             }
         )
 
     return episodes
-
 def copy_static():
     src = ROOT / "static"
     dest = DIST_DIR / "static"

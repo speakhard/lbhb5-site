@@ -5,7 +5,7 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: #f4f4f8;
 
-  /* Layered background: starfield over a blue-purple gradient */
+  /* Starfield over a blue–purple gradient */
   background:
     radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.15) 1px, transparent 2px),
     radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.12) 1px, transparent 2px),
@@ -20,7 +20,7 @@ body {
 }
 
 a {
-  color: #7cc7ff;
+  color: #7cc7ff; /* light blue */
   text-decoration: none;
 }
 a:hover {
@@ -37,7 +37,8 @@ a:hover {
 
 .site-header,
 .site-footer {
-  background: #101528;
+  background: rgba(5, 8, 24, 0.96);
+  backdrop-filter: blur(10px);
 }
 
 .header-inner {
@@ -86,7 +87,8 @@ a:hover {
   margin-top: 2rem;
   padding: 1.75rem;
   border-radius: 0.9rem;
-  background: radial-gradient(circle at top left, #233a72, #060918);
+  background: radial-gradient(circle at top left, #3357c5, #081028);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.6);
 }
 
 .hero h2 {
@@ -100,7 +102,7 @@ a:hover {
   max-width: 40rem;
 }
 
-/* Episode lists */
+/* Episodes sections */
 
 .episodes-preview,
 .episodes-index {
@@ -113,20 +115,8 @@ a:hover {
   font-size: 1.3rem;
 }
 
-/* Cards */
+/* Stacked episode list */
 
-.episodes-preview,
-.episodes-index {
-  margin-top: 2.5rem;
-}
-
-.episodes-preview h3,
-.episodes-index h2 {
-  margin: 0 0 1rem;
-  font-size: 1.3rem;
-}
-
-/* Stacked list, no columns */
 .episode-list {
   display: flex;
   flex-direction: column;
@@ -134,6 +124,7 @@ a:hover {
 }
 
 /* Card layout with artwork on the left */
+
 .episode-card {
   display: flex;
   gap: 1.25rem;
@@ -188,6 +179,11 @@ a:hover {
 .episode-card .listen-link {
   margin-top: auto;
   font-size: 0.88rem;
+}
+
+.listen-link a {
+  color: #7cc7ff;
+  font-weight: 500;
 }
 
 /* Episode detail page */
