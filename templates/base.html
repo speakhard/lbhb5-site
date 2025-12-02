@@ -9,11 +9,18 @@
   </head>
   <body>
     <header class="site-header">
-      <div class="container">
-        <h1 class="site-title">
-          <a href="/">{{ site.title }}</a>
-        </h1>
-        <p class="site-tagline">{{ site.tagline }}</p>
+      <div class="container header-inner">
+        <div>
+          <h1 class="site-title">
+            <a href="/">{{ site.title }}</a>
+          </h1>
+          <p class="site-tagline">{{ site.tagline }}</p>
+        </div>
+
+        <nav class="site-nav">
+          <a href="/">Home</a>
+          <a href="/episodes/">Episodes</a>
+        </nav>
       </div>
     </header>
 

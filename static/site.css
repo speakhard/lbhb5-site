@@ -1,3 +1,5 @@
+/* Global layout */
+
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -5,8 +7,13 @@ body {
   color: #f4f4f8;
 }
 
-a { color: #ffb347; text-decoration: none; }
-a:hover { text-decoration: underline; }
+a {
+  color: #ffb347;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 
 .container {
   max-width: 960px;
@@ -14,29 +21,158 @@ a:hover { text-decoration: underline; }
   padding: 1.5rem;
 }
 
-.site-header, .site-footer {
+/* Header & footer */
+
+.site-header,
+.site-footer {
   background: #101528;
 }
 
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 1.4rem;
+}
 .site-title a {
   color: #ffffff;
 }
 
 .site-tagline {
+  margin: 0.25rem 0 0;
   color: #c4c6dd;
-  margin-top: 0.25rem;
+  font-size: 0.95rem;
 }
+
+.site-nav a {
+  margin-left: 1rem;
+  font-size: 0.95rem;
+  color: #e3e4f5;
+}
+.site-nav a:hover {
+  color: #ffffff;
+}
+
+.site-main {
+  padding-bottom: 2rem;
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #a5a7c7;
+}
+
+/* Hero */
 
 .hero {
   margin-top: 2rem;
-  padding: 1.5rem;
-  border-radius: 0.75rem;
+  padding: 1.75rem;
+  border-radius: 0.9rem;
   background: radial-gradient(circle at top left, #233a72, #060918);
 }
 
-.episodes-preview {
+.hero h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.hero p {
+  margin: 0.25rem 0;
+  max-width: 40rem;
+}
+
+/* Episode lists */
+
+.episodes-preview,
+.episodes-index {
+  margin-top: 2.5rem;
+}
+
+.episodes-preview h3,
+.episodes-index h2 {
+  margin: 0 0 1rem;
+  font-size: 1.3rem;
+}
+
+/* Cards */
+
+.episode-list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .episode-list {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+}
+
+.episode-card {
+  padding: 1rem 1.25rem;
+  border-radius: 0.75rem;
+  background: #111623;
+  border: 1px solid #1e2334;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.episode-card h4 {
+  margin: 0 0 0.3rem;
+  font-size: 1.05rem;
+}
+
+.episode-card h4 a {
+  color: #f5f5ff;
+}
+
+.episode-card .date {
+  margin: 0 0 0.5rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #a0a3c7;
+}
+
+.episode-card .summary {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+  color: #d1d3ee;
+}
+
+.episode-card .listen-link {
+  font-size: 0.88rem;
+}
+
+/* Episode detail page */
+
+.episode-page {
   margin-top: 2rem;
-  padding-top: 1rem;
-  border-top: 1px solid #22263a;
+  max-width: 42rem;
+}
+
+.episode-page h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.7rem;
+}
+
+.episode-page .date {
+  margin: 0 0 1rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #a0a3c7;
+}
+
+.episode-page p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
 }
 

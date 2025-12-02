@@ -2,17 +2,11 @@
 
 {% block content %}
 
-<section class="hero">
-  <h2>Welcome to {{ site.title }}</h2>
-  <p>{{ site.description }}</p>
-</section>
-
-<section class="episodes-preview">
-  <h3>Recent Episodes</h3>
+<section class="episodes-index">
+  <h2>All Episodes</h2>
 
   <div class="episode-list">
-    {# Show only the first 4 episodes on the homepage #}
-    {% for ep in episodes[:4] %}
+    {% for ep in episodes %}
       <article class="episode-card">
         <h4>
           <a href="/episodes/{{ ep.slug }}.html">{{ ep.title }}</a>
@@ -34,10 +28,6 @@
       </article>
     {% endfor %}
   </div>
-
-  <p style="margin-top: 1.25rem;">
-    <a href="/episodes/">View all episodes →</a>
-  </p>
 </section>
 
 {% endblock %}
