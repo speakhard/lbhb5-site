@@ -59,8 +59,24 @@ def load_episodes_from_rss(url: str, limit: int = 20):
         if enclosures:
             audio_url = enclosures[0].get("href", "#")
 
-        # Description
-        description = entry.get("summary", "") or entry.get("description", "")
+        # Prefer a short tagline / subtitle if available, fall back to full description
+        tagline = getattr(entry, "itunes_subtitle", None) or entry.get("itunes_subtitle")
+        description = tagline or entry.get("summary", "") or entry.get("description", "")
+
+        # Episode artwork (if present)
+        image_url = None
+
+        # Common locations for artwork in podcast feeds
+        if getattr(entry, "itunes_image", None):
+            image_url = entry.itunes_image
+        elif isinstance(entry.get("image"), dict) and entry["image"].get("href"):
+            image_url = entry["image"]["href"]
+        elif entry.get("image"):
+            image_url = entry["image"]
+
+        if not image_url:
+            image_url = "/static/placeholder.jpg"
+
 
         episodes.append(
             {
@@ -68,7 +84,7 @@ def load_episodes_from_rss(url: str, limit: int = 20):
                 "slug": slugify(title),
                 "date": date_str,
                 "description": description,
-                "image": "/static/placeholder.jpg",  # keep placeholder for now
+                "image": image_url
                 "audio_url": audio_url,
             }
         )

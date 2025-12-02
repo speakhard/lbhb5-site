@@ -11,26 +11,34 @@
   <h3>Recent Episodes</h3>
 
   <div class="episode-list">
-    {# Show only the first 4 episodes on the homepage #}
-    {% for ep in episodes[:4] %}
+    {# Show 6 stacked episodes on the homepage #}
+    {% for ep in episodes[:6] %}
       <article class="episode-card">
-        <h4>
-          <a href="/episodes/{{ ep.slug }}.html">{{ ep.title }}</a>
-        </h4>
-
-        {% if ep.date %}
-          <p class="date">{{ ep.date }}</p>
+        {% if ep.image %}
+          <div class="episode-art-wrap">
+            <img src="{{ ep.image }}" alt="" class="episode-art">
+          </div>
         {% endif %}
 
-        {% if ep.description %}
-          <p class="summary">
-            {{ ep.description }}
+        <div class="episode-meta">
+          <h4>
+            <a href="/episodes/{{ ep.slug }}.html">{{ ep.title }}</a>
+          </h4>
+
+          {% if ep.date %}
+            <p class="date">{{ ep.date }}</p>
+          {% endif %}
+
+          {% if ep.description %}
+            <p class="summary">
+              {{ ep.description }}
+            </p>
+          {% endif %}
+
+          <p class="listen-link">
+            <a href="{{ ep.audio_url }}">▶ Listen</a>
           </p>
-        {% endif %}
-
-        <p class="listen-link">
-          <a href="{{ ep.audio_url }}">▶ Listen</a>
-        </p>
+        </div>
       </article>
     {% endfor %}
   </div>
