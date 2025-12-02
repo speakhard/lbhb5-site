@@ -1,3 +1,4 @@
+import shutil
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 import re
@@ -74,9 +75,16 @@ def load_episodes_from_rss(url: str, limit: int = 20):
 
     return episodes
 
+def copy_static():
+    src = ROOT / "static"
+    dest = DIST_DIR / "static"
+    if src.exists():
+        shutil.copytree(src, dest, dirs_exist_ok=True)
+
 def main():
     print("==> Building Last Best Hope site (clean version)")
     DIST_DIR.mkdir(parents=True, exist_ok=True)
+    copy_static()
 
     fallback_episodes = [
         {
@@ -120,6 +128,10 @@ def main():
 
     # Homepage
     render("home.html", context, DIST_DIR / "index.html")
+
+
+    # Episodes index page
+    render("episodes_index.html", context, DIST_DIR / "episodes" / "index.html")
 
     # Individual episode pages
     for ep in episodes:
