@@ -20,20 +20,50 @@ def render(template_name, context, out_path: Path):
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(html, encoding="utf-8")
 
+
 FEED_URL = "https://pinecast.com/feed/last-best-hope"
 
+
 def slugify(value: str) -> str:
-  value = value.lower().strip()
-  value = re.sub(r"[^a-z0-9]+", "-", value)
-  value = re.sub(r"-+", "-", value).strip("-")
-  return value or "episode"
+    value = value.lower().strip()
+    value = re.sub(r"[^a-z0-9]+", "-", value)
+    value = re.sub(r"-+", "-", value).strip("-")
+    return value or "episode"
 
 
 def strip_html(text: str) -> str:
-  if not text:
-      return ""
-  # crude but effective HTML stripper
-  return re.sub(r"<[^>]+>", "", text)
+    if not text:
+        return ""
+    return re.sub(r"<[^>]+>", "", text)
+
+
+def make_tagline(entry):
+    """
+    Try to get a short tagline:
+    1) explicit subtitle fields
+    2) otherwise first sentence / ~180 chars of summary/description
+    """
+    # 1) subtitle fields if present
+    for key in ("itunes_subtitle", "subtitle"):
+        val = getattr(entry, key, None) or entry.get(key)
+        if val:
+            return strip_html(val).strip()
+
+    # 2) fall back to summary/description
+    raw = entry.get("summary", "") or entry.get("description", "")
+    text = strip_html(raw).strip()
+    if not text:
+        return ""
+
+    # try to cut at end of first sentence-ish
+    for sep in [". ", " – ", " - ", "\n"]:
+        if sep in text:
+            head = text.split(sep)[0].strip()
+            if head:
+                return head + "…"
+
+    # final fallback: truncate
+    return text[:180].rstrip() + ("…" if len(text) > 180 else "")
 
 
 def load_episodes_from_rss(url: str, limit: int = 50):
@@ -57,10 +87,10 @@ def load_episodes_from_rss(url: str, limit: int = 50):
         if enclosures:
             audio_url = enclosures[0].get("href", "#")
 
-        # Tagline / description
-        tagline = getattr(entry, "itunes_subtitle", None) or entry.get("itunes_subtitle")
+        # Tagline + full description
+        tagline = make_tagline(entry)
         raw_desc = entry.get("summary", "") or entry.get("description", "")
-        description = strip_html(tagline or raw_desc)
+        full_description = strip_html(raw_desc).strip()
 
         # Episode artwork
         image_url = None
@@ -79,18 +109,22 @@ def load_episodes_from_rss(url: str, limit: int = 50):
                 "title": title,
                 "slug": slugify(title),
                 "date": date_str,
-                "description": description,
+                "tagline": tagline,
+                "description": full_description,
                 "image": image_url,
                 "audio_url": audio_url,
             }
         )
 
     return episodes
+
+
 def copy_static():
     src = ROOT / "static"
     dest = DIST_DIR / "static"
     if src.exists():
         shutil.copytree(src, dest, dirs_exist_ok=True)
+
 
 def main():
     print("==> Building Last Best Hope site (clean version)")
@@ -102,6 +136,7 @@ def main():
             "title": "Nothing's the Same Anymore (CHRYSALIS)",
             "slug": "nothings-the-same-anymore-chrysalis",
             "date": "2025-03-11",
+            "tagline": "Josh and John discuss the season finale of Babylon 5's first season, after which everything changed.",
             "description": "Josh and John discuss the season finale of Babylon 5's first season, after which everything changed.",
             "image": "/static/placeholder.jpg",
             "audio_url": "#",
@@ -110,6 +145,7 @@ def main():
             "title": "Another Word for Surrender (THE FALL OF NIGHT)",
             "slug": "another-word-for-surrender-the-fall-of-night",
             "date": "2025-03-19",
+            "tagline": "John and Josh discuss the parallels between Earth/Centauri/Narn and U.S./Russia/Ukraine.",
             "description": "John and Josh discuss the parallels between Earth/Centauri/Narn and U.S./Russia/Ukraine.",
             "image": "/static/placeholder.jpg",
             "audio_url": "#",
@@ -120,9 +156,10 @@ def main():
         "title": "Last Best Hope",
         "tagline": "An explicitly political Babylon 5 podcast",
         "description": "Using Babylon 5 to process the rise of authoritarianism in the real world.",
+        "feed_url": FEED_URL,
     }
 
-    # 👉 NEW: try RSS, fall back to hardcoded
+    # Try RSS, fall back to hardcoded
     try:
         episodes = load_episodes_from_rss(FEED_URL, limit=20)
         if not episodes:
@@ -140,7 +177,6 @@ def main():
     # Homepage
     render("home.html", context, DIST_DIR / "index.html")
 
-
     # Episodes index page
     render("episodes_index.html", context, DIST_DIR / "episodes" / "index.html")
 
@@ -152,6 +188,6 @@ def main():
             DIST_DIR / "episodes" / f"{ep['slug']}.html",
         )
 
+
 if __name__ == "__main__":
     main()
-
