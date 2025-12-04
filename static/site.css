@@ -1,16 +1,16 @@
-/* Global layout */
+/* ========= Global layout ========= */
 
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: #f4f4f8;
+  color: #E6EBF8;
 
-  /* Starfield over a blue–purple gradient */
+  /* Starfield over purple-blue space gradient */
   background:
-    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.15) 1px, transparent 2px),
-    radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.12) 1px, transparent 2px),
+    radial-gradient(circle at 15% 20%, rgba(255, 255, 255, 0.18) 1px, transparent 2px),
+    radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.14) 1px, transparent 2px),
     radial-gradient(circle at 40% 80%, rgba(255, 255, 255, 0.10) 1px, transparent 2px),
-    linear-gradient(180deg, #050510 0%, #0b1740 45%, #432276 100%);
+    linear-gradient(180deg, #050513 0%, #101634 40%, #2C2462 80%, #3E2C7F 100%);
   background-size:
     180px 180px,
     220px 220px,
@@ -20,7 +20,7 @@ body {
 }
 
 a {
-  color: #7cc7ff; /* light blue */
+  color: #7CC7FF; /* light blue links */
   text-decoration: none;
 }
 a:hover {
@@ -33,11 +33,11 @@ a:hover {
   padding: 1.5rem;
 }
 
-/* Header & footer */
+/* ========= Header & footer ========= */
 
 .site-header,
 .site-footer {
-  background: rgba(5, 8, 24, 0.96);
+  background: rgba(20, 40, 90, 0.95); /* solar-panel blue-ish */
   backdrop-filter: blur(10px);
 }
 
@@ -53,22 +53,22 @@ a:hover {
   font-size: 1.4rem;
 }
 .site-title a {
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .site-tagline {
   margin: 0.25rem 0 0;
-  color: #c4c6dd;
+  color: #C2CBE6;
   font-size: 0.95rem;
 }
 
 .site-nav a {
   margin-left: 1rem;
   font-size: 0.95rem;
-  color: #e3e4f5;
+  color: #E6EBF8;
 }
 .site-nav a:hover {
-  color: #ffffff;
+  color: #A9D6FF;
 }
 
 .site-main {
@@ -78,16 +78,16 @@ a:hover {
 .site-footer p {
   margin: 0;
   font-size: 0.8rem;
-  color: #a5a7c7;
+  color: #A5ACC9;
 }
 
-/* Hero */
+/* ========= Hero ========= */
 
 .hero {
   margin-top: 2rem;
   padding: 1.75rem;
   border-radius: 0.9rem;
-  background: radial-gradient(circle at top left, #3357c5, #081028);
+  background: radial-gradient(circle at top left, #314F9C, #101634);
   box-shadow: 0 18px 35px rgba(0, 0, 0, 0.6);
 }
 
@@ -102,7 +102,7 @@ a:hover {
   max-width: 40rem;
 }
 
-/* Episodes sections */
+/* ========= Episodes sections ========= */
 
 .episodes-preview,
 .episodes-index {
@@ -115,7 +115,7 @@ a:hover {
   font-size: 1.3rem;
 }
 
-/* Stacked episode list */
+/* ========= Stacked episode list ========= */
 
 .episode-list {
   display: flex;
@@ -123,16 +123,18 @@ a:hover {
   gap: 1rem;
 }
 
-/* Card layout with artwork on the left */
+/* ========= Episode cards (station hull colors) ========= */
 
 .episode-card {
   display: flex;
   gap: 1.25rem;
-  padding: 1rem 1.25rem;
-  border-radius: 0.75rem;
-  background: #111623cc;
-  border: 1px solid #1e2334;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  padding: 1.25rem 1.5rem;
+  border-radius: 0.9rem;
+
+  /* hull blue-gray */
+  background: #1B2538;
+  border: 1px solid #344561;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.55);
 }
 
 .episode-art-wrap {
@@ -142,7 +144,7 @@ a:hover {
 .episode-art {
   width: 240px;
   height: 240px;
-  max-width: 35vw;  /* keep it sane on small screens */
+  max-width: 35vw;
   max-height: 35vw;
   border-radius: 0.6rem;
   object-fit: cover;
@@ -159,7 +161,7 @@ a:hover {
 }
 
 .episode-card h4 a {
-  color: #f5f5ff;
+  color: #F2F4FF;
 }
 
 .episode-card .date {
@@ -167,26 +169,26 @@ a:hover {
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #a0a3c7;
+  color: #A0A9C4;
 }
 
 .episode-card .summary {
   margin: 0 0 0.75rem;
   font-size: 0.9rem;
-  color: #d1d3ee;
+  color: #D0D6EB;
 }
 
 .episode-card .listen-link {
   margin-top: auto;
-  font-size: 0.88rem;
+  font-size: 0.9rem;
 }
 
 .listen-link a {
-  color: #7cc7ff;
+  color: #7CC7FF;
   font-weight: 500;
 }
 
-/* Episode detail page */
+/* ========= Episode detail page ========= */
 
 .episode-page {
   margin-top: 2rem;
@@ -204,11 +206,10 @@ a:hover {
   font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #a0a3c7;
+  color: #A0A9C4;
 }
 
 .episode-page p {
   line-height: 1.6;
   margin-bottom: 1rem;
 }
-

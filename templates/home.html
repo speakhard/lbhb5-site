@@ -11,7 +11,7 @@
   <h3>Recent Episodes</h3>
 
   <div class="episode-list">
-    {# Show 6 stacked episodes on the homepage #}
+    {# Show 6 latest episodes, stacked #}
     {% for ep in episodes[:6] %}
       <article class="episode-card">
         {% if ep.image %}
@@ -49,4 +49,3 @@
 </section>
 
 {% endblock %}
-
