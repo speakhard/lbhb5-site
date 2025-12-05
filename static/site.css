@@ -77,6 +77,21 @@ a:hover {
   gap: 1rem;
 }
 
+
+/* This hits BOTH <img> and inline <svg> in the nav */
+.site-nav img,
+.site-nav svg {
+  width: 45px;
+  height: 45px;
+  display: block;
+}
+
+/* Optional, keeps click targets tight */
+.nav-icon-link {
+  display: inline-flex;
+  align-items: center;
+}
+
 .nav-icon-link {
   display: inline-flex;
   align-items: center;
