@@ -16,11 +16,15 @@
           <p class="date">{{ ep.date }}</p>
         {% endif %}
 
-        {% if ep.description %}
-          <p class="summary">
-            {{ ep.description }}
-          </p>
-        {% endif %}
+{% if ep.tagline %}
+  <p class="summary">
+    {{ ep.tagline }}
+  </p>
+{% elif ep.description %}
+  <p class="summary">
+    {{ ep.description }}
+  </p>
+{% endif %}
 
         <p class="listen-link">
           <a href="{{ ep.audio_url }}">▶ Listen</a>

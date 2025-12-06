@@ -31,11 +31,13 @@
             <p class="date">{{ ep.date }}</p>
           {% endif %}
 
-          {% if ep.description %}
-            <p class="summary">
-              {{ ep.description }}
-            </p>
-          {% endif %}
+{% set summary_text = ep.tagline or ep.description %}
+
+{% if summary_text %}
+  <p class="summary">
+    {{ summary_text[:200] }}{% if summary_text|length > 200 %}…{% endif %}
+  </p>
+{% endif %}
 
           <p class="listen-link">
             <a href="{{ ep.audio_url }}">▶ Listen</a>
