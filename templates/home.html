@@ -21,15 +21,14 @@
             <img src="{{ ep.image }}" alt="" class="episode-art">
           </div>
         {% endif %}
-
+        
+          {% if ep.date %}
+            <p class="date">{{ ep.date }}</p>
+          {% endif %}
         <div class="episode-meta">
           <h4>
             <a href="/episodes/{{ ep.slug }}.html">{{ ep.title }}</a>
           </h4>
-
-          {% if ep.date %}
-            <p class="date">{{ ep.date }}</p>
-          {% endif %}
 
 {% set summary_text = ep.tagline or ep.description %}
 
