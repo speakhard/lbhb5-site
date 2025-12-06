@@ -2,13 +2,6 @@
 
 {% block content %}
 
-<!--
-<section class="hero">.
-   <h2>Welcome to {{ site.title }}</h2>
-   <p>{{ site.description }}</p>
- </section>
--->
-
 <section class="episodes-preview">
   <h3>Recent Episodes</h3>
 
@@ -21,22 +14,25 @@
             <img src="{{ ep.image }}" alt="" class="episode-art">
           </div>
         {% endif %}
-        
+
+        <div class="episode-meta">
+
+          {# DATE ABOVE TITLE #}
           {% if ep.date %}
             <p class="date">{{ ep.date }}</p>
           {% endif %}
-        <div class="episode-meta">
+
           <h4>
             <a href="/episodes/{{ ep.slug }}.html">{{ ep.title }}</a>
           </h4>
 
-{% set summary_text = ep.tagline or ep.description %}
-
-{% if summary_text %}
-  <p class="summary">
-    {{ summary_text[:200] }}{% if summary_text|length > 200 %}…{% endif %}
-  </p>
-{% endif %}
+          {# TAGLINE / SUMMARY, CLIPPED #}
+          {% set summary_text = ep.tagline or ep.description %}
+          {% if summary_text %}
+            <p class="summary">
+              {{ summary_text[:200] }}{% if summary_text|length > 200 %}…{% endif %}
+            </p>
+          {% endif %}
 
           <p class="listen-link">
             <a href="{{ ep.audio_url }}">▶ Listen</a>
