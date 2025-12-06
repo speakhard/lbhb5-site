@@ -6,11 +6,13 @@ body {
   color: #E6EBF8;
 
   /* Starfield over purple-blue space gradient */
-  background:
-    radial-gradient(circle at 15% 20%, rgba(255, 255, 255, 0.18) 1px, transparent 2px),
-    radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.14) 1px, transparent 2px),
-    radial-gradient(circle at 40% 80%, rgba(255, 255, 255, 0.10) 1px, transparent 2px),
-    linear-gradient(180deg, #050513 0%, #101634 40%, #2C2462 80%, #3E2C7F 100%);
+  background: radial-gradient(
+        circle at top right,
+        #242d63 0%,
+        #1a1f47 30%,
+        #11152d 70%,
+        #0b0f24 100%
+  );
   background-size:
     180px 180px,
     220px 220px,
@@ -37,7 +39,10 @@ a:hover {
 
 .site-header,
 .site-footer {
-  background: rgba(10,18,35,0.95);
+  background: linear-gradient(
+      rgba(20, 35, 75, 0.85) 0%,
+      rgba(10, 18, 35, 0.95) 100%
+  );
   backdrop-filter: blur(6px);
 }
 
@@ -166,10 +171,18 @@ a:hover {
   gap: 1rem;
   padding: 0.9rem 1.1rem;    /* less padding = shorter cards */
   border-radius: 18px;
-  background: #0d1b3d;
+  background: rgba(13, 22, 45, 0.82); /* smooth, atmospheric */
   box-shadow:
     0 10px 25px rgba(0, 0, 0, 0.45),
     0 0 0 1px rgba(255, 255, 255, 0.03);
+}
+
+.episode-card:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 16px 32px rgba(0, 0, 0, 0.55),
+    0 0 0 1px rgba(255, 255, 255, 0.07);
+  transition: all 140ms ease;
 }
 
   /* hull blue-gray */
