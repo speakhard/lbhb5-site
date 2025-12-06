@@ -1,22 +1,77 @@
 /* ========= Global layout ========= */
 
-body {
-  margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: #E6EBF8;
+/* ===== Global background: EA uniform + Earth ===== */
 
-  /* Starfield over purple-blue space gradient */
-  background:
-    radial-gradient(circle at 15% 20%, rgba(255, 255, 255, 0.18) 1px, transparent 2px),
-    radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.14) 1px, transparent 2px),
-    radial-gradient(circle at 40% 80%, rgba(255, 255, 255, 0.10) 1px, transparent 2px),
-    linear-gradient(180deg, #050513 0%, #101634 40%, #2C2462 80%, #3E2C7F 100%);
-  background-size:
-    180px 180px,
-    220px 220px,
-    260px 260px,
-    cover;
+body {
+  color: #e5ecff;
+  background-color: #050814; /* safety color while image loads */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Segoe UI", sans-serif;
+}
+
+/* Shared background image */
+body.bg-fixed,
+body.bg-fluid {
+  background-image: url("/static/LBH_site_background_3840x2160.webp");
+  background-size: cover;
+  background-position: center bottom; /* Earth anchored at bottom edge */
+  background-repeat: no-repeat;
+}
+
+/* Variant 1: fixed parallax-ish background */
+body.bg-fixed {
   background-attachment: fixed;
+}
+
+/* Variant 2: fluid background (better on mobile / older GPUs) */
+body.bg-fluid {
+  background-attachment: scroll;
+}
+
+/* ===== Starfield + color grading overlay ===== */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1; /* stays behind site content if content uses positive z-index */
+
+  /* 1) subtle stars (two layers of tiny dots) */
+  background-image:
+    radial-gradient(circle, rgba(255, 255, 255, 0.35) 0, rgba(255, 255, 255, 0.35) 1px, transparent 2px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.20) 0, rgba(255, 255, 255, 0.20) 1px, transparent 2px),
+
+    /* 2) top cool wash */
+    radial-gradient(circle at top, rgba(125, 155, 255, 0.35), transparent 60%),
+
+    /* 3) bottom warm reflection (sunset over Earth) */
+    radial-gradient(circle at bottom, rgba(255, 178, 90, 0.30), transparent 55%);
+
+  background-size:
+    3px 3px,
+    5px 5px,
+    100% 100%,
+    100% 100%;
+
+  background-position:
+    0 0,
+    1px 1px,
+    0 0,
+    0 0;
+
+  mix-blend-mode: soft-light;
+  opacity: 0.9;
+}
+
+/* Make sure page layout establishes a positive stacking context,
+   so the overlay sits behind content */
+.site-shell,
+.site-main,
+.episode-page,
+.episodes-preview {
+  position: relative;
+  z-index: 1;
 }
 
 a {
