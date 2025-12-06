@@ -28,7 +28,7 @@ a:hover {
 }
 
 .container {
-  max-width: 960px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 1.5rem;
 }
@@ -37,8 +37,8 @@ a:hover {
 
 .site-header,
 .site-footer {
-  background: rgba(20, 40, 90, 0.95); /* solar-panel blue-ish */
-  backdrop-filter: blur(10px);
+  background: rgba(10,18,35,0.95);
+  backdrop-filter: blur(6px);
 }
 
 .header-inner {
@@ -65,10 +65,10 @@ a:hover {
 .site-nav a {
   margin-left: 1rem;
   font-size: 0.95rem;
-  color: #E6EBF8;
+  color: #ffffffcc;
 }
 .site-nav a:hover {
-  color: #A9D6FF;
+  color: #ffffff;
 }
 
 .site-nav {
@@ -166,7 +166,7 @@ a:hover {
   gap: 1rem;
   padding: 0.9rem 1.1rem;    /* less padding = shorter cards */
   border-radius: 18px;
-  background: rgba(10, 18, 35, 0.95);
+  background: #0d1b3d;
   box-shadow:
     0 10px 25px rgba(0, 0, 0, 0.45),
     0 0 0 1px rgba(255, 255, 255, 0.03);
