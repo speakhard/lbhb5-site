@@ -6,13 +6,11 @@ body {
   color: #E6EBF8;
 
   /* Starfield over purple-blue space gradient */
-  background: radial-gradient(
-        circle at top right,
-        #242d63 0%,
-        #1a1f47 30%,
-        #11152d 70%,
-        #0b0f24 100%
-  );
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255, 255, 255, 0.18) 1px, transparent 2px),
+    radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.14) 1px, transparent 2px),
+    radial-gradient(circle at 40% 80%, rgba(255, 255, 255, 0.10) 1px, transparent 2px),
+    linear-gradient(180deg, #050513 0%, #101634 40%, #2C2462 80%, #3E2C7F 100%);
   background-size:
     180px 180px,
     220px 220px,
