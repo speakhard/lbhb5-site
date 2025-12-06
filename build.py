@@ -3,7 +3,7 @@ from pathlib import Path
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 import re
 import feedparser
-from time import strftime
+from datetime import datetime
 
 ROOT = Path(__file__).parent
 TEMPLATES_DIR = ROOT / "templates"
@@ -35,6 +35,23 @@ def strip_html(text: str) -> str:
     if not text:
         return ""
     return re.sub(r"<[^>]+>", "", text)
+
+
+def format_pretty_date(parsed, fallback: str = "") -> str:
+    """
+    Turn a feedparser time struct into 'March 11, 2025'.
+    If anything goes wrong, fall back to the provided string.
+    """
+    if not parsed:
+        return fallback
+    try:
+        dt = datetime(*parsed[:6])
+        month = dt.strftime("%B")  # 'March'
+        day = dt.day               # 1–31, no leading zero
+        year = dt.year
+        return f"{month} {day}, {year}"
+    except Exception:
+        return fallback
 
 
 def make_tagline(entry):
@@ -74,11 +91,15 @@ def load_episodes_from_rss(url: str, limit: int = 50):
         title = entry.get("title", "Untitled episode")
 
         # Date
-        if getattr(entry, "published_parsed", None):
-            date_str = strftime("%Y-%m-%d", entry.published_parsed)
-        elif getattr(entry, "updated_parsed", None):
-            date_str = strftime("%Y-%m-%d", entry.updated_parsed)
+        published_struct = getattr(entry, "published_parsed", None)
+        updated_struct = getattr(entry, "updated_parsed", None)
+
+        if published_struct:
+            date_str = format_pretty_date(published_struct)
+        elif updated_struct:
+            date_str = format_pretty_date(updated_struct)
         else:
+            # fallback: raw string if no parsed struct exists
             date_str = entry.get("published", "") or entry.get("updated", "")
 
         # Audio URL
@@ -135,7 +156,7 @@ def main():
         {
             "title": "Nothing's the Same Anymore (CHRYSALIS)",
             "slug": "nothings-the-same-anymore-chrysalis",
-            "date": "2025-03-11",
+            "date": "March 11, 2025",
             "tagline": "Josh and John discuss the season finale of Babylon 5's first season, after which everything changed.",
             "description": "Josh and John discuss the season finale of Babylon 5's first season, after which everything changed.",
             "image": "/static/placeholder.jpg",
@@ -144,7 +165,7 @@ def main():
         {
             "title": "Another Word for Surrender (THE FALL OF NIGHT)",
             "slug": "another-word-for-surrender-the-fall-of-night",
-            "date": "2025-03-19",
+            "date": "March 19, 2025",
             "tagline": "John and Josh discuss the parallels between Earth/Centauri/Narn and U.S./Russia/Ukraine.",
             "description": "John and Josh discuss the parallels between Earth/Centauri/Narn and U.S./Russia/Ukraine.",
             "image": "/static/placeholder.jpg",
