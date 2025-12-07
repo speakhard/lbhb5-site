@@ -9,60 +9,26 @@ body {
     "Segoe UI", sans-serif;
 }
 
-/* Shared background image */
-body.bg-fixed,
-body.bg-fluid {
-  background-image: url("/static/LBH_site_background_3840x2160.webp");
+body {
+  background-image: url('/static/LBH_site_background_3840x2160.jpg');
   background-size: cover;
-  background-position: center bottom; /* Earth anchored at bottom edge */
+  background-position: center top;
   background-repeat: no-repeat;
-}
-
-/* Variant 1: fixed parallax-ish background */
-body.bg-fixed {
   background-attachment: fixed;
 }
-
-/* Variant 2: fluid background (better on mobile / older GPUs) */
-body.bg-fluid {
-  background-attachment: scroll;
-}
-
-/* ===== Starfield + color grading overlay ===== */
 
 body::before {
   content: "";
   position: fixed;
-  inset: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   pointer-events: none;
-  z-index: -1; /* stays behind site content if content uses positive z-index */
-
-  /* 1) subtle stars (two layers of tiny dots) */
-  background-image:
-    radial-gradient(circle, rgba(255, 255, 255, 0.35) 0, rgba(255, 255, 255, 0.35) 1px, transparent 2px),
-    radial-gradient(circle, rgba(255, 255, 255, 0.20) 0, rgba(255, 255, 255, 0.20) 1px, transparent 2px),
-
-    /* 2) top cool wash */
-    radial-gradient(circle at top, rgba(125, 155, 255, 0.35), transparent 60%),
-
-    /* 3) bottom warm reflection (sunset over Earth) */
-    radial-gradient(circle at bottom, rgba(255, 178, 90, 0.30), transparent 55%);
-
-  background-size:
-    3px 3px,
-    5px 5px,
-    100% 100%,
-    100% 100%;
-
-  background-position:
-    0 0,
-    1px 1px,
-    0 0,
-    0 0;
-
-  mix-blend-mode: soft-light;
-  opacity: 0.9;
+  background: rgba(0, 0, 0, 0.25); /* adjust 0–0.4 as needed */
+  z-index: -1;
 }
+
 
 /* Make sure page layout establishes a positive stacking context,
    so the overlay sits behind content */
