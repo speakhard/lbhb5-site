@@ -1,6 +1,6 @@
 /* ========= Global layout ========= */
 
-/* ===== Global background: deep space with conflict glow ===== */
+/* ===== Global background: deep, almost-black space ===== */
 body {
   margin: 0;
   min-height: 100vh;
@@ -9,34 +9,34 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
     "Segoe UI", sans-serif;
 
-  /* base is almost-black navy */
-  background-color: #020313;
+  /* base: near-black navy */
+  background-color: #01010b;
 
   background-image:
-    /* top-left indigo / EA blue */
+    /* very faint EA blue, mostly off-screen top-left */
     radial-gradient(
-      circle at 12% -5%,
-      rgba(96, 165, 250, 0.35) 0%,
-      rgba(2, 3, 19, 0.0) 55%
+      circle at -20% -20%,
+      rgba(59, 130, 246, 0.22) 0%,
+      rgba(1, 1, 11, 0) 55%
     ),
-    /* top-right violet authoritarian glow */
+    /* faint authoritarian purple, pushed off-screen top-right */
     radial-gradient(
-      circle at 88% 0%,
-      rgba(147, 51, 234, 0.30) 0%,
-      rgba(2, 3, 19, 0.0) 55%
+      circle at 120% -20%,
+      rgba(147, 51, 234, 0.18) 0%,
+      rgba(1, 1, 11, 0) 55%
     ),
-    /* bottom-right red civil-war wash */
+    /* red conflict glow, mostly off-screen bottom-right */
     radial-gradient(
-      circle at 90% 110%,
-      rgba(239, 68, 68, 0.25) 0%,
-      rgba(2, 3, 19, 0.0) 60%
+      circle at 130% 120%,
+      rgba(239, 68, 68, 0.16) 0%,
+      rgba(1, 1, 11, 0) 55%
     ),
-    /* central vignette to push cards forward */
+    /* central vignette: big black bowl */
     radial-gradient(
-      circle at 50% 40%,
-      rgba(15, 23, 42, 0.96) 0%,
-      #020313 55%,
-      #000000 100%
+      circle at 50% 45%,
+      rgba(10, 16, 35, 0.95) 0%,
+      #020111 55%,
+      #000000 80%
     );
 
   background-size: cover;
@@ -51,14 +51,15 @@ body::before {
   pointer-events: none;
   z-index: 0;
 
-  opacity: 0.28;              /* stronger stars */
+  /* a bit more visible */
+  opacity: 0.35;
   mix-blend-mode: screen;
 
   background-image:
-    radial-gradient(circle, rgba(255,255,255,0.18) 1px, transparent 1px),
-    radial-gradient(circle, rgba(255,255,255,0.09) 1px, transparent 1px);
+    radial-gradient(circle, rgba(255,255,255,0.20) 1px, transparent 1px),
+    radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 1px);
 
-  background-size: 180px 180px, 260px 260px;
+  background-size: 160px 160px, 260px 260px;
   background-position: 0 0, 40px 60px;
 }
 
