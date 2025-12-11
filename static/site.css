@@ -1,51 +1,41 @@
 /* ========= Global layout ========= */
 
-/* ===== Global background: EA uniform + Earth ===== */
-
+/* ===== Global background: deep space with conflict glow ===== */
 body {
+  margin: 0;
+  min-height: 100vh;
+
   color: #e5ecff;
-  background-color: #050814; /* safety color while image loads */
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
     "Segoe UI", sans-serif;
-}
 
-/* ===== Global background: deep space with indigo + red conflict glow ===== */
-body {
-  min-height: 100vh;
-  margin: 0;
-
-  background-color: #040617;
+  /* base is almost-black navy */
+  background-color: #020313;
 
   background-image:
-    /* top-left indigo glow */
+    /* top-left indigo / EA blue */
     radial-gradient(
-      circle at 10% 0%,
-      rgba(80, 99, 255, 0.35) 0%,
-      rgba(4, 6, 23, 0.0) 55%
+      circle at 12% -5%,
+      rgba(96, 165, 250, 0.35) 0%,
+      rgba(2, 3, 19, 0.0) 55%
     ),
-    /* top-right violet glow */
+    /* top-right violet authoritarian glow */
     radial-gradient(
-      circle at 90% 0%,
+      circle at 88% 0%,
       rgba(147, 51, 234, 0.30) 0%,
-      rgba(4, 6, 23, 0.0) 60%
+      rgba(2, 3, 19, 0.0) 55%
     ),
-    /* bottom-right red conflict wash */
+    /* bottom-right red civil-war wash */
     radial-gradient(
-      circle at 90% 100%,
-      rgba(239, 68, 68, 0.22) 0%,
-      rgba(4, 6, 23, 0.0) 60%
+      circle at 90% 110%,
+      rgba(239, 68, 68, 0.25) 0%,
+      rgba(2, 3, 19, 0.0) 60%
     ),
-    /* bottom-left cool blue reflection */
+    /* central vignette to push cards forward */
     radial-gradient(
-      circle at 0% 100%,
-      rgba(56, 189, 248, 0.18) 0%,
-      rgba(4, 6, 23, 0.0) 65%
-    ),
-    /* central vignette that darkens behind content */
-    radial-gradient(
-      circle at 50% 35%,
-      rgba(15, 23, 42, 0.95) 0%,
-      #020617 55%,
+      circle at 50% 40%,
+      rgba(15, 23, 42, 0.96) 0%,
+      #020313 55%,
       #000000 100%
     );
 
@@ -59,17 +49,17 @@ body::before {
   position: fixed;
   inset: 0;
   pointer-events: none;
-  opacity: 0.20;
+  z-index: 0;
+
+  opacity: 0.28;              /* stronger stars */
   mix-blend-mode: screen;
 
   background-image:
-    radial-gradient(circle, rgba(255,255,255,0.14) 1px, transparent 1px),
-    radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1px);
+    radial-gradient(circle, rgba(255,255,255,0.18) 1px, transparent 1px),
+    radial-gradient(circle, rgba(255,255,255,0.09) 1px, transparent 1px);
 
   background-size: 180px 180px, 260px 260px;
   background-position: 0 0, 40px 60px;
-
-  z-index: 0;
 }
 
 /* Make sure page layout establishes a positive stacking context,
@@ -118,8 +108,11 @@ a:hover {
   margin: 0;
   font-size: 1.4rem;
 }
+
 .site-title a {
   color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
 }
 
 .site-tagline {
@@ -207,13 +200,14 @@ a:hover {
 /* ========= Episodes sections ========= */
 
 .episodes-preview {
-  max-width: 960px;          /* similar content width to Podpage main column */
-  margin: 3rem auto;
+  max-width: 960px;
+  margin: 2.25rem auto;    /* was 3rem */
 }
 
-.episodes-preview h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1.25rem;
+.episode-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;            /* was 0.9rem — tighter stack */
 }
 
 /* ========= Stacked episode list ========= */
@@ -224,38 +218,41 @@ a:hover {
   gap: 0.9rem;               /* tighter vertical spacing between cards */
 }
 
-/* ========= Episode cards (station hull colors) ========= */
+/* ========= Episode cards ========= */
 
 .episode-card {
   position: relative;
   display: flex;
-  gap: 1.75rem;
-  padding: 1.75rem 2rem;
+  gap: 1.25rem;                         /* a bit tighter */
+  padding: 1.35rem 1.5rem;              /* less padding */
   border-radius: 18px;
 
-  /* slightly lighter, cooler navy than the surrounding background */
-  background: rgba(10, 20, 40, 0.94);
+  /* use the “old background blue” on the cards themselves */
+  background: linear-gradient(
+    135deg,
+    #0f1b3a 0%,
+    #061024 100%
+  );
 
-  /* subtle indigo border to separate from purple/red back */
-  border: 1px solid rgba(129, 140, 248, 0.25);
+  border: 1px solid rgba(59, 130, 246, 0.32);
 
   box-shadow:
-    0 22px 55px rgba(15, 23, 42, 0.78),
-    0 0 0 1px rgba(15, 23, 42, 0.4);
+    0 16px 40px rgba(0, 0, 0, 0.75),
+    0 0 0 1px rgba(15, 23, 42, 0.45);
 
   color: #e9f0ff;
-  align-items: center;
+  align-items: flex-start;
   z-index: 1;
 }
 
 .episode-art-wrap {
   flex-shrink: 0;
-  margin-right: 0.75rem;
+  margin-right: 0.5rem;
 }
 
 .episode-art {
-  width: 240px;
-  height: 240px;
+  width: 220px;                         /* was 240px */
+  height: 220px;
   border-radius: 10px;
   object-fit: cover;
 }
@@ -270,7 +267,6 @@ a:hover {
   font-weight: 600;
   color: #f9fbff;
 }
-}
 
 .episode-card .date {
   font-size: 0.68rem;
@@ -280,7 +276,7 @@ a:hover {
 }
 
 .episode-card .summary {
-  margin-top: 0.45rem;
+  margin-top: 0.40rem;
   font-size: 0.86rem;
   line-height: 1.35;
   color: rgba(203, 213, 225, 0.95);
