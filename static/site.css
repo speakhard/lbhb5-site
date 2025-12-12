@@ -1,48 +1,26 @@
 /* ========= Global layout ========= */
 
-/* ===== Global background: deep black space + corner nebula ===== */
+/* ===== Global background: Earth horizon from space ===== */
+
 body {
-  min-height: 100vh;
   margin: 0;
+  min-height: 100vh;
+  color: #e5ecff;
 
-  /* base space black */
-  background-color: #000000;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Segoe UI", sans-serif;
 
-  /* layer 1: subtle vertical dark gradient (top slightly lighter than bottom) */
-  background-image:
-    linear-gradient(
-      180deg,
-      #020617 0%,
-      #000000 40%,
-      #000000 100%
-    ),
-    /* layer 2: bright electric-blue nebula, top-left */
-    radial-gradient(
-      circle at 10% 15%,
-      rgba(56, 189, 248, 0.75) 0%,
-      rgba(56, 189, 248, 0.35) 14%,
-      transparent 40%
-    ),
-    /* layer 3: violet nebula, top-right */
-    radial-gradient(
-      circle at 85% 12%,
-      rgba(129, 140, 248, 0.80) 0%,
-      rgba(129, 140, 248, 0.40) 16%,
-      transparent 42%
-    ),
-    /* layer 4: magenta conflict glow, bottom-right */
-    radial-gradient(
-      circle at 85% 78%,
-      rgba(236, 72, 153, 0.65) 0%,
-      rgba(236, 72, 153, 0.32) 18%,
-      transparent 50%
-    );
-
+  background-image: url("/static/earth_horizon.webp");
+  background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+
+  /* fallback color while image loads */
+  background-color: #000;
 }
 
+/* Darken center behind cards so text reads cleanly */
 body::before {
   content: "";
   position: fixed;
@@ -50,24 +28,43 @@ body::before {
   pointer-events: none;
   z-index: 0;
 
-  /* denser, smaller stars */
+  background:
+    /* top black fade to reveal space */
+    linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.95) 0%,
+      rgba(0, 0, 0, 0.6) 20%,
+      rgba(0, 0, 0, 0.35) 45%,
+      rgba(0, 0, 0, 0.20) 60%,
+      rgba(0, 0, 0, 0.45) 100%
+    ),
+
+    /* a gentle radial vignette centered around middle content */
+    radial-gradient(circle at 50% 40%,
+      rgba(0, 0, 0, 0.55) 0%,
+      rgba(0, 0, 0, 0.70) 45%,
+      rgba(0, 0, 0, 0.90) 80%,
+      rgba(0, 0, 0, 1.0) 100%
+    );
+
+  mix-blend-mode: normal;
+}
+
+/* Optional stars over the black sky region */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+
   background-image:
-    radial-gradient(circle, rgba(255, 255, 255, 0.28) 1px, transparent 1px),
-    radial-gradient(circle, rgba(255, 255, 255, 0.12) 1px, transparent 1px),
-    radial-gradient(circle, rgba(148, 163, 255, 0.16) 1px, transparent 1px);
+    radial-gradient(circle, rgba(255,255,255,0.8) 1px, transparent 1px),
+    radial-gradient(circle, rgba(255,255,255,0.4) 1px, transparent 1px);
 
-  background-size:
-    120px 120px,
-    220px 220px,
-    320px 320px;
+  background-size: 150px 150px, 250px 250px;
+  background-position: 0 0, 40px 60px;
 
-  background-position:
-    0 0,
-    40px 80px,
-    90px 30px;
-
-  opacity: 0.42;          /* crank up from 0.20 */
-  mix-blend-mode: screen; /* keeps them luminous on dark background */
+  opacity: 0.12; /* keep subtle and classy */
 }
 
 /* Make sure page layout establishes a positive stacking context,
