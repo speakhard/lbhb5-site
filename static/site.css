@@ -20,7 +20,7 @@ body {
   background-color: #000;
 }
 
-/* Darken center behind cards so text reads cleanly */
+/* Light, cinematic vignette */
 body::before {
   content: "";
   position: fixed;
@@ -29,27 +29,16 @@ body::before {
   z-index: 0;
 
   background:
-    /* top black fade to reveal space */
-    linear-gradient(to bottom,
-      rgba(0, 0, 0, 0.95) 0%,
-      rgba(0, 0, 0, 0.6) 20%,
-      rgba(0, 0, 0, 0.35) 45%,
-      rgba(0, 0, 0, 0.20) 60%,
-      rgba(0, 0, 0, 0.45) 100%
-    ),
-
-    /* a gentle radial vignette centered around middle content */
-    radial-gradient(circle at 50% 40%,
-      rgba(0, 0, 0, 0.55) 0%,
-      rgba(0, 0, 0, 0.70) 45%,
-      rgba(0, 0, 0, 0.90) 80%,
-      rgba(0, 0, 0, 1.0) 100%
+    radial-gradient(
+      circle at center,
+      rgba(0, 0, 0, 0.10) 0%,     /* very light center shading */
+      rgba(0, 0, 0, 0.15) 40%,    /* soft fade */
+      rgba(0, 0, 0, 0.25) 85%     /* gentle vignette edges */
     );
 
-  mix-blend-mode: normal;
+  opacity: 0.55;                  /* was WAY too strong — now subtle */
 }
 
-/* Optional stars over the black sky region */
 body::after {
   content: "";
   position: fixed;
@@ -58,13 +47,13 @@ body::after {
   z-index: 0;
 
   background-image:
-    radial-gradient(circle, rgba(255,255,255,0.8) 1px, transparent 1px),
-    radial-gradient(circle, rgba(255,255,255,0.4) 1px, transparent 1px);
+    radial-gradient(circle, rgba(255,255,255,0.8) 1.2px, transparent 1px),
+    radial-gradient(circle, rgba(255,255,255,0.5) 1px, transparent 1px);
 
-  background-size: 150px 150px, 250px 250px;
-  background-position: 0 0, 40px 60px;
+  background-size: 140px 140px, 240px 240px;
+  background-position: 0 0, 60px 80px;
 
-  opacity: 0.12; /* keep subtle and classy */
+  opacity: 0.22;  /* was 0.12 — barely visible */
 }
 
 /* Make sure page layout establishes a positive stacking context,
@@ -238,16 +227,16 @@ a:hover {
   /* darker, more neutral hull */
   background: radial-gradient(
     circle at top left,
-    rgba(15, 23, 42, 0.98),
-    rgba(3, 7, 18, 0.98)
+    rgba(12, 22, 38, 0.82),
+    rgba(15, 23, 42, 0.98)
   );
 
   /* sharper blue edge */
   border: 1px solid rgba(59, 130, 246, 0.55);
 
   box-shadow:
-    0 18px 40px rgba(15, 23, 42, 0.9),
-    0 0 0 1px rgba(15, 23, 42, 0.7);
+    0 18px 45px rgba(0, 0, 0, 0.55),
+    0 0 0 1px rgba(0, 0, 0, 0.35);
 
   color: #e9f0ff;
   align-items: center;
