@@ -1,42 +1,42 @@
 /* ========= Global layout ========= */
 
-/* ===== Global background: deep, almost-black space ===== */
+/* ===== Global background: deep space with bright nebula ===== */
 body {
-  margin: 0;
   min-height: 100vh;
+  margin: 0;
 
-  color: #e5ecff;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
-    "Segoe UI", sans-serif;
+  /* base space black */
+  background-color: #000000;
 
-  /* base: near-black navy */
-  background-color: #01010b;
-
+  /* layer order: nebula glows on top, deep black underneath */
   background-image:
-    /* very faint EA blue, mostly off-screen top-left */
+    /* bright electric blue nebula, left/top */
     radial-gradient(
-      circle at -20% -20%,
-      rgba(59, 130, 246, 0.22) 0%,
-      rgba(1, 1, 11, 0) 55%
+      circle at 10% 15%,
+      rgba(56, 189, 248, 0.75) 0%,
+      rgba(56, 189, 248, 0.35) 15%,
+      transparent 55%
     ),
-    /* faint authoritarian purple, pushed off-screen top-right */
+    /* violet / purple nebula, right/top */
     radial-gradient(
-      circle at 120% -20%,
-      rgba(147, 51, 234, 0.18) 0%,
-      rgba(1, 1, 11, 0) 55%
+      circle at 85% 10%,
+      rgba(129, 140, 248, 0.75) 0%,
+      rgba(129, 140, 248, 0.35) 18%,
+      transparent 60%
     ),
-    /* red conflict glow, mostly off-screen bottom-right */
+    /* magenta “political turbulence” glow, right/bottom */
     radial-gradient(
-      circle at 130% 120%,
-      rgba(239, 68, 68, 0.16) 0%,
-      rgba(1, 1, 11, 0) 55%
+      circle at 85% 80%,
+      rgba(236, 72, 153, 0.65) 0%,
+      rgba(236, 72, 153, 0.30) 18%,
+      transparent 55%
     ),
-    /* central vignette: big black bowl */
+    /* deep black core so the nebula fades into space */
     radial-gradient(
-      circle at 50% 45%,
-      rgba(10, 16, 35, 0.95) 0%,
-      #020111 55%,
-      #000000 80%
+      circle at 50% 40%,
+      #020617 0%,
+      #020617 35%,
+      #000000 100%
     );
 
   background-size: cover;
@@ -51,16 +51,24 @@ body::before {
   pointer-events: none;
   z-index: 0;
 
-  /* a bit more visible */
-  opacity: 0.35;
-  mix-blend-mode: screen;
-
+  /* denser, smaller stars */
   background-image:
-    radial-gradient(circle, rgba(255,255,255,0.20) 1px, transparent 1px),
-    radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 1px);
+    radial-gradient(circle, rgba(255, 255, 255, 0.28) 1px, transparent 1px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.12) 1px, transparent 1px),
+    radial-gradient(circle, rgba(148, 163, 255, 0.16) 1px, transparent 1px);
 
-  background-size: 160px 160px, 260px 260px;
-  background-position: 0 0, 40px 60px;
+  background-size:
+    120px 120px,
+    220px 220px,
+    320px 320px;
+
+  background-position:
+    0 0,
+    40px 80px,
+    90px 30px;
+
+  opacity: 0.42;          /* crank up from 0.20 */
+  mix-blend-mode: screen; /* keeps them luminous on dark background */
 }
 
 /* Make sure page layout establishes a positive stacking context,
@@ -92,10 +100,13 @@ a:hover {
 .site-header,
 .site-footer {
   background: linear-gradient(
-      rgba(20, 35, 75, 0.85) 0%,
-      rgba(10, 18, 35, 0.95) 100%
+    135deg,
+    #020617 0%,
+    #020617 40%,
+    #111827 100%
   );
-  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(8px);
 }
 
 .header-inner {
@@ -202,13 +213,13 @@ a:hover {
 
 .episodes-preview {
   max-width: 960px;
-  margin: 2.25rem auto;    /* was 3rem */
+  margin: 2.4rem auto;
 }
 
 .episode-list {
   display: flex;
   flex-direction: column;
-  gap: 0.65rem;            /* was 0.9rem — tighter stack */
+  gap: 0.7rem;      /* tighter stack */
 }
 
 /* ========= Stacked episode list ========= */
@@ -224,25 +235,25 @@ a:hover {
 .episode-card {
   position: relative;
   display: flex;
-  gap: 1.25rem;                         /* a bit tighter */
-  padding: 1.35rem 1.5rem;              /* less padding */
+  gap: 1.4rem;
+  padding: 1.4rem 1.7rem;
   border-radius: 18px;
 
-  /* use the “old background blue” on the cards themselves */
-  background: linear-gradient(
-    135deg,
-    #0f1b3a 0%,
-    #061024 100%
+  /* station hull: neutral grey to deep indigo */
+  background: radial-gradient(
+    circle at top left,
+    rgba(31, 41, 55, 0.96),
+    rgba(15, 23, 42, 0.98)
   );
 
-  border: 1px solid rgba(59, 130, 246, 0.32);
+  border: 1px solid rgba(148, 163, 184, 0.55);
 
   box-shadow:
-    0 16px 40px rgba(0, 0, 0, 0.75),
-    0 0 0 1px rgba(15, 23, 42, 0.45);
+    0 18px 40px rgba(15, 23, 42, 0.9),
+    0 0 0 1px rgba(15, 23, 42, 0.65);
 
   color: #e9f0ff;
-  align-items: flex-start;
+  align-items: center;
   z-index: 1;
 }
 
@@ -264,16 +275,16 @@ a:hover {
 }
 
 .episode-card h4 a {
-  font-size: 1.0rem;
+  font-size: 1.02rem;
   font-weight: 600;
   color: #f9fbff;
 }
 
 .episode-card .date {
-  font-size: 0.68rem;
-  letter-spacing: 0.12em;
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: rgba(191, 219, 254, 0.85);
+  color: rgba(191, 219, 254, 0.9);
 }
 
 .episode-card .summary {
