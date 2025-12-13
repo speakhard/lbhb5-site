@@ -100,33 +100,42 @@
           </div>
         </div>
 
-        <div class="transcript-panel transcript--show-timecodes" id="transcript-panel">
-          {# 
-            For now, drop raw HTML or Markdown-to-HTML here.
-            Convention: wrap timecodes in <span class="tc">[00:01:23]</span>
-            Later we can switch this to an include:
-            {% include "transcripts/" ~ episode.slug ~ ".html" %}
-          #}
-          <p>
-            <span class="tc">[00:00:00]</span>
-            Transcript for this episode will go here. Timecodes can be
-            hidden or shown using the toggle above.
-          </p>
+      <!-- Transcript -->
+      <section class="episode-transcript">
+        <div class="episode-transcript-header">
+          <h2 class="section-heading">Transcript</h2>
+          {% if episode.transcript_html %}
+            <div class="transcript-controls">
+              <button type="button" class="btn btn-ghost btn-xs" id="toggle-timecodes">
+                Hide timecodes
+              </button>
+            </div>
+          {% endif %}
         </div>
 
-        <div class="transcript-links">
-          <a href="/transcripts/{{ episode.slug }}.html" class="link-muted" target="_blank" rel="noopener">
-            Open full transcript in a new tab
-          </a>
-          <span aria-hidden="true">·</span>
-          <a href="/transcripts/{{ episode.slug }}.md" class="link-muted">
-            Download as Markdown
-          </a>
-          <span aria-hidden="true">·</span>
-          <a href="/transcripts/{{ episode.slug }}.pdf" class="link-muted">
-            Download as PDF
-          </a>
-        </div>
+        {% if episode.transcript_html %}
+          <div class="transcript-panel transcript--show-timecodes" id="transcript-panel">
+            {{ episode.transcript_html | safe }}
+          </div>
+
+          <div class="transcript-links">
+            <a href="/transcripts/{{ episode.slug }}.html" class="link-muted" target="_blank" rel="noopener">
+              Open full transcript in a new tab
+            </a>
+            <span aria-hidden="true">·</span>
+            <a href="/transcripts/{{ episode.slug }}.md" class="link-muted">
+              Download as Markdown
+            </a>
+            <span aria-hidden="true">·</span>
+            <a href="/transcripts/{{ episode.slug }}.pdf" class="link-muted">
+              Download as PDF
+            </a>
+          </div>
+        {% else %}
+          <p class="episode-transcript-empty">
+            Transcript coming soon.
+          </p>
+        {% endif %}
       </section>
 
       <!-- Relevant links section -->

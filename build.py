@@ -8,20 +8,21 @@ from datetime import datetime
 ROOT = Path(__file__).parent
 TEMPLATES_DIR = ROOT / "templates"
 DIST_DIR = ROOT / "dist"
+TRANSCRIPTS_DIR = ROOT / "transcripts"
 
 env = Environment(
     loader=FileSystemLoader(str(TEMPLATES_DIR)),
     autoescape=select_autoescape(["html", "xml"]),
 )
 
+FEED_URL = "https://pinecast.com/feed/last-best-hope"
+
+
 def render(template_name, context, out_path: Path):
     template = env.get_template(template_name)
     html = template.render(**context)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(html, encoding="utf-8")
-
-
-FEED_URL = "https://pinecast.com/feed/last-best-hope"
 
 
 def slugify(value: str) -> str:
@@ -134,7 +135,8 @@ def load_episodes_from_rss(url: str, limit: int = 50):
                 "description": full_description,
                 "image": image_url,
                 "audio_url": audio_url,
-                "permalink": entry.get("link", ""),  # NEW
+                "permalink": entry.get("link", ""),
+                "transcript_html": "",  # will be filled in later if we have a file
             }
         )
 
@@ -175,10 +177,21 @@ def main():
     ]
 
     site = {
-        "title": "Last Best Hope",
+        "title": "LAST BEST HOPE",
         "tagline": "An explicitly political Babylon 5 podcast",
         "description": "Using Babylon 5 to process the rise of authoritarianism in the real world.",
-        "feed_url": FEED_URL,
+        "feed_url": FEED_URL,  # <-- fixed: use constant, not bare URL
+
+        # Show-level platform URLs
+        "apple_podcasts_url": "https://podcasts.apple.com/us/podcast/last-best-hope-an-explicitly-political-babylon-5-podcast/id1801636475?mt=2&ls=1",
+        "spotify_url": "https://open.spotify.com/show/5ASOLdJDYx8sLbwVZtiujd?si=ae23a5323ecb4906",
+        "rss_url": FEED_URL,  # <-- fixed: string, again using constant
+        # "youtube_url": "https://www.youtube.com/@YourChannelHere",
+
+        # Discussion homes (optional but recommended)
+        "bluesky_base_url": "https://bsky.app/profile/lastbesthopeb5.bsky.social",
+        # "mastodon_base_url": "https://mastodon.instance/@LastBestHopeB5",
+        # "reddit_thread_base": "https://www.reddit.com/r/LastBestHopeB5/",
     }
 
     # Try RSS, fall back to hardcoded
@@ -195,6 +208,32 @@ def main():
         "site": site,
         "episodes": episodes,
     }
+
+    # Attach transcripts and copy transcript assets if available
+    transcripts_out_dir = DIST_DIR / "transcripts"
+    transcripts_out_dir.mkdir(parents=True, exist_ok=True)
+
+    for ep in episodes:
+        slug = ep["slug"]
+
+        # HTML transcript for in-page panel + full-page view
+        html_src = TRANSCRIPTS_DIR / f"{slug}.html"
+        if html_src.exists():
+            html_text = html_src.read_text(encoding="utf-8")
+            ep["transcript_html"] = html_text
+
+            # copy to dist/transcripts/<slug>.html for "open full transcript"
+            html_dest = transcripts_out_dir / f"{slug}.html"
+            shutil.copy2(html_src, html_dest)
+        else:
+            ep["transcript_html"] = ""
+
+        # Optional Markdown / PDF downloads
+        for ext in ("md", "pdf"):
+            src = TRANSCRIPTS_DIR / f"{slug}.{ext}"
+            if src.exists():
+                dest = transcripts_out_dir / f"{slug}.{ext}"
+                shutil.copy2(src, dest)
 
     # Homepage
     render("home.html", context, DIST_DIR / "index.html")
