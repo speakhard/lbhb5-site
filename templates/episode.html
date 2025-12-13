@@ -1,15 +1,188 @@
 {% extends "base.html" %}
 
 {% block content %}
-<article class="episode-page">
-  <h2>{{ episode.title }}</h2>
-  <p class="date">{{ episode.date }}</p>
 
-  <p>{{ episode.description }}</p>
+<main class="episode-page">
 
-  <p>
-    <a href="{{ episode.audio_url }}">▶ Listen</a>
-  </p>
-</article>
+  <!-- Episode hero card (same “hull” look as index cards, but wider) -->
+  <article class="episode-page-shell">
+
+    <header class="episode-page-header">
+      <div class="episode-page-meta">
+        <p class="episode-page-date">{{ episode.date }}</p>
+
+        <h1 class="episode-page-title">
+          {{ episode.title }}
+        </h1>
+
+        {% if episode.description %}
+          <p class="episode-page-dek">
+            {{ episode.description }}
+          </p>
+        {% endif %}
+
+        <!-- Primary actions: play + platform links -->
+        <div class="episode-page-actions">
+          {% if episode.audio_url %}
+            <a href="#episode-audio-player" class="btn btn-primary">
+              ▶ Play episode
+            </a>
+          {% endif %}
+
+          {# These can be per-episode later; for now link to show pages or leave blank #}
+          {% if site.apple_podcasts_url %}
+            <a href="{{ site.apple_podcasts_url }}" class="btn btn-ghost" target="_blank" rel="noopener">
+               Apple Podcasts
+            </a>
+          {% endif %}
+          {% if site.spotify_url %}
+            <a href="{{ site.spotify_url }}" class="btn btn-ghost" target="_blank" rel="noopener">
+              ♫ Spotify
+            </a>
+          {% endif %}
+          {% if site.rss_url %}
+            <a href="{{ site.rss_url }}" class="btn btn-ghost" target="_blank" rel="noopener">
+              RSS feed
+            </a>
+          {% endif %}
+          {% if site.youtube_url %}
+            <a href="{{ site.youtube_url }}" class="btn btn-ghost" target="_blank" rel="noopener">
+              ▶ YouTube
+            </a>
+          {% endif %}
+        </div>
+
+        {% if episode.permalink %}
+          <p class="episode-page-permalink">
+            Original episode page:
+            <a href="{{ episode.permalink }}" target="_blank" rel="noopener">
+              {{ episode.permalink }}
+            </a>
+          </p>
+        {% endif %}
+      </div>
+
+      {% if episode.image %}
+        <div class="episode-page-art-wrap">
+          <img src="{{ episode.image }}" alt="{{ episode.title }}" class="episode-page-art">
+        </div>
+      {% endif %}
+    </header>
+
+    <section class="episode-page-body">
+      {% if episode.audio_url %}
+        <section class="episode-player" id="episode-audio-player">
+          <h2 class="section-heading">Listen</h2>
+          <audio controls preload="none" class="episode-audio">
+            <source src="{{ episode.audio_url }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </section>
+      {% endif %}
+
+      <section class="episode-description">
+        <h2 class="section-heading">Episode Summary</h2>
+        {% if episode.description %}
+          <p>{{ episode.description }}</p>
+        {% else %}
+          <p>No description available for this episode yet.</p>
+        {% endif %}
+      </section>
+
+      <!-- Transcript shell. “transcript.html” can be a per-episode include later. -->
+      <section class="episode-transcript">
+        <div class="episode-transcript-header">
+          <h2 class="section-heading">Transcript</h2>
+          <div class="transcript-controls">
+            <button type="button" class="btn btn-ghost btn-xs" id="toggle-timecodes">
+              Hide timecodes
+            </button>
+          </div>
+        </div>
+
+        <div class="transcript-panel transcript--show-timecodes" id="transcript-panel">
+          {# 
+            For now, drop raw HTML or Markdown-to-HTML here.
+            Convention: wrap timecodes in <span class="tc">[00:01:23]</span>
+            Later we can switch this to an include:
+            {% include "transcripts/" ~ episode.slug ~ ".html" %}
+          #}
+          <p>
+            <span class="tc">[00:00:00]</span>
+            Transcript for this episode will go here. Timecodes can be
+            hidden or shown using the toggle above.
+          </p>
+        </div>
+
+        <div class="transcript-links">
+          <a href="/transcripts/{{ episode.slug }}.html" class="link-muted" target="_blank" rel="noopener">
+            Open full transcript in a new tab
+          </a>
+          <span aria-hidden="true">·</span>
+          <a href="/transcripts/{{ episode.slug }}.md" class="link-muted">
+            Download as Markdown
+          </a>
+          <span aria-hidden="true">·</span>
+          <a href="/transcripts/{{ episode.slug }}.pdf" class="link-muted">
+            Download as PDF
+          </a>
+        </div>
+      </section>
+
+      <!-- Relevant links section -->
+      <section class="episode-links">
+        <h2 class="section-heading">Links & References</h2>
+        <ul class="episode-links-list">
+          {# Example items; replace with per-episode content or an include #}
+          <li><a href="#">Example article about Babylon 5 politics</a></li>
+          <li><a href="#">Interview or essay mentioned in the episode</a></li>
+        </ul>
+      </section>
+
+      <!-- Comment / discussion strategy: link out rather than embed heavy widget -->
+      <section class="episode-discussion">
+        <h2 class="section-heading">Discuss this Episode</h2>
+        <p class="episode-discussion-copy">
+          Join the conversation with other listeners:
+        </p>
+        <div class="episode-discussion-actions">
+          {% if site.mastodon_base_url %}
+            <a href="{{ site.mastodon_base_url }}" class="btn btn-ghost" target="_blank" rel="noopener">
+              💬 Thread on Mastodon
+            </a>
+          {% endif %}
+          {% if site.reddit_thread_base %}
+            <a href="{{ site.reddit_thread_base }}" class="btn btn-ghost" target="_blank" rel="noopener">
+              ⬆️ Thread on Reddit
+            </a>
+          {% endif %}
+        </div>
+        <p class="episode-discussion-note">
+          (Best practice in 2025 is to keep comments on a federated or community
+          platform you control, rather than embedding heavy third-party trackers.)
+        </p>
+      </section>
+
+    </section>
+  </article>
+</main>
+
+<!-- Tiny inline script for timecode toggle -->
+<script>
+  (function () {
+    const panel = document.getElementById('transcript-panel');
+    const btn = document.getElementById('toggle-timecodes');
+    if (!panel || !btn) return;
+
+    btn.addEventListener('click', function () {
+      const show = panel.classList.toggle('transcript--show-timecodes');
+      if (show) {
+        btn.textContent = 'Hide timecodes';
+      } else {
+        btn.textContent = 'Show timecodes';
+      }
+    });
+  })();
+</script>
+
 {% endblock %}
-

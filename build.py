@@ -134,6 +134,7 @@ def load_episodes_from_rss(url: str, limit: int = 50):
                 "description": full_description,
                 "image": image_url,
                 "audio_url": audio_url,
+                "permalink": entry.get("link", ""),  # NEW
             }
         )
 
