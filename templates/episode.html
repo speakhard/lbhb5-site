@@ -29,7 +29,6 @@
             </a>
           {% endif %}
 
-          {# These can be per-episode later; for now link to show pages or leave blank #}
           {% if site.apple_podcasts_url %}
             <a href="{{ site.apple_podcasts_url }}" class="btn btn-ghost" target="_blank" rel="noopener">
                Apple Podcasts
@@ -89,24 +88,17 @@
         {% endif %}
       </section>
 
-      <!-- Transcript shell. “transcript.html” can be a per-episode include later. -->
-      <section class="episode-transcript">
-        <div class="episode-transcript-header">
-          <h2 class="section-heading">Transcript</h2>
-          <div class="transcript-controls">
-            <button type="button" class="btn btn-ghost btn-xs" id="toggle-timecodes">
-              Hide timecodes
-            </button>
-          </div>
-        </div>
-
       <!-- Transcript -->
       <section class="episode-transcript">
         <div class="episode-transcript-header">
           <h2 class="section-heading">Transcript</h2>
+
           {% if episode.transcript_html %}
             <div class="transcript-controls">
-              <button type="button" class="btn btn-ghost btn-xs" id="toggle-timecodes">
+              <button
+                type="button"
+                class="btn btn-ghost btn-xs"
+                id="toggle-timecodes">
                 Hide timecodes
               </button>
             </div>
@@ -114,7 +106,12 @@
         </div>
 
         {% if episode.transcript_html %}
-          <div class="transcript-panel transcript--show-timecodes" id="transcript-panel">
+          <!-- 
+            transcript-body + hide-timestamps:
+            - CSS: .transcript-body.hide-timestamps .tc { display: none; }
+            - Default: hide timestamps; button toggles this class.
+          -->
+          <div id="transcript-panel" class="transcript-body hide-timestamps">
             {{ episode.transcript_html | safe }}
           </div>
 
@@ -142,7 +139,7 @@
       <section class="episode-links">
         <h2 class="section-heading">Links & References</h2>
         <ul class="episode-links-list">
-          {# Example items; replace with per-episode content or an include #}
+          {# TODO: wire real per-episode links later #}
           <li><a href="#">Example article about Babylon 5 politics</a></li>
           <li><a href="#">Interview or essay mentioned in the episode</a></li>
         </ul>
@@ -183,13 +180,11 @@
     const btn = document.getElementById('toggle-timecodes');
     if (!panel || !btn) return;
 
+    // Start with timestamps hidden (class present)
+    // Clicking toggles visibility and label text.
     btn.addEventListener('click', function () {
-      const show = panel.classList.toggle('transcript--show-timecodes');
-      if (show) {
-        btn.textContent = 'Hide timecodes';
-      } else {
-        btn.textContent = 'Show timecodes';
-      }
+      const nowHidden = panel.classList.toggle('hide-timestamps');
+      btn.textContent = nowHidden ? 'Show timecodes' : 'Hide timecodes';
     });
   })();
 </script>

@@ -494,6 +494,33 @@ a:hover {
   display: none;
 }
 
+/* Transcript base styles */
+.transcript-body {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #e5ecff;
+}
+
+/* Hide timestamps when container has .hide-timestamps */
+.transcript-body.hide-timestamps .tc {
+  display: none;
+}
+
+.transcript-turn {
+  margin: 0.25rem 0;
+}
+
+.transcript-turn .speaker {
+  font-weight: 600;
+  color: #cbd5ff;
+}
+
+.transcript-preface {
+  margin-bottom: 1rem;
+  font-style: italic;
+  color: #a5b4fc;
+}
+
 /* Transcript links */
 
 .transcript-links {
