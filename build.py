@@ -126,6 +126,9 @@ def load_episodes_from_rss(url: str, limit: int = 50):
         if not image_url:
             image_url = "/static/placeholder.jpg"
 
+        slug = slugify(title)
+        print(f"[EPISODE] {title} -> {slug}")
+        
         episodes.append(
             {
                 "title": title,

@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Edit {{ ep.slug }}</title>
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; margin: 24px; max-width: 980px; }
+    label { display:block; font-weight: 600; margin: 14px 0 6px; }
+    input, textarea { width: 100%; padding: 10px; font-size: 14px; }
+    textarea { min-height: 120px; }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .actions { margin-top: 18px; display:flex; gap: 10px; align-items: center; }
+    button { padding: 10px 14px; }
+    .meta { color:#555; font-size: 13px; }
+    code { background:#f2f2f2; padding:2px 6px; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <p><a href="{{ url_for('index') }}">← Back</a></p>
+
+  <h1>Edit episode</h1>
+  <div class="meta">
+    <div><strong>Slug:</strong> <code>{{ ep.slug }}</code></div>
+    <div><strong>Date:</strong> {{ ep.date }}</div>
+    <div><strong>Transcript:</strong>
+      html {{ "✓" if t.html else "—" }},
+      md {{ "✓" if t.md else "—" }},
+      pdf {{ "✓" if t.pdf else "—" }}
+    </div>
+  </div>
+
+  <form method="post">
+    <label>Title</label>
+    <input name="title" value="{{ data.title }}"/>
+
+    <label>Full description (what shows on episode page)</label>
+    <textarea name="description">{{ data.description }}</textarea>
+
+    <div class="row">
+      <div>
+        <label>Apple URL (optional per-episode override)</label>
+        <input name="apple_url" value="{{ data.apple_url }}"/>
+      </div>
+      <div>
+        <label>Spotify URL (optional per-episode override)</label>
+        <input name="spotify_url" value="{{ data.spotify_url }}"/>
+      </div>
+    </div>
+
+    <label>YouTube URL (optional)</label>
+    <input name="youtube_url" value="{{ data.youtube_url }}"/>
+
+    <label>Links & references (one per line: <code>Label | URL</code>)</label>
+    <textarea name="links_blob">{% for l in data.links %}{{ l.label }} | {{ l.url }}
+{% endfor %}</textarea>
+
+    <div class="actions">
+      <button type="submit">Save</button>
+      <span class="meta">Saved to <code>episodes_meta/{{ ep.slug }}.json</code></span>
+    </div>
+  </form>
+</body>
+</html>
