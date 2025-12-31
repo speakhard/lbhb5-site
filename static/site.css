@@ -502,7 +502,7 @@ a:hover {
 }
 
 /* Hide timestamps when container has .hide-timestamps */
-.transcript-body.hide-timestamps .tc {
+.transcript-body.hide-timecodes .tc {
   display: none;
 }
 

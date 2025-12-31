@@ -11,22 +11,12 @@
       <div class="episode-page-meta">
         <p class="episode-page-date">{{ episode.date }}</p>
 
-        <h1 class="episode-page-title">
-          {{ episode.title }}
-        </h1>
-
-        {% if episode.description %}
-          <p class="episode-page-dek">
-            {{ episode.description }}
-          </p>
-        {% endif %}
+        <h1 class="episode-page-title">{{ episode.title }}</h1>
 
         <!-- Primary actions: play + platform links -->
         <div class="episode-page-actions">
           {% if episode.audio_url %}
-            <a href="#episode-audio-player" class="btn btn-primary">
-              ▶ Play episode
-            </a>
+            <a href="#episode-audio-player" class="btn btn-primary">▶ Play episode</a>
           {% endif %}
 
           {% if site.apple_podcasts_url %}
@@ -54,9 +44,7 @@
         {% if episode.permalink %}
           <p class="episode-page-permalink">
             Original episode page:
-            <a href="{{ episode.permalink }}" target="_blank" rel="noopener">
-              {{ episode.permalink }}
-            </a>
+            <a href="{{ episode.permalink }}" target="_blank" rel="noopener">{{ episode.permalink }}</a>
           </p>
         {% endif %}
       </div>
@@ -79,14 +67,14 @@
         </section>
       {% endif %}
 
-      <section class="episode-description">
-        <h2 class="section-heading">Episode Summary</h2>
-        {% if episode.description %}
-          <p>{{ episode.description }}</p>
-        {% else %}
-          <p>No description available for this episode yet.</p>
-        {% endif %}
-      </section>
+      {# FULL DESCRIPTION ONLY (no redundant “Episode Summary” header) #}
+      {% if episode.description %}
+        <section class="episode-description">
+          <div class="episode-description-body">
+            {{ episode.description }}
+          </div>
+        </section>
+      {% endif %}
 
       <!-- Transcript -->
       <section class="episode-transcript">
@@ -101,25 +89,26 @@
                 id="toggle-timecodes">
                 Hide timecodes
               </button>
+
+              <a href="/transcripts/{{ episode.slug }}.html" class="btn btn-ghost btn-xs" target="_blank" rel="noopener">
+                Open full transcript
+              </a>
             </div>
           {% endif %}
         </div>
 
         {% if episode.transcript_html %}
-          <!-- 
-            transcript-body + hide-timestamps:
-            - CSS: .transcript-body.hide-timestamps .tc { display: none; }
-            - Default: hide timestamps; button toggles this class.
-          -->
-          <div id="transcript-panel" class="transcript-body hide-timestamps">
+          {# 
+            Scrollable window.
+            Default: timestamps hidden via .hide-timestamps on the wrapper.
+            IMPORTANT: your CSS must include:
+              .episode-transcript-scroll.hide-timestamps .tc { display: none; }
+          #}
+          <div id="transcript-scroll" class="episode-transcript-scroll hide-timestamps">
             {{ episode.transcript_html | safe }}
           </div>
 
           <div class="transcript-links">
-            <a href="/transcripts/{{ episode.slug }}.html" class="link-muted" target="_blank" rel="noopener">
-              Open full transcript in a new tab
-            </a>
-            <span aria-hidden="true">·</span>
             <a href="/transcripts/{{ episode.slug }}.md" class="link-muted">
               Download as Markdown
             </a>
@@ -129,9 +118,7 @@
             </a>
           </div>
         {% else %}
-          <p class="episode-transcript-empty">
-            Transcript coming soon.
-          </p>
+          <p class="episode-transcript-empty">Transcript coming soon.</p>
         {% endif %}
       </section>
 
@@ -145,12 +132,17 @@
         </ul>
       </section>
 
-      <!-- Comment / discussion strategy: link out rather than embed heavy widget -->
+      <!-- Discussion section -->
       <section class="episode-discussion">
         <h2 class="section-heading">Discuss this Episode</h2>
-        <p class="episode-discussion-copy">
-          Join the conversation with other listeners:
-        </p>
+
+        {# Optional: later you can embed a Bluesky post here #}
+        {# Example (when you have the at:// URI):
+            <blockquote class="bluesky-embed" data-bluesky-uri="{{ episode.bluesky_uri }}"></blockquote>
+            <script async src="https://embed.bsky.app/embed.js"></script>
+        #}
+
+        <p class="episode-discussion-copy">Join the conversation with other listeners:</p>
         <div class="episode-discussion-actions">
           {% if site.mastodon_base_url %}
             <a href="{{ site.mastodon_base_url }}" class="btn btn-ghost" target="_blank" rel="noopener">
@@ -163,9 +155,9 @@
             </a>
           {% endif %}
         </div>
+
         <p class="episode-discussion-note">
-          (Best practice in 2025 is to keep comments on a federated or community
-          platform you control, rather than embedding heavy third-party trackers.)
+          (Best practice: keep discussion on a community platform rather than embedding heavy third-party trackers.)
         </p>
       </section>
 
@@ -176,14 +168,13 @@
 <!-- Tiny inline script for timecode toggle -->
 <script>
   (function () {
-    const panel = document.getElementById('transcript-panel');
+    const scroll = document.getElementById('transcript-scroll');
     const btn = document.getElementById('toggle-timecodes');
-    if (!panel || !btn) return;
+    if (!scroll || !btn) return;
 
     // Start with timestamps hidden (class present)
-    // Clicking toggles visibility and label text.
     btn.addEventListener('click', function () {
-      const nowHidden = panel.classList.toggle('hide-timestamps');
+      const nowHidden = scroll.classList.toggle('hide-timestamps');
       btn.textContent = nowHidden ? 'Show timecodes' : 'Hide timecodes';
     });
   })();

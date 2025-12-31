@@ -9,55 +9,110 @@
     input, textarea { width: 100%; padding: 10px; font-size: 14px; }
     textarea { min-height: 120px; }
     .row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-    .actions { margin-top: 18px; display:flex; gap: 10px; align-items: center; }
-    button { padding: 10px 14px; }
+    .actions { margin-top: 18px; display:flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+    button { padding: 10px 14px; cursor: pointer; }
     .meta { color:#555; font-size: 13px; }
     code { background:#f2f2f2; padding:2px 6px; border-radius: 6px; }
+    .card { border: 1px solid #ddd; border-radius: 10px; padding: 14px; margin: 14px 0; }
+    .badges span { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 12px; margin-right: 6px; background: #eee; }
+    .ok { background: #d7ffd7 !important; }
+    .no { background: #ffd7d7 !important; }
+    .danger { background: #fff3cd; border: 1px solid #ffe69c; }
+    .muted { color:#666; font-size: 13px; }
+    .links { display:flex; gap:10px; align-items:center; flex-wrap: wrap; }
+    .links a { text-decoration: none; }
+    .links a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
   <p><a href="{{ url_for('index') }}">← Back</a></p>
 
   <h1>Edit episode</h1>
+
   <div class="meta">
     <div><strong>Slug:</strong> <code>{{ ep.slug }}</code></div>
     <div><strong>Date:</strong> {{ ep.date }}</div>
-    <div><strong>Transcript:</strong>
-      html {{ "✓" if t.html else "—" }},
-      md {{ "✓" if t.md else "—" }},
-      pdf {{ "✓" if t.pdf else "—" }}
+  </div>
+
+  <div class="card">
+    <h2 style="margin:0 0 10px;">Transcript (this episode)</h2>
+
+    <div class="badges meta" style="margin-bottom:10px;">
+      <span class="{{ 'ok' if t.raw else 'no' }}">raw {{ '✓' if t.raw else '—' }}</span>
+      <span class="{{ 'ok' if t.html else 'no' }}">html {{ '✓' if t.html else '—' }}</span>
+      <span class="{{ 'ok' if t.md else 'no' }}">md {{ '✓' if t.md else '—' }}</span>
+      <span class="{{ 'ok' if t.pdf else 'no' }}">pdf {{ '✓' if t.pdf else '—' }}</span>
+    </div>
+
+    <div class="muted" style="margin-bottom:10px;">
+      Expected raw filename: <code>raw_transcripts/{{ ep.slug }}.txt</code>
+    </div>
+
+    <form method="post" action="{{ url_for('upload_transcript_for_episode', slug=ep.slug) }}" enctype="multipart/form-data" class="actions">
+      <input type="file" name="file" accept=".txt" />
+      <button type="submit">Upload raw transcript for this episode</button>
+    </form>
+
+    <div class="actions">
+      <form method="post" action="{{ url_for('clean_transcript_for_episode', slug=ep.slug) }}">
+        <button type="submit">Clean transcript for this episode</button>
+      </form>
+
+      <div class="links meta">
+        {% if t.html %}
+          <a href="/transcripts/{{ ep.slug }}.html" target="_blank" rel="noopener">Open HTML</a>
+        {% endif %}
+        {% if t.md %}
+          <a href="/transcripts/{{ ep.slug }}.md" target="_blank" rel="noopener">Open MD</a>
+        {% endif %}
+        {% if t.pdf %}
+          <a href="/transcripts/{{ ep.slug }}.pdf" target="_blank" rel="noopener">Open PDF</a>
+        {% endif %}
+        <a href="{{ url_for('transcript_log') }}">View transcript log</a>
+      </div>
+    </div>
+
+    <div class="card danger">
+      <div class="muted">
+        Note: “Clean transcript” will overwrite existing <code>transcripts/{{ ep.slug }}.html</code> and <code>.md</code>.
+        It will then move the raw file into <code>processed_transcripts/</code>.
+      </div>
     </div>
   </div>
 
-  <form method="post">
-    <label>Title</label>
-    <input name="title" value="{{ data.title }}"/>
+  <div class="card">
+    <h2 style="margin:0 0 10px;">Episode metadata</h2>
 
-    <label>Full description (what shows on episode page)</label>
-    <textarea name="description">{{ data.description }}</textarea>
+    <form method="post">
+      <label>Title</label>
+      <input name="title" value="{{ data.title }}"/>
 
-    <div class="row">
-      <div>
-        <label>Apple URL (optional per-episode override)</label>
-        <input name="apple_url" value="{{ data.apple_url }}"/>
+      <label>Full description (what shows on episode page)</label>
+      <textarea name="description">{{ data.description }}</textarea>
+
+      <div class="row">
+        <div>
+          <label>Apple URL (optional per-episode override)</label>
+          <input name="apple_url" value="{{ data.apple_url }}"/>
+        </div>
+        <div>
+          <label>Spotify URL (optional per-episode override)</label>
+          <input name="spotify_url" value="{{ data.spotify_url }}"/>
+        </div>
       </div>
-      <div>
-        <label>Spotify URL (optional per-episode override)</label>
-        <input name="spotify_url" value="{{ data.spotify_url }}"/>
-      </div>
-    </div>
 
-    <label>YouTube URL (optional)</label>
-    <input name="youtube_url" value="{{ data.youtube_url }}"/>
+      <label>YouTube URL (optional)</label>
+      <input name="youtube_url" value="{{ data.youtube_url }}"/>
 
-    <label>Links & references (one per line: <code>Label | URL</code>)</label>
-    <textarea name="links_blob">{% for l in data.links %}{{ l.label }} | {{ l.url }}
+      <label>Links & references (one per line: <code>Label | URL</code>)</label>
+      <textarea name="links_blob">{% for l in data.links %}{{ l.label }} | {{ l.url }}
 {% endfor %}</textarea>
 
-    <div class="actions">
-      <button type="submit">Save</button>
-      <span class="meta">Saved to <code>episodes_meta/{{ ep.slug }}.json</code></span>
-    </div>
-  </form>
+      <div class="actions">
+        <button type="submit">Save</button>
+        <span class="meta">Saved to <code>episodes_meta/{{ ep.slug }}.json</code></span>
+      </div>
+    </form>
+  </div>
 </body>
 </html>

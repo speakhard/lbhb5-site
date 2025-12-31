@@ -10,12 +10,14 @@
     .badges span { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 12px; margin-right: 6px; background: #eee; }
     .ok { background: #d7ffd7 !important; }
     .no { background: #ffd7d7 !important; }
-    .actions { margin: 16px 0; display: flex; gap: 10px; flex-wrap: wrap; }
+    .actions { margin: 16px 0; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
     button { padding: 8px 12px; }
     a { text-decoration: none; }
     .flash { padding: 10px 12px; border-radius: 8px; margin: 12px 0; }
     .flash.ok { background: #e9ffe9; }
     .flash.error { background: #ffe9e9; }
+    .publish { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+    input[type="text"] { padding: 8px 10px; min-width: 320px; }
   </style>
 </head>
 <body>
@@ -32,30 +34,32 @@
       <button type="submit">Build site</button>
     </form>
 
-    <form method="post" action="{{ url_for('run_clean_transcripts') }}">
-      <button type="submit">Batch clean transcripts</button>
-    </form>
-
     <a href="{{ url_for('build_log') }}">View build log</a>
     <a href="{{ url_for('transcript_log') }}">View transcript log</a>
+    <a href="{{ url_for('publish_log') }}">View publish log</a>
   </div>
 
-  <h2>Upload raw Descript transcript (.txt)</h2>
-  <form method="post" action="{{ url_for('upload_transcript') }}" enctype="multipart/form-data">
-    <input type="file" name="file" />
-    <button type="submit">Upload</button>
-    <div class="meta">Tip: name files as <code>&lt;episode-slug&gt;.txt</code> for clean matching.</div>
-  </form>
+  <div class="actions">
+    <form method="post" action="{{ url_for('publish') }}" class="publish">
+      <input type="text" name="message" placeholder="Commit message (optional)" />
+      <button type="submit">Publish (git push + build)</button>
+    </form>
+  </div>
 
   <h2>Episodes</h2>
+  <div class="meta" style="margin-bottom:12px;">
+    Upload + clean transcripts happens inside an episode page now (so it always knows which slug to use).
+  </div>
 
   {% for row in rows %}
     <div class="row">
       <div>
         <div><strong>{{ row.title }}</strong></div>
         <div class="meta">{{ row.ep.date }} · <code>{{ row.ep.slug }}</code></div>
+
         <div class="badges meta">
           <span class="{{ 'ok' if row.has_meta else 'no' }}">meta {{ '✓' if row.has_meta else '—' }}</span>
+          <span class="{{ 'ok' if row.t.raw else 'no' }}">raw {{ '✓' if row.t.raw else '—' }}</span>
           <span class="{{ 'ok' if row.t.html else 'no' }}">html {{ '✓' if row.t.html else '—' }}</span>
           <span class="{{ 'ok' if row.t.md else 'no' }}">md {{ '✓' if row.t.md else '—' }}</span>
           <span class="{{ 'ok' if row.t.pdf else 'no' }}">pdf {{ '✓' if row.t.pdf else '—' }}</span>
