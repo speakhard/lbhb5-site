@@ -4,5 +4,10 @@
   "youtube_url": "",
   "apple_url": "",
   "spotify_url": "",
-  "links": []
+  "links": [
+    {
+      "label": "422 Lurker's Guide Page",
+      "url": "http://www.midwinter.com/lurk/countries/us/guide/088.html"
+    }
+  ]
 }
