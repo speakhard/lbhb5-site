@@ -31,12 +31,12 @@ body::before {
   background:
     radial-gradient(
       circle at center,
-      rgba(0, 0, 0, 0.10) 0%,     /* very light center shading */
-      rgba(0, 0, 0, 0.15) 40%,    /* soft fade */
-      rgba(0, 0, 0, 0.25) 85%     /* gentle vignette edges */
+      rgba(0, 0, 0, 0.10) 0%,
+      rgba(0, 0, 0, 0.15) 40%,
+      rgba(0, 0, 0, 0.25) 85%
     );
 
-  opacity: 0.55;                  /* was WAY too strong — now subtle */
+  opacity: 0.55;
 }
 
 body::after {
@@ -53,11 +53,10 @@ body::after {
   background-size: 140px 140px, 240px 240px;
   background-position: 0 0, 60px 80px;
 
-  opacity: 0.22;  /* was 0.12 — barely visible */
+  opacity: 0.22;
 }
 
-/* Make sure page layout establishes a positive stacking context,
-   so the overlay sits behind content */
+/* Make sure overlay sits behind content */
 .site-shell,
 .site-main,
 .episode-page,
@@ -67,7 +66,7 @@ body::after {
 }
 
 a {
-  color: #7CC7FF; /* light blue links */
+  color: #7CC7FF;
   text-decoration: none;
 }
 a:hover {
@@ -133,7 +132,6 @@ a:hover {
   gap: 1rem;
 }
 
-
 /* This hits BOTH <img> and inline <svg> in the nav */
 .site-nav img,
 .site-nav svg {
@@ -143,11 +141,6 @@ a:hover {
 }
 
 /* Optional, keeps click targets tight */
-.nav-icon-link {
-  display: inline-flex;
-  align-items: center;
-}
-
 .nav-icon-link {
   display: inline-flex;
   align-items: center;
@@ -204,15 +197,7 @@ a:hover {
 .episode-list {
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;      /* tighter stack */
-}
-
-/* ========= Stacked episode list ========= */
-
-.episode-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.9rem;               /* tighter vertical spacing between cards */
+  gap: 0.9rem;
 }
 
 /* ========= Episode cards ========= */
@@ -224,14 +209,12 @@ a:hover {
   padding: 1.4rem 1.7rem;
   border-radius: 18px;
 
-  /* darker, more neutral hull */
   background: radial-gradient(
     circle at top left,
     rgba(12, 22, 38, 0.82),
     rgba(15, 23, 42, 0.98)
   );
 
-  /* sharper blue edge */
   border: 1px solid rgba(59, 130, 246, 0.55);
 
   box-shadow:
@@ -249,7 +232,7 @@ a:hover {
 }
 
 .episode-art {
-  width: 220px;                         /* was 240px */
+  width: 220px;
   height: 220px;
   border-radius: 10px;
   object-fit: cover;
@@ -333,17 +316,9 @@ a:hover {
 
 .episode-page-title {
   margin: 0 0 0.75rem;
-  font-size: 1.9rem;       /* large but fits in single line on desktop */
+  font-size: 1.9rem;
   line-height: 1.2;
   color: #f9fbff;
-}
-
-.episode-page-dek {
-  margin: 0 0 1.5rem;
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: rgba(203, 213, 225, 0.95);
-  max-width: 40rem;
 }
 
 .episode-page-actions {
@@ -444,8 +419,8 @@ a:hover {
   margin-bottom: 2rem;
 }
 
-.episode-description p {
-  margin: 0;
+/* Your build.py now converts newlines to <br>, so style the container, not <p> */
+.episode-description-body {
   line-height: 1.6;
   color: rgba(226, 232, 240, 0.96);
 }
@@ -466,11 +441,14 @@ a:hover {
 
 .transcript-controls {
   flex-shrink: 0;
+  display: inline-flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
-/* Scrollable transcript panel */
+/* ✅ NEW: Scrollable transcript window that matches episode.html (#transcript-scroll / .episode-transcript-scroll) */
 
-.transcript-panel {
+.episode-transcript-scroll {
   max-height: 420px;
   overflow-y: auto;
   padding: 0.85rem 1rem;
@@ -479,10 +457,20 @@ a:hover {
   border: 1px solid rgba(148, 163, 184, 0.35);
   font-size: 0.9rem;
   line-height: 1.5;
+
+  /* little polish */
+  scroll-behavior: smooth;
 }
 
-/* Timecode visibility toggle */
-.transcript-panel .tc {
+/* ✅ Make transcript paragraphs breathe a bit */
+.episode-transcript-scroll .transcript-turn,
+.episode-transcript-scroll .transcript-note,
+.episode-transcript-scroll .transcript-preface {
+  margin: 0.28rem 0;
+}
+
+/* Timecode style (works whether panel is scroll or full transcript page) */
+.tc {
   display: inline-block;
   margin-right: 0.35rem;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -490,7 +478,9 @@ a:hover {
   color: #60a5fa;
 }
 
-.transcript-panel:not(.transcript--show-timecodes) .tc {
+/* ✅ This is the rule your button expects:
+   episode.html toggles .hide-timestamps on #transcript-scroll */
+.episode-transcript-scroll.hide-timestamps .tc {
   display: none;
 }
 
@@ -501,22 +491,14 @@ a:hover {
   color: #e5ecff;
 }
 
-/* Hide timestamps when container has .hide-timestamps */
-.transcript-body.hide-timecodes .tc {
-  display: none;
-}
-
-.transcript-turn {
-  margin: 0.25rem 0;
-}
-
-.transcript-turn .speaker {
+/* Speaker styling */
+.speaker {
   font-weight: 600;
   color: #cbd5ff;
 }
 
 .transcript-preface {
-  margin-bottom: 1rem;
+  margin-bottom: 0.85rem;
   font-style: italic;
   color: #a5b4fc;
 }
@@ -576,6 +558,11 @@ a:hover {
   color: #94a3b8;
 }
 
+/* ✅ Bluesky embed wrapper (keeps it from blasting full width / adds spacing) */
+.bluesky-embed {
+  margin: 0.75rem 0 1rem;
+}
+
 /* Responsive tweaks */
 
 @media (max-width: 800px) {
@@ -590,5 +577,9 @@ a:hover {
   .episode-page-art {
     width: 100%;
     height: auto;
+  }
+
+  .episode-transcript-scroll {
+    max-height: 55vh;
   }
 }

@@ -4,7 +4,6 @@
 
 <main class="episode-page">
 
-  <!-- Episode hero card (same “hull” look as index cards, but wider) -->
   <article class="episode-page-shell">
 
     <header class="episode-page-header">
@@ -13,31 +12,22 @@
 
         <h1 class="episode-page-title">{{ episode.title }}</h1>
 
-        <!-- Primary actions: play + platform links -->
         <div class="episode-page-actions">
           {% if episode.audio_url %}
             <a href="#episode-audio-player" class="btn btn-primary">▶ Play episode</a>
           {% endif %}
 
           {% if site.apple_podcasts_url %}
-            <a href="{{ site.apple_podcasts_url }}" class="btn btn-ghost" target="_blank" rel="noopener">
-               Apple Podcasts
-            </a>
+            <a href="{{ site.apple_podcasts_url }}" class="btn btn-ghost" target="_blank" rel="noopener"> Apple Podcasts</a>
           {% endif %}
           {% if site.spotify_url %}
-            <a href="{{ site.spotify_url }}" class="btn btn-ghost" target="_blank" rel="noopener">
-              ♫ Spotify
-            </a>
+            <a href="{{ site.spotify_url }}" class="btn btn-ghost" target="_blank" rel="noopener">♫ Spotify</a>
           {% endif %}
           {% if site.rss_url %}
-            <a href="{{ site.rss_url }}" class="btn btn-ghost" target="_blank" rel="noopener">
-              RSS feed
-            </a>
+            <a href="{{ site.rss_url }}" class="btn btn-ghost" target="_blank" rel="noopener">RSS feed</a>
           {% endif %}
           {% if site.youtube_url %}
-            <a href="{{ site.youtube_url }}" class="btn btn-ghost" target="_blank" rel="noopener">
-              ▶ YouTube
-            </a>
+            <a href="{{ site.youtube_url }}" class="btn btn-ghost" target="_blank" rel="noopener">▶ YouTube</a>
           {% endif %}
         </div>
 
@@ -57,6 +47,7 @@
     </header>
 
     <section class="episode-page-body">
+
       {% if episode.audio_url %}
         <section class="episode-player" id="episode-audio-player">
           <h2 class="section-heading">Listen</h2>
@@ -86,8 +77,9 @@
               <button
                 type="button"
                 class="btn btn-ghost btn-xs"
-                id="toggle-timecodes">
-                Hide timecodes
+                id="toggle-timecodes"
+                aria-pressed="false">
+                Show timecodes
               </button>
 
               <a href="/transcripts/{{ episode.slug }}.html" class="btn btn-ghost btn-xs" target="_blank" rel="noopener">
@@ -101,7 +93,8 @@
           {# 
             Scrollable window.
             Default: timestamps hidden via .hide-timestamps on the wrapper.
-            IMPORTANT: your CSS must include:
+            IMPORTANT: CSS must include:
+              .episode-transcript-scroll { max-height: 420px; overflow: auto; }
               .episode-transcript-scroll.hide-timestamps .tc { display: none; }
           #}
           <div id="transcript-scroll" class="episode-transcript-scroll hide-timestamps">
@@ -109,50 +102,54 @@
           </div>
 
           <div class="transcript-links">
-            <a href="/transcripts/{{ episode.slug }}.md" class="link-muted">
-              Download as Markdown
-            </a>
+            <a href="/transcripts/{{ episode.slug }}.md" class="link-muted">Download as Markdown</a>
             <span aria-hidden="true">·</span>
-            <a href="/transcripts/{{ episode.slug }}.pdf" class="link-muted">
-              Download as PDF
-            </a>
+            <a href="/transcripts/{{ episode.slug }}.pdf" class="link-muted">Download as PDF</a>
           </div>
         {% else %}
           <p class="episode-transcript-empty">Transcript coming soon.</p>
         {% endif %}
       </section>
 
-      <!-- Relevant links section -->
+      <!-- Links & References -->
       <section class="episode-links">
         <h2 class="section-heading">Links & References</h2>
-        <ul class="episode-links-list">
-          {# TODO: wire real per-episode links later #}
-          <li><a href="#">Example article about Babylon 5 politics</a></li>
-          <li><a href="#">Interview or essay mentioned in the episode</a></li>
-        </ul>
+
+        {% if episode.links and episode.links|length %}
+          <ul class="episode-links-list">
+            {% for link in episode.links %}
+              {% if link.url %}
+                <li>
+                  <a href="{{ link.url }}" target="_blank" rel="noopener">
+                    {{ link.label if link.label else link.url }}
+                  </a>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p class="link-muted">No links added yet.</p>
+        {% endif %}
       </section>
 
-      <!-- Discussion section -->
+      <!-- Discussion -->
       <section class="episode-discussion">
         <h2 class="section-heading">Discuss this Episode</h2>
 
-        {# Optional: later you can embed a Bluesky post here #}
-        {# Example (when you have the at:// URI):
-            <blockquote class="bluesky-embed" data-bluesky-uri="{{ episode.bluesky_uri }}"></blockquote>
-            <script async src="https://embed.bsky.app/embed.js"></script>
-        #}
+        {% if episode.bluesky_embed_html %}
+          <div class="bluesky-embed-wrap">
+            {{ episode.bluesky_embed_html | safe }}
+          </div>
+        {% endif %}
 
         <p class="episode-discussion-copy">Join the conversation with other listeners:</p>
+
         <div class="episode-discussion-actions">
           {% if site.mastodon_base_url %}
-            <a href="{{ site.mastodon_base_url }}" class="btn btn-ghost" target="_blank" rel="noopener">
-              💬 Thread on Mastodon
-            </a>
+            <a href="{{ site.mastodon_base_url }}" class="btn btn-ghost" target="_blank" rel="noopener">💬 Thread on Mastodon</a>
           {% endif %}
           {% if site.reddit_thread_base %}
-            <a href="{{ site.reddit_thread_base }}" class="btn btn-ghost" target="_blank" rel="noopener">
-              ⬆️ Thread on Reddit
-            </a>
+            <a href="{{ site.reddit_thread_base }}" class="btn btn-ghost" target="_blank" rel="noopener">⬆️ Thread on Reddit</a>
           {% endif %}
         </div>
 
@@ -165,17 +162,21 @@
   </article>
 </main>
 
-<!-- Tiny inline script for timecode toggle -->
+<!-- Timecode toggle -->
 <script>
   (function () {
     const scroll = document.getElementById('transcript-scroll');
     const btn = document.getElementById('toggle-timecodes');
     if (!scroll || !btn) return;
 
-    // Start with timestamps hidden (class present)
+    // default: hidden (class present)
+    btn.textContent = 'Show timecodes';
+    btn.setAttribute('aria-pressed', 'false');
+
     btn.addEventListener('click', function () {
-      const nowHidden = scroll.classList.toggle('hide-timestamps');
-      btn.textContent = nowHidden ? 'Show timecodes' : 'Hide timecodes';
+      const hiddenNow = scroll.classList.toggle('hide-timestamps');
+      btn.textContent = hiddenNow ? 'Show timecodes' : 'Hide timecodes';
+      btn.setAttribute('aria-pressed', hiddenNow ? 'false' : 'true');
     });
   })();
 </script>
