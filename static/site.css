@@ -144,9 +144,6 @@ a:hover {
 .nav-icon-link {
   display: inline-flex;
   align-items: center;
-}
-
-.nav-icon-link {
   margin-left: 0.5rem;
 }
 
@@ -419,13 +416,13 @@ a:hover {
   margin-bottom: 2rem;
 }
 
-/* Your build.py now converts newlines to <br>, so style the container, not <p> */
+/* build.py converts newlines to <br>, so style the container */
 .episode-description-body {
   line-height: 1.6;
   color: rgba(226, 232, 240, 0.96);
 }
 
-/* Transcript */
+/* ========= Transcript ========= */
 
 .episode-transcript {
   margin-bottom: 2rem;
@@ -446,8 +443,7 @@ a:hover {
   flex-wrap: wrap;
 }
 
-/* ✅ NEW: Scrollable transcript window that matches episode.html (#transcript-scroll / .episode-transcript-scroll) */
-
+/* Scrollable transcript window (matches episode.html: #transcript-scroll / .episode-transcript-scroll) */
 .episode-transcript-scroll {
   max-height: 420px;
   overflow-y: auto;
@@ -457,12 +453,10 @@ a:hover {
   border: 1px solid rgba(148, 163, 184, 0.35);
   font-size: 0.9rem;
   line-height: 1.5;
-
-  /* little polish */
   scroll-behavior: smooth;
 }
 
-/* ✅ Make transcript paragraphs breathe a bit */
+/* Make transcript paragraphs breathe a bit */
 .episode-transcript-scroll .transcript-turn,
 .episode-transcript-scroll .transcript-note,
 .episode-transcript-scroll .transcript-preface {
@@ -478,7 +472,7 @@ a:hover {
   color: #60a5fa;
 }
 
-/* ✅ This is the rule your button expects:
+/* This is the rule your button expects:
    episode.html toggles .hide-timestamps on #transcript-scroll */
 .episode-transcript-scroll.hide-timestamps .tc {
   display: none;
@@ -504,7 +498,6 @@ a:hover {
 }
 
 /* Transcript links */
-
 .transcript-links {
   margin-top: 0.6rem;
   font-size: 0.8rem;
@@ -523,7 +516,7 @@ a:hover {
   color: #e5ecff;
 }
 
-/* Links & discussion */
+/* ========= Links & discussion ========= */
 
 .episode-links {
   margin-bottom: 2rem;
@@ -558,12 +551,16 @@ a:hover {
   color: #94a3b8;
 }
 
-/* ✅ Bluesky embed wrapper (keeps it from blasting full width / adds spacing) */
-.bluesky-embed {
+/* Bluesky embed wrapper (prevents it from feeling slammed into other content) */
+.bluesky-embed-wrap {
   margin: 0.75rem 0 1rem;
 }
 
-/* Responsive tweaks */
+.bluesky-embed {
+  margin: 0;
+}
+
+/* ========= Responsive tweaks ========= */
 
 @media (max-width: 800px) {
   .episode-page-shell {

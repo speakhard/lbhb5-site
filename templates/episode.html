@@ -3,7 +3,6 @@
 {% block content %}
 
 <main class="episode-page">
-
   <article class="episode-page-shell">
 
     <header class="episode-page-header">
@@ -58,11 +57,11 @@
         </section>
       {% endif %}
 
-      {# FULL DESCRIPTION ONLY (no redundant “Episode Summary” header) #}
+      {# Full description only (no redundant “Episode Summary” header) #}
       {% if episode.description %}
         <section class="episode-description">
           <div class="episode-description-body">
-            {{ episode.description }}
+            {{ episode.description | safe }}
           </div>
         </section>
       {% endif %}
@@ -90,14 +89,8 @@
         </div>
 
         {% if episode.transcript_html %}
-          {# 
-            Scrollable window.
-            Default: timestamps hidden via .hide-timestamps on the wrapper.
-            IMPORTANT: CSS must include:
-              .episode-transcript-scroll { max-height: 420px; overflow: auto; }
-              .episode-transcript-scroll.hide-timestamps .tc { display: none; }
-          #}
-          <div id="transcript-scroll" class="episode-transcript-scroll hide-timestamps">
+          {# default: timecodes hidden via class on the scroll container #}
+          <div id="transcript-scroll" class="episode-transcript-scroll hide-timestamps hide-timecodes">
             {{ episode.transcript_html | safe }}
           </div>
 
@@ -137,25 +130,10 @@
         <h2 class="section-heading">Discuss this Episode</h2>
 
         {% if episode.bluesky_embed_html %}
-          <div class="bluesky-embed-wrap">
+          <div class="bluesky-embed">
             {{ episode.bluesky_embed_html | safe }}
           </div>
         {% endif %}
-
-        <p class="episode-discussion-copy">Join the conversation with other listeners:</p>
-
-        <div class="episode-discussion-actions">
-          {% if site.mastodon_base_url %}
-            <a href="{{ site.mastodon_base_url }}" class="btn btn-ghost" target="_blank" rel="noopener">💬 Thread on Mastodon</a>
-          {% endif %}
-          {% if site.reddit_thread_base %}
-            <a href="{{ site.reddit_thread_base }}" class="btn btn-ghost" target="_blank" rel="noopener">⬆️ Thread on Reddit</a>
-          {% endif %}
-        </div>
-
-        <p class="episode-discussion-note">
-          (Best practice: keep discussion on a community platform rather than embedding heavy third-party trackers.)
-        </p>
       </section>
 
     </section>
@@ -169,14 +147,19 @@
     const btn = document.getElementById('toggle-timecodes');
     if (!scroll || !btn) return;
 
-    // default: hidden (class present)
-    btn.textContent = 'Show timecodes';
-    btn.setAttribute('aria-pressed', 'false');
+    const refresh = () => {
+      const hidden = scroll.classList.contains('hide-timestamps') || scroll.classList.contains('hide-timecodes');
+      btn.textContent = hidden ? 'Show timecodes' : 'Hide timecodes';
+      btn.setAttribute('aria-pressed', hidden ? 'false' : 'true');
+    };
+
+    // Ensure initial UI matches DOM (default is hidden)
+    refresh();
 
     btn.addEventListener('click', function () {
-      const hiddenNow = scroll.classList.toggle('hide-timestamps');
-      btn.textContent = hiddenNow ? 'Show timecodes' : 'Hide timecodes';
-      btn.setAttribute('aria-pressed', hiddenNow ? 'false' : 'true');
+      scroll.classList.toggle('hide-timestamps');
+      scroll.classList.toggle('hide-timecodes');
+      refresh();
     });
   })();
 </script>

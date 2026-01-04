@@ -6,7 +6,7 @@
   <style>
     body { font-family: system-ui, -apple-system, sans-serif; margin: 24px; max-width: 980px; }
     label { display:block; font-weight: 600; margin: 14px 0 6px; }
-    input, textarea { width: 100%; padding: 10px; font-size: 14px; }
+    input, textarea { width: 100%; padding: 10px; font-size: 14px; box-sizing: border-box; }
     textarea { min-height: 120px; }
     .row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
     .actions { margin-top: 18px; display:flex; gap: 10px; align-items: center; flex-wrap: wrap; }
@@ -22,6 +22,23 @@
     .links { display:flex; gap:10px; align-items:center; flex-wrap: wrap; }
     .links a { text-decoration: none; }
     .links a:hover { text-decoration: underline; }
+    .help { font-size: 13px; color: #555; line-height: 1.4; }
+    .small { font-size: 12px; color: #666; }
+    .preview {
+      border: 1px solid #e5e5e5;
+      border-radius: 10px;
+      padding: 12px;
+      margin-top: 10px;
+      background: #fafafa;
+      overflow: auto;
+      max-height: 360px;
+    }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+
+    /* Flash messages (if you enable them in templates later) */
+    .flash { padding: 10px 12px; border-radius: 10px; margin: 12px 0; }
+    .flash.ok { background: #e7fff0; border: 1px solid #b7f5cc; }
+    .flash.error { background: #fff1f1; border: 1px solid #ffd0d0; }
   </style>
 </head>
 <body>
@@ -32,6 +49,31 @@
   <div class="meta">
     <div><strong>Slug:</strong> <code>{{ ep.slug }}</code></div>
     <div><strong>Date:</strong> {{ ep.date }}</div>
+  </div>
+
+  <!-- Publish (Build + Git Commit + Push) -->
+  <div class="card">
+    <h2 style="margin:0 0 10px;">Publish</h2>
+
+    <div class="help">
+      This will run <span class="mono">python3 build.py</span>, then <span class="mono">git add -A</span>,
+      commit (if there are changes), and <span class="mono">git push</span>.
+    </div>
+
+    <form method="post" action="{{ url_for('publish') }}" class="actions">
+      <input
+        name="message"
+        placeholder='Commit message (optional, e.g. "Episode {{ ep.slug }} updates")'
+        value="Publish updates"
+      />
+      <button type="submit">Publish</button>
+      <a class="meta" href="{{ url_for('publish_log') }}">View publish log</a>
+      <a class="meta" href="{{ url_for('build_log') }}">View build log</a>
+    </form>
+
+    <div class="muted">
+      If Publish fails, it will be in the log (common causes: SSH auth not set up, no upstream, merge conflict).
+    </div>
   </div>
 
   <div class="card">
@@ -107,6 +149,25 @@
       <label>Links & references (one per line: <code>Label | URL</code>)</label>
       <textarea name="links_blob">{% for l in data.links %}{{ l.label }} | {{ l.url }}
 {% endfor %}</textarea>
+
+      <label>Bluesky embed HTML (optional)</label>
+      <div class="help">
+        Paste the Bluesky embed block (the <span class="mono">&lt;blockquote class="bluesky-embed" ...&gt;...&lt;/blockquote&gt;</span> chunk).
+        <div class="small" style="margin-top:6px;">
+          Your profile: <a href="https://bsky.app/profile/lastbesthopeb5.bsky.social" target="_blank" rel="noopener">lastbesthopeb5.bsky.social</a>
+        </div>
+      </div>
+      <textarea
+        name="bluesky_embed_html"
+        placeholder='Paste Bluesky embed HTML here (blockquote...)'
+      >{{ data.bluesky_embed_html }}</textarea>
+
+      {% if data.bluesky_embed_html %}
+        <div class="muted" style="margin-top:10px;">Preview (basic sanity check):</div>
+        <div class="preview">
+          {{ data.bluesky_embed_html | safe }}
+        </div>
+      {% endif %}
 
       <div class="actions">
         <button type="submit">Save</button>

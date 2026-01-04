@@ -5,23 +5,31 @@
   <title>LBH Editor</title>
   <style>
     body { font-family: system-ui, -apple-system, sans-serif; margin: 24px; }
+    h1 { margin: 0 0 10px; }
     .row { padding: 10px 0; border-bottom: 1px solid #ddd; display: grid; grid-template-columns: 1fr auto; gap: 16px; }
     .meta { color: #555; font-size: 13px; margin-top: 6px; }
     .badges span { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 12px; margin-right: 6px; background: #eee; }
     .ok { background: #d7ffd7 !important; }
     .no { background: #ffd7d7 !important; }
     .actions { margin: 16px 0; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
-    button { padding: 8px 12px; }
+    button { padding: 8px 12px; cursor: pointer; }
     a { text-decoration: none; }
+    a:hover { text-decoration: underline; }
     .flash { padding: 10px 12px; border-radius: 8px; margin: 12px 0; }
-    .flash.ok { background: #e9ffe9; }
-    .flash.error { background: #ffe9e9; }
+    .flash.ok { background: #e9ffe9; border: 1px solid #bfe9bf; }
+    .flash.error { background: #ffe9e9; border: 1px solid #f1bcbc; }
     .publish { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
     input[type="text"] { padding: 8px 10px; min-width: 320px; }
+    .topline { display:flex; gap: 12px; align-items: baseline; flex-wrap: wrap; }
+    .pill { font-size: 12px; padding: 2px 8px; border-radius: 999px; background:#f3f4f6; color:#374151; }
+    .muted { color:#666; font-size: 13px; }
   </style>
 </head>
 <body>
-  <h1>LBH Editor</h1>
+  <div class="topline">
+    <h1>LBH Editor</h1>
+    <span class="pill">local</span>
+  </div>
 
   {% with messages = get_flashed_messages(with_categories=true) %}
     {% for cat,msg in messages %}
@@ -34,21 +42,22 @@
       <button type="submit">Build site</button>
     </form>
 
-    <a href="{{ url_for('build_log') }}">View build log</a>
-    <a href="{{ url_for('transcript_log') }}">View transcript log</a>
-    <a href="{{ url_for('publish_log') }}">View publish log</a>
+    <a href="{{ url_for('build_log') }}">Build log</a>
+    <a href="{{ url_for('transcript_log') }}">Transcript log</a>
+    <a href="{{ url_for('publish_log') }}">Publish log</a>
   </div>
 
   <div class="actions">
     <form method="post" action="{{ url_for('publish') }}" class="publish">
       <input type="text" name="message" placeholder="Commit message (optional)" />
-      <button type="submit">Publish (git push + build)</button>
+      <button type="submit">Publish (build + git push)</button>
     </form>
+    <div class="muted">Runs build, then commits/pushes if anything changed.</div>
   </div>
 
   <h2>Episodes</h2>
   <div class="meta" style="margin-bottom:12px;">
-    Upload + clean transcripts happens inside an episode page now (so it always knows which slug to use).
+    Transcript upload + clean happens inside each episode page (so it always knows which slug to use).
   </div>
 
   {% for row in rows %}
@@ -66,8 +75,11 @@
         </div>
       </div>
 
-      <div>
+      <div style="display:flex; gap:10px; align-items:center;">
         <a href="{{ url_for('edit_episode', slug=row.ep.slug) }}">Edit</a>
+        {% if row.ep.permalink %}
+          <a href="{{ row.ep.permalink }}" target="_blank" rel="noopener" class="meta">Original</a>
+        {% endif %}
       </div>
     </div>
   {% endfor %}

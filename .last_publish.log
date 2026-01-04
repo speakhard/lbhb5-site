@@ -1,11 +1,13 @@
 ==> git status (pre)
- M episodes_meta/11-good-kind-and-decent-the-deconstruction-of-falling-stars.json
-?? raw_transcripts/
+ M build.py
+ M static/site.css
+ M templates/episode.html
+?? .last_publish.log
 
 ==> git add -A
 
 ==> git commit
-[main 90fd422] Updated LBH11 episode page links.
+[main d6da49f] Publish updates
  Committer: trickybee <trickybee@trickybees-MacBook-Air.local>
 Your name and email address were configured automatically based
 on your username and hostname. Please check that they are accurate.
@@ -19,12 +21,12 @@ After doing this, you may fix the identity used for this commit with:
 
     git commit --amend --reset-author
 
- 2 files changed, 749 insertions(+), 1 deletion(-)
- create mode 100644 raw_transcripts/11-good-kind-and-decent-the-deconstruction-of-falling-stars.txt
+ 4 files changed, 243 insertions(+), 104 deletions(-)
+ create mode 100644 .last_publish.log
 
 ==> git push
 To github.com:speakhard/lbhb5-site.git
-   3d84145..90fd422  main -> main
+   90fd422..d6da49f  main -> main
 
 ==> python build.py
 ==> Building Last Best Hope site (clean version)
