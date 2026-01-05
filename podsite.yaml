@@ -1,0 +1,15 @@
+site:
+  title: "LAST BEST HOPE"
+  tagline: "An explicitly political Babylon 5 podcast"
+  description: "Using Babylon 5 to process the rise of authoritarianism in the real world."
+
+podcast:
+  rss: "https://pinecast.com/feed/last-best-hope"
+
+homepage:
+  featured_count: 50
+
+links:
+  apple: "https://podcasts.apple.com/us/podcast/last-best-hope-an-explicitly-political-babylon-5-podcast/id1801636475?mt=2&ls=1"
+  spotify: "https://open.spotify.com/show/5ASOLdJDYx8sLbwVZtiujd?si=ae23a5323ecb4906"
+  bluesky: "https://bsky.app/profile/lastbesthopeb5.bsky.social"

@@ -1,35 +1,6 @@
-==> git status (pre)
- M build.py
- M static/site.css
- M templates/episode.html
-?? .last_publish.log
+=== build.py ===
 
-==> git add -A
-
-==> git commit
-[main d6da49f] Publish updates
- Committer: trickybee <trickybee@trickybees-MacBook-Air.local>
-Your name and email address were configured automatically based
-on your username and hostname. Please check that they are accurate.
-You can suppress this message by setting them explicitly. Run the
-following command and follow the instructions in your editor to edit
-your configuration file:
-
-    git config --global --edit
-
-After doing this, you may fix the identity used for this commit with:
-
-    git commit --amend --reset-author
-
- 4 files changed, 243 insertions(+), 104 deletions(-)
- create mode 100644 .last_publish.log
-
-==> git push
-To github.com:speakhard/lbhb5-site.git
-   90fd422..d6da49f  main -> main
-
-==> python build.py
-==> Building Last Best Hope site (clean version)
+==> Building Last Best Hope site
 [EPISODE] #11 – Good, Kind, and Decent (THE DECONSTRUCTION OF FALLING STARS) -> 11-good-kind-and-decent-the-deconstruction-of-falling-stars
 [EPISODE] #10 – Drunk, With the Rest of the Aliens (INFECTION) -> 10-drunk-with-the-rest-of-the-aliens-infection
 [EPISODE] #9 – Rules of Engagement (NO SURRENDER, NO RETREAT) -> 9-rules-of-engagement-no-surrender-no-retreat
@@ -43,3 +14,31 @@ To github.com:speakhard/lbhb5-site.git
 [EPISODE] #1 – Nothing's the Same Anymore (CHRYSALIS) -> 1-nothing-s-the-same-anymore-chrysalis
 Loaded 11 episodes from RSS
 
+
+=== git add -A ===
+
+
+
+=== git commit ===
+
+[main 1929d05] Episode 11 added bluesky post.
+ Committer: trickybee <trickybee@trickybees-MacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+
+=== git push ===
+
+To github.com:speakhard/lbhb5-site.git
+   6fb32e1..1929d05  main -> main
