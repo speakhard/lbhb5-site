@@ -1,19 +1,6 @@
-=== build.py ===
+=== build ===
 
-==> Building Last Best Hope site
-[EPISODE] #11 – Good, Kind, and Decent (THE DECONSTRUCTION OF FALLING STARS) -> 11-good-kind-and-decent-the-deconstruction-of-falling-stars
-[EPISODE] #10 – Drunk, With the Rest of the Aliens (INFECTION) -> 10-drunk-with-the-rest-of-the-aliens-infection
-[EPISODE] #9 – Rules of Engagement (NO SURRENDER, NO RETREAT) -> 9-rules-of-engagement-no-surrender-no-retreat
-[EPISODE] #8 – One Battle After Another (BY ANY MEANS NECESSARY) -> 8-one-battle-after-another-by-any-means-necessary
-[EPISODE] #7 – What Did We Do Wrong? (POINT OF NO RETURN) -> 7-what-did-we-do-wrong-point-of-no-return
-[EPISODE] #6 – A Stormy Present (MESSAGES FROM EARTH) -> 6-a-stormy-present-messages-from-earth
-[EPISODE] #5 – Stupid Enough to Take It (DUST TO DUST, EXOGENESIS) -> 5-stupid-enough-to-take-it-dust-to-dust-exogenesis
-[EPISODE] #4 – Where Everyone Has Gone Before (VOICES OF AUTHORITY) -> 4-where-everyone-has-gone-before-voices-of-authority
-[EPISODE] #3 – Who Are You? (COMES THE INQUISITOR) -> 3-who-are-you-comes-the-inquisitor
-[EPISODE] #2 – Another Word for Surrender (THE FALL OF NIGHT) -> 2-another-word-for-surrender-the-fall-of-night
-[EPISODE] #1 – Nothing's the Same Anymore (CHRYSALIS) -> 1-nothing-s-the-same-anymore-chrysalis
-Loaded 11 episodes from RSS
-
+Build finished.
 
 === git add -A ===
 
@@ -21,7 +8,7 @@ Loaded 11 episodes from RSS
 
 === git commit ===
 
-[main 1929d05] Episode 11 added bluesky post.
+[main cfa81cb] Publish updates
  Committer: trickybee <trickybee@trickybees-MacBook-Air.local>
 Your name and email address were configured automatically based
 on your username and hostname. Please check that they are accurate.
@@ -35,10 +22,27 @@ After doing this, you may fix the identity used for this commit with:
 
     git commit --amend --reset-author
 
- 1 file changed, 3 insertions(+), 2 deletions(-)
+ 18 files changed, 69 insertions(+), 1695 deletions(-)
+ delete mode 100644 README.md
+ delete mode 100644 build.py
+ create mode 100644 podsite.yaml
+ delete mode 100644 requirements.txt
+ delete mode 100644 templates/base.html
+ delete mode 100644 templates/episode.html
+ delete mode 100644 templates/episodes_index.html
+ delete mode 100644 templates/home.html
+ delete mode 100644 templates_editor/build_log.html
+ delete mode 100644 templates_editor/episode_edit.html
+ delete mode 100644 templates_editor/index.html
+ delete mode 100644 templates_editor/publish_log.html
+ delete mode 100644 templates_editor/transcript.html
+ delete mode 100755 tools/backup.sh
+ delete mode 100644 tools/clean_transcript.py
+ delete mode 100644 tools/editor.py
 
 
 === git push ===
 
 To github.com:speakhard/lbhb5-site.git
-   6fb32e1..1929d05  main -> main
+   006f6a6..cfa81cb  main -> main
+

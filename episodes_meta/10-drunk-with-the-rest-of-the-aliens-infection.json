@@ -4,5 +4,11 @@
   "youtube_url": "",
   "apple_url": "",
   "spotify_url": "",
-  "links": []
+  "links": [
+    {
+      "label": "Lurker's Guide Entry \"Infection\"",
+      "url": "http://www.midwinter.com/lurk/countries/us/guide/004.html"
+    }
+  ],
+  "bluesky_embed_html": ""
 }
