@@ -3,4 +3,3 @@ __pycache__/
 *.pyc
 .last_build.log
 .last_transcripts.log
-dist/
