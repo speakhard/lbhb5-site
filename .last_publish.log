@@ -8,7 +8,7 @@ Build finished.
 
 === git commit ===
 
-[main cfa81cb] Publish updates
+[main 27f7506] Added transcript and links for Infection
  Committer: trickybee <trickybee@trickybees-MacBook-Air.local>
 Your name and email address were configured automatically based
 on your username and hostname. Please check that they are accurate.
@@ -22,27 +22,12 @@ After doing this, you may fix the identity used for this commit with:
 
     git commit --amend --reset-author
 
- 18 files changed, 69 insertions(+), 1695 deletions(-)
- delete mode 100644 README.md
- delete mode 100644 build.py
- create mode 100644 podsite.yaml
- delete mode 100644 requirements.txt
- delete mode 100644 templates/base.html
- delete mode 100644 templates/episode.html
- delete mode 100644 templates/episodes_index.html
- delete mode 100644 templates/home.html
- delete mode 100644 templates_editor/build_log.html
- delete mode 100644 templates_editor/episode_edit.html
- delete mode 100644 templates_editor/index.html
- delete mode 100644 templates_editor/publish_log.html
- delete mode 100644 templates_editor/transcript.html
- delete mode 100755 tools/backup.sh
- delete mode 100644 tools/clean_transcript.py
- delete mode 100644 tools/editor.py
+ 5 files changed, 1299 insertions(+), 198 deletions(-)
+ create mode 100644 processed_transcripts/10-drunk-with-the-rest-of-the-aliens-infection.txt
 
 
 === git push ===
 
 To github.com:speakhard/lbhb5-site.git
-   006f6a6..cfa81cb  main -> main
+   cfa81cb..27f7506  main -> main
 

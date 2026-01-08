@@ -1,0 +1,743 @@
+11-good-kind-and-decent-the-deconstruction-of-falling-stars
+
+
+
+===
+
+[00:00:19] **JOSH**, Yeah. I forgot about the microphone. yeah. But you were saying that you
+
+[00:00:24] **JOSH**, watched
+
+[00:00:25] **JOHN**, an episode. I watched it when we first started doing the podcast. It ended up in my rotation because I ended up watching a lot of episodes in the Spring. And it's an episode that I go back to regularly, in my rotations. It's so interesting and what I'm gonna say we really get into it is that, yeah, I had a lot of, , strong opinions when I first watched it, good and bad. But it's funny to go back.
+
+[00:00:45] **JOSH**, Yeah, completely. This was one of those episodes for me also that had a pretty lasting impact. The idea that. you could have this crazy installment outside of the story of the show, commenting on the story of the show, was really influential on me. And, , jms was always really good about that. He played with the format. So one thing I noticed the director of this episode was Stephen Furst who also played Vir. And he directed three episodes of Babylon 5.
+
+[00:01:17] **JOSH**, And all three of them were these format ones. Like the first one he directed was The Illusion of Truth, which was another episode that we were, considering this week. So that's like a weird format in that the second half of it, takes on the form of an in universe, TV news special.
+
+[00:01:35] **JOSH**, And then the third episode he directed was The Corps is Mother, The Corps is Father from season five which is supposed to be an episode of Babylon 5. as if Babylon 5 were a show about the PsiCorps, from the point of view of the PsiCorps. I don't know if this was intentional or if it was just sort of luck of the draw, but Stephen Furst ended up directing just episodes of Babylon 5 that were not normal perspectives.
+
+[00:02:00] **JOSH**, He was always doing something funky.
+
+[00:02:02] **JOHN**, That's
+
+[00:02:02] **JOHN**, something I really love about diving deep into it, is that you have so many production, details and things you did not, . Whereas all these in things go on behind the scenes. It's not just, well, people go in, they do the same thing every day. It's very predictable. You make a show, you go home, ?
+
+[00:02:19] **JOHN**, didn't realizing Stephen Furst died years ago too.
+
+[00:02:22] **JOSH**, Yeah, 2017, he was young. they talk about the B5 curse obviously, you don't make light or joke around in a way that's, disrespectful. But sometimes it really does feel like there is a curse on the show. So many of the actors on this show died pretty young.
+
+[00:02:39] **JOSH**, It's staggering actually. I mean, like you look at some of these cast photos, and you look at, who isn't with us anymore, and it's, pretty, , sobering. It's upsetting
+
+[00:02:49] **JOSH**, for a show that's like not that old.
+
+[00:02:50] **JOHN**, I mean, not, I mean, it, it is interesting to think of like, where we started watching shows was around the 25th anniversary of Star Trek.
+
+[00:02:58] **JOHN**, And now this is, this is where past 30 years for this show, and that's when we started losing some of the original cast. But of course we still have William Shatner with us.
+
+[00:03:06] **JOSH**, Yes. Who's like 93 or
+
+[00:03:09] **JOHN**, , Walter
+
+[00:03:10] **JOHN**, obviously is on this show as well. I'm very grateful they are all around.
+
+[00:03:15] **JOSH**, Yeah. No, I think about that also. It's like, in the early nineties, which was certainly for me the beginning of my sci-fi fandom, ? Yeah. Star Trek was 25, 30 years old. I remember watching the 30th anniversary special on TV in 1996 and being like, wow, 30 years. B5 is there now.
+
+[00:03:35] **JOHN**, Yep.
+
+[00:03:35] **JOSH**, it's just strange to think about how long ago I thought that was then versus now, which like, for various reasons doesn't feel that long ago.
+
+[00:03:46] **JOHN**, Our own perception of time. There are days in that 30 years feels like, oh yeah, that makes sense. But not so much in my own life. It makes sense when I start looking at the world and the changes in the world. if I think of 66 to 96 and now 96 to 2000, almost 26. Wow. I mean, it is a different world in many ways. You can see the different, cultural eras, different technologies emerging. So yeah, that makes sense to me that it's been 30 years. But when I feel it, I'm like, oh, 1996 was like five, 10 years ago. I mean, it's back there, but it's not that far away. And then you realize all the things that have happened. I mean, I dunno about you, but the last 10 or 15 years are the ones that really went quickly.
+
+[00:04:31] **JOSH**, Yeah, completely. And also with the disappearance of the monoculture for better and for worse. We don't have these like shared cultural seasons anymore really.
+
+[00:04:42] **JOHN**, no,
+
+[00:04:43] **JOHN**, We had to watch Babylon 5 or record it But you would tune into a show and that following week you'd discuss it with people. That hasn't happened to me in quite a while with a sci-fi, with any TV show to say nothing of a sci-fi show it, I'll get a message from somebody, Hey, have you watched a new show of this?
+
+[00:05:00] **JOHN**, Have you watched that? And maybe I, maybe you haven't, but it's not synchronous.
+
+[00:05:04] **JOSH**, Right.
+
+[00:05:05] **JOHN**, And it's really hard to have the shared experience and awe. That is something I remember we all made a point, , of watching, I forget who was there, but some of us watched it sleeping in light together.
+
+[00:05:17] **JOHN**, And, then we re-watched it one time, I think it was the summer, , after it aired, which I guess would've been 98,
+
+[00:05:25] **JOSH**, Summer of 99 then,
+
+[00:05:27] **JOHN**, Yeah.
+
+[00:05:27] **JOSH**, because it aired in November of 98, I remember where I was. I had the flu, so I was home. And I remember,
+
+[00:05:33] **JOSH**, the tears were flowing and it only made my congestion that
+
+[00:05:37] **JOHN**, Of Of course.
+
+[00:05:38] **JOSH**, Very emotional.
+
+[00:05:40] **JOHN**, Oh I cried at that episode. And the interesting thing about that is that, going into, discussing deconstruction of falling stars, for views, I don't remember Sleeping in Light was filmed as the finale of the show at the end of season four, wrapped up. Done. And TNTa comes in and sort of a last minute deal, , , saves a show for a fifth season. And of course, having watched Sleeping In Light, you say, oh yeah, of course jms couldn't have allowed that to have been aired because that is the end of the show. you cannot go on after that to have another season of the show be like, just kidding. That is the end of the show, both thematically, but in emotionally, I, I cried the same way.
+
+[00:06:20] **JOHN**, It just it was incredibly powerful. So in a really interesting trick that I don't know if I've ever seen done anywhere else, TNT decided to say, well, we authorized, whatever it is, 22 episodes. We'll let you use one of those to air at the end of your fourth season. And then you take sleeping in Light and put it at the end of hours. And JMS must have made that requirement because again, it would not have worked. It's not something you can fudge. Sleeping in light has to be the end of the show. could not be the end of season four if you end have season five.
+
+[00:06:48] **JOHN**, So maybe that was part of it, but very unorthodox. very uncommon to see something like that happen. And this episode we get works really well as a finale in between, the seasons to give us a sense of, where things go, well in the future. Little preview of the, difficulty of the telepath war coming up. But it was also completely out of time, literally out of time. So it really worked So I, I appreciate the episode, but I'll say when I first saw it, I didn't like this episode.
+
+[00:07:19] **JOSH**, Really.
+
+[00:07:20] **JOHN**, It goes into a couple different things of when you're watching a show, , first your mind state matters where you are emotionally, where you are.
+
+[00:07:30] **JOHN**, Have you had a bad day? did you just get cut off in traffic and you were really angry and you sat down and you're just that's gonna affect the way a, a show comes in. And I remember not being in the best, head space watching this episode for the first time I was in college. I don't know over what, but I just wasn't in a great mood. And watching the episode, it was the second part of the episode is that the episode is jarring and at times uncomfortable. And that's something that. For me at that age shows that were uncomfortable, especially with characters that I love. I had a difficult time really getting to that that kind of episode, , we've talked about in other podcasts. Star Trek generations had that effect on me, where it was so jarring and so traumatic for what the storyline was of that, that I could not process or appreciate, the really good parts of the movie.
+
+[00:08:21] **JOHN**, And the same applied to this. Going back and rewatching it, this is one of my favorite episodes. It's so good. , but you're gonna go into it getting, you're gonna get angry watching this episode because they're doing exactly what the title says they are deconstructing, the characters that we have come to, know and love and also bond with that, that's the thing about a good show. You end up caring about the characters, but bonding, you feel like you're sort of a family with them. That's how I felt about Star Trek. That's how I feel about this. you've never met them, but like, oh, but they're sort of family in a, in an interesting kind of way. So then to see the characters being put through the meat grinder. Of perception, if that's the right word for this. And future generations having very different takes. It's also how I get very uncomfortable. I'm very absolutist in my own life as sometimes have to work on this, is that when I've seen something and I know this is the way it is, I get very upset when somebody, has a completely not just different perspective, but it's factually wrong.
+
+[00:09:20] **JOHN**, And this show is literally, this episode is about they don't know the facts. We've watched a hundred episodes with these characters. We're meant to literally be watching the truth, if you will, like we're there with them experiencing it, and to have these people in the future analyzing it and getting it wrong.
+
+[00:09:38] **JOHN**, I'm just like, oh, this is so bad you, no, you can't be doing that.
+
+[00:09:42] **JOSH**, well, that's sort of the magic trick of this episode, right? because we have seen it all happen and we were there with them, to then see this sort of telescoping perspective, this, telescopic perspective the opening segment is in the immediate aftermath of the events that we've just seen, and it's sort of a news panel show and the panel of experts are, , prognosticating then we jump a hundred years later and it's like an academic context where, they're saying, history says that it's like this, but that was actually just pr and like, intentional mythmaking and they actually weren't so great things would've happened with or without them, blah, blah, blah.
+
+[00:10:23] **JOSH**, what's interesting about all that stuff is that that all resonates because That's real. That's the perspective that we see when we're watching the news and when we're, reading, a book about history or we're in some academic setting, discussing events so fact that we are watching that familiar performance, but for the first time we know what happened, we were there.
+
+[00:10:49] **JOSH**, That allows us to see very clearly how these things work, and how maybe they fall short of the truth. , recently, was a new, Ken Burns documentary about the American Revolution.
+
+[00:11:06] **JOSH**, And I'm a sucker for a good Ken Burns documentary, so I was watching it, and you have all of these. historians and, biographers and all of these experts who are speaking so authoritatively about who these people were, what motivated them, what they were thinking, and
+
+[00:11:25] **JOHN**, think I'm back.
+
+[00:11:25] **JOSH**, It's like, yeah, but how do that you don't actually know that? having watched this episode, it really makes you realize like there is no way to know even now, we're living through events, but we are watching the news.
+
+[00:11:40] **JOSH**, Like we don't know what's going on in the mind of like, Donald Trump, for example. we have no idea what forces are actually at work here. So. It's interesting because that historical, , deconstruction if you will some of it's not wrong because you can only really see certain things after the fact with some perspective.
+
+[00:12:02] **JOSH**, Like I think one of the historians the gist of what she's saying is not incorrect. the idea that Sheridan and Delenn became symbolic figureheads, that was a, a permission structure for others to take action, which is exactly what, , we were saying a few weeks ago.
+
+[00:12:19] **JOSH**, And not only that, that's also what Sheridan and Delenn believed themselves.
+
+[00:12:24] **JOHN**, Mm-hmm.
+
+[00:12:25] **JOSH**, they were like, there's something immodest about all this. It's it wasn't us. It was all of us together.
+
+[00:12:29] **JOHN**, Yeah.
+
+[00:12:30] **JOSH**, And then these academics are it's sort of a reaction, to the ha geography, the mythmaking, and they sort of go to the other extreme where there're these horrible, power hungry, Megalomaniacs. Like that's the only other alternative. Not that the truth is somewhere in the middle,
+
+[00:12:48] **JOHN**, Or, saying they, they were going full on Comes the Inquisitor, which again, we know like, oh they've been through this this what we're talking about here and Act two, which I think this is the meat of the episode for me, is Act two, the academics, the hundred year anniversary of the Interstellar Alliance academics, including the really annoying one. He's a professor from NYU, by the way. They cite these
+
+[00:13:10] **JOHN**, NYUI was like, oh, they're really going in hard for the realism here. And they are, you're right, it's somewhere in the middle. But there's a presumptive to it that assumes all things in history operate a certain way. And that the individual doesn't matter everything, ? And that you're right. One of the professors was saying like, every they are vessels to which people pour their hopes and dreams, and that these characters really become avatars for something rather than the actual thing. But going back when the shadow representative is trying to get him on Zaha dom. saying you're like a nexus. I always thought of him as Albert Einstein with a hair and everything. And he says, you're like a nexus point. You move and the universe tends to move with you. So it wasn't execution of power as if by my will, I shall have the universe move this way. It's that people, figures, groups can a different point become nexus points and it lasts for only a period of time, but the way you move things tend to go with you like that. That's a really, nuanced description of what Sheridan and Delenn everyone involved in this is. And it's something that, that the academics in this episode, I don't think could wrap their heads around because it's not clearly defined, mean that everybody followed No, doesn't mean who would follow.
+
+[00:14:28] **JOHN**, And you can't easily quantify what that means. It's easier just to say they mean nothing. That's a more binary proposition. They don't mean anything or they mean everything. No, you're right. It's in the middle. It's that they, things tend to move in their direction. And what I found really interesting was that you have these characters and obviously they're written as man characters for a show We're watching. And we're the audience we get to see. So they're gonna be the center of actions. But the other day I came across a post that a friend made about different genre, different show that I linked into this, the moment you proposed this episode. And of course it's the famous Lord of the Rings, was, it was about towards the end when most people forget. The ending is the hero ostensibly fails at the last moment after three books or three movies, depending on how you watched it working or read it. your hero has made it all this far through horrors and trials unimaginable. And at the very last moment puts the ring on instead of destroying it. And most people, for convenience sake, forget that or just sort of goes into the background. The profound importance of that moment was that no mortal person, human hobbit, whatever could withstand that. It wasn't a failing, it wasn't a moral failing. It was that that is simply too much. But the quality of what they did before their mercy, being true to themselves their ideals and their internal goodness as imperfect as they were, allowed another character there. Gollum incredibly flawed. To carry out ultimately what, through his own greed what destroys ring and saves the world. And that's a hero's journey that we're not used to. And I thought there's similarity to that here. They didn't make it that Sheridan and crew were these perfect people who made every decision, right? They weakened and they fell and they owned it. You couldn't have had the Garibaldi story line.
+
+[00:16:25] **JOHN**, You look at him, the reason why we still like him as a character is not because he succeeded. He caused disaster after disaster due to both being manipulated and his own foils. But his inherent decency somehow carried through to where he was a great character. And then going into act three of this, he is the virtual representation of himself that sort of saves the day there through the nature that he was programmed with, of being suspicious and everything else. And it really made me one of the, yeah, these weren't your traditional hero archetypes who have all the strength in the universe. They always make the right decision and they just power through any adversity. These characters stumbled and broke and at times, ended up on their knees at times, ended up in conflict with each other.
+
+[00:17:16] **JOHN**, What one knew you are wrong. They had to be brought back to, back to the best of them. And that's one of the most interesting parts about this, is that a real hero that we can, understand is going to be profoundly human and not this amazing archetype. So for that, I can understand the academics not wanting Sheridan or Delenn to be these godlike figures.
+
+[00:17:43] **JOHN**, Like they're not to themselves, they're not to anybody else, but cultures and histor, and the natural feeling of, of history wants to put people in that pedestal. that they must have been something more. They, there must have been something special about these figures that made them more than everybody else. Well, no they were Nexus points. They were in the right place at the right time. We got lucky in the sense that they were generally good people trying to do the best with what they could. And in many points in history, that's not the case. You don't end up with people who have the best of intentions. And then it goes a different way. And you can see the other characters that are introduced, other captains, even with an earth force, you see, well, each one of 'em made different decisions under President Clark. And if any one of them had been on the station, how different history would've been. Now were they awful people? Was captain Lockley who's gonna come in after this episode. One episode later, the new commander, new captain of Babylon 5, we then learned was on, was on the other side of this. Now, what would've happened if she had been appointed there three years early? Would she have led a to, , them to a grand alliance?
+
+[00:18:48] **JOHN**, Which she would've been a very competent, decent captain of Babylon 5. But none of that would've happened because it's sort of, you get a person who wants for the best stumbles along the way but happens to be sort of the right person in the right place. And that's what the historians have real trouble dealing with, is the idea that maybe it is a bit of luck that these right people were there, not because they were special, but it's just sort of who they were. And the other part that sort of gets me is ' the episode titles deconstruction. And this part in act two is the ultimate academic deconstruction under the, concept. I think of postmodernism. It really, they are like the representation of academic postmodernist thought. And this is filmed, in the late nineties when that's certainly at its almost peak of influence. And you could just tell how JMS wanted to rip that apart. He didn't like that because these characters did not gain, you don't feel sympathetic for the academics, after Delenn comes in and rips 'em apart. that is something that I felt like, oh, he has opinions, JMS has opinions on this and he is putting them first and foremost, and I'm there for it.
+
+[00:19:58] **JOSH**, Yeah. And not only that one of the academics tries to get the last word in after Delenn sort of has a mic drop and she turns and of shames him into silence because it's sort of like really, like you learned nothing from what I just said. it is interesting too.
+
+[00:20:15] **JOSH**, Delenn coming in and saying, you guys don't know what you're talking about and you're not interested in knowing anything. But something I can tell you for sure is that the only thing you have to know is that John Sheridan was good, kind of decent. And I think what is interesting there is that, I think we have a tendency to forget that historical figures are humans who are complicated, even contradictory. And I think not just academics but I think people in general like to reduce historical figures to simplified sort of ciphers for like, , this guy was the honest one and this guy was the crazy one.
+
+[00:20:56] **JOSH**, This guy was the strategy guy. And this one like, so that you can reduce complex events and the interaction of all of these variables and personalities and agendas and motivations to kind of wrap your head around it, to kind of reduce everything into these very simplistic shapes that will fit together to form the picture you want.
+
+[00:21:19] **JOSH**, Which is interesting too, because I think to contrast the second act of the academics with the following one.
+
+[00:21:27] **JOSH**, There is a conscious, intentional attempt to fabricate history. I do think that the intention of the academics is to try to find the truth, though their methods and ideas are sort of, flawed.
+
+[00:21:46] **JOHN**, There. What I could say the biggest difficulty with academia, which leads the general population to look skew sometimes towards academia, rightfully and wrongfully. And I think that skepticism's over rock, but institutionally speaking, when somebody makes their name as a PhD for something, they've done it for something that they've clearly defined and they've used a methodology that's been clearly defined.
+
+[00:22:08] **JOHN**, So anything that opposes that becomes a very personal opposition. So in, it's very difficult to say, go up to the ideal of saying, well, everything is supposed to be for open inquiry and rigorous methodology of examining and doing that and these. Characters the, these academic characters in this embody sort of the stereotype of, well, they have not only preexisting, it's not that they have a preexisting perspective as much as they have a preexisting framework, academic framework, which they have to apply to everything because, well, that's how their department does it.
+
+[00:22:39] **JOHN**, That is the currently in vogue way of thinking about things. That must be the truth. Well, five, 10 years later, there's gonna be a new way of thinking that's in vogue that's gonna be different, but they're very much locked in and nothing else can be the case, but it would also be a challenge to their position to do so. So it's really hard to have a really open, genuine discussion about that when to, the word agenda comes out. People use that as this very pejorative term. No, there, there are agendas there. It's like, well this is my discipline. This is the way I study x, y, Z departments ideas, , , whether it's economic, psychology, whatever it is. And they're limited by that so profoundly. As the viewer, we get to be magic. We get to be the magic audience, , that knows and has seen things that they could never have seen and understood. And again, you're just sitting there like, no, that's not what it is. So when Delenn acomes in, like you mentioned, I'm practically like, clapping that, oh my God, thanks.
+
+[00:23:35] **JOHN**, She's gonna set the record straight. And what you quoted her saying was the most devastating thing that could have been said because she simply she didn't try to debate academic jargon or go into intellectual knots. She said he was a good and decent man. Period. Doesn't have to justify every single decision he made, rightly or wrongly. It's that the important part of this is that just as a person, he tried his best. He messed up at different points. He certainly had his weak points, but overall, he was a good man. And that's something that, again, is hard to parse. There are people who really aren't, they're still human. They're not entirely evil.
+
+[00:24:16] **JOHN**, But there are people whose motives are incredibly different. They are far more self-serving. And that's the distinction to make, is that the people who ended up at the top of Babylon 5 were not. And those who were incredibly self-serving, thinking of of early G'Kar and certainly Londo had incredibly difficult journeys to go through to become different versions of themselves.
+
+[00:24:36] **JOHN**, And not every character did people ask sometimes, well, how did Mr. Morden become so evil? Chances are he was just a regular guy. out on the Interplanetary Expeditions mission. He was probably excited to get a good payday, didn't have a particularly strong or bad moral center. Which made him ideal for manipulation of the shadows.
+
+[00:24:56] **JOHN**, And then the really tragic part was Sheridan's wife. There she is, Anna Sheridan comes back and you can say, well, it must have been the fact that she was put in one of the shadow ships, but she seemed to go so hook, line and sinker into the Shadow ideas. And you wonder, but this is the guy that he was partners with because she was also human, slightly different person, probably a great good person beforehand, but just different enough that she was an ideal representative of the Shadows. And how do you quantify that super easily? How do you predict that beforehand? And yes, you get to write the show being like, well, this is how it happened. But the characters are so fleshed out and so well thought at, and so challenged that they don't feel like they are just two dimensional, good guy characters.
+
+[00:25:39] **JOHN**, So yeah when Delenn leaves him with that final line, you do not wish to know anything. You wish only to speak. Like, well, we love to speak here and you and I we love to talk about this show, but these characters are the worst representation that they only want to hear their own voices. And to see her even they have questions Sure. But they want them to wor want, they want it to work out for their pre-existing viewpoints. So, yeah I ended up with this act of the show. I was so angry. I'm just like, how dare they do this? , how dare they, take the people we, we know and, and cast them in this light. But yeah. What are you, what is history gonna do with anybody, , today? , who's of note? They're not gonna get them, right? You could try the best you can, but no, no one's gonna know who the leaders of our world today really are because you pointed out we barely know who they are ourselves.
+
+[00:26:31] **JOHN**, We know broad strokes, we know some things. So that's something really interesting. It's funny we jumped right into act two because I think that's the really though there's so many more in this. I mean, the, this episode just has so much going for it. But it starts off much closer.
+
+[00:26:46] **JOHN**, Was, was it, , 10 years after?
+
+[00:26:49] **JOSH**, The first? Segment is in the immediate aftermath.
+
+[00:26:52] **JOHN**, oh, that's Right, It's 22.
+
+[00:26:54] **JOSH**, right. It's 2262 and no. Yeah. I'm glad that you , brought up that for a segment because these two segments the first half of the show, the panel of experts, on cable news essentially, and the academic panel, these are the two that are most familiar to all of us because we see this all the time.
+
+[00:27:15] **JOSH**, the first act probably is the most familiar because see this nonstop. It's, three talking heads boxes on the screen sort of casting judgment and blame and trying to hopelessly prognosticate about what's in store.
+
+[00:27:31] **JOSH**, And there was one thing about this that struck me watching it now versus 25, 30 years ago first of all. This whole segment feels even more realistic to me now than then. there was just something about way that they were speaking about things and the idea that the annoying guy, the guy who worked for, the Clark administration or was at least part of the party that he was a member of, right?
+
+[00:27:57] **JOSH**, who, , now has some egg on his face because the head of his party, tried, to scorch the earth and was, , deposed and, we're moving on from that. But yet he still believes what he believes, right?
+
+[00:28:10] **JOHN**, Yeah.
+
+[00:28:11] **JOSH**, And what he says, he's not entirely wrong, he's just coming at it from the perspective of, I'm not in love with this guy.
+
+[00:28:20] **JOSH**, Sheridan, So I am going to voice the, , the alternative potential viewpoint because I'm not going to give Sheridan a break or the benefit of the doubt like the other panelists are because. The other ones already agree with him broadly. He did not.
+
+[00:28:39] **JOHN**, Mm-hmm. Mm-hmm.
+
+[00:28:40] **JOSH**, But I remember thinking when I was a kid, well, a kid, I don't know how old I was.
+
+[00:28:45] **JOSH**, I guess I was 14 or 15 when this was on. so yeah, so a kid I found this guy such an over the top caricature that I almost, didn't, believe it. I was like, how can he still be playing for the other team when we just all saw what happened? And now I think he's perhaps the most realistic member of that panel.
+
+[00:29:07] **JOHN**, I, I, I, that, that is something I had not thought a thought about with that. Brilliant. You're right. He's realistic. And the cognitive dissonance when he said like, oh yeah, we'll just talk about like scorch earth, we'll move on from that. That is a, such a real phenomenon, again, is very hard to quantify.
+
+[00:29:23] **JOHN**, It's very hard to understand that it is something that is not only dissonant, it's very human. And you're sitting there like, okay, so this person was on the wrong side, but he is still being somewhat respected, somewhat listened to because, millions of people on earth must have supported him.
+
+[00:29:41] **JOHN**, I mean, Henry Ellis is, one of those characters that, you and I look at and we're like, oh, this guy, this guy. But he's so representative of how a ton of people in the Earth Alliance and Earthdome must feel because they didn't really think that Clark was gonna be that bad. And how could they live themselves if they could accept that the guy who's gonna go scorched earth was their guy. And again, this is a similar comparison to Nazi Germany. Millions of Germans could not reconcile that. The guy they voted for in 33 and supported for a decade after that created the concentration camps in Holocaust. that's the reality of it. But even in decades later when people were interviewed, they would challenge the very validity of that notion because they'd be like, oh, I, I didn't even know that happened.
+
+[00:30:30] **JOHN**, Did it really happen? I couldn't imagine that. And, And they couldn't really live with themselves for that, but nor did they believe that it was a problem, because that's not what they thought they voted for. That's not what they thought they were supporting from their nationalist standpoint, even though it really was at as they watched their neighbors getting taken away and everything else. But it's a very common experience. So here you have this character, Henry Ellis. Yeah. To him it's just, well, he went too far. Turns out he was crazy, but maybe the things that, he was talking about otherwise I still go for, and as a result, he's gonna be incredibly skeptical of Sheridan because Sheridan was on the other team.
+
+[00:31:06] **JOHN**, But also Sheridan represents a profoundly different world of view, which is one that you can cobble together disparate groups in a peaceful manner and build something over time. As difficult as it is, the Clark regime embodies, well, we've discussed many times before. It embodies Earth First.
+
+[00:31:26] **JOHN**, That's the language used throughout the show is Earth First. Why can't we just, when we do the media episodes, that's a big part of it. The various senators generally say, well, why can't we just focus on the problems back at home first? Why are we funding this Babylon 5 station when there's so much that needs to be done back on Earth? That is the Clark party. That is their belief, is that you cannot be looking outside. , you have to just care about yourself, your own people. And that's what we see today. The new, The new national security, , , viewpoint as released by the Trump administration is literally that. Screws over Europe completely. Says, we're not there to be a global anything.
+
+[00:32:04] **JOHN**, We're there to have our own little sphere of influence over here in the Western Hemisphere. , screw everybody else unless it directly, and the text is, unless it directly influences our interests. But that is the viewpoint of a lot of people. And it has been at various points in our history leading up into World War ii, incredibly isolationist.
+
+[00:32:21] **JOHN**, If it doesn't concern us directly or our money, we don't care. Europe falls apart, completely goes in the second World War. It takes being attacked for the Japanese before the US enters that war. It is not something uncommon in our own history. It makes complete sense for to endure in the Earth Alliance. So this guy has a perspective that's incredibly, , , real seeming because he is real for us today. I'm glad he turns out to be wrong about the Alliance. But isn't it interesting that he's still given such such a platform and seeming impramatur respect or social acceptability. So clearly on Earth they did they're not purging. Clark supporters, they may say, yeah, you lost you, you were wrong. But the nature of that was not to exile the other side entirely. And that probably leads to some other interesting conflicts in the future history of the Earth Alliance. And then Ellis makes his final sort of comment there asking the question and he is not wrong.
+
+[00:33:18] **JOHN**, He says, will Sheridan have to resort to force to keep this vision going? And that question is answered in the fifth season and in the later stories about the Alliance , that yes, there will be times when force is used and will that be, for disaster ultimately? Yeah this was a good, this was a good part.
+
+[00:33:40] **JOHN**, It's a little bit quicker than the rest of the episode and it, doesn't always like, seem as exciting as what happens after, , act two. But it's really, it's something that we don't get very often in any TV shows. Imagine watching TV show and then getting on the meta level, the thoughts of people in that world on what you've just watched. I can't think of anything else that have really had that experience with can.
+
+[00:34:02] **JOSH**, No, I really can't. But one of the reasons why I think this episode is effective and works, because it does have like, sort of a finale ish,
+
+[00:34:15] **JOSH**, Or at the very least, like, , post script sort of a feeling. , one of the reasons that it, works. Where it is, is because, there's another season after this and the show is saying that more stuff happens that's important, right?
+
+[00:34:29] **JOSH**, So the same way that you were saying that , the hero's arc of Frodo is not one that we're used to seeing. the arc of this show is working in a similar way in that what would normally be sort of the finale of the story of the show which we just saw is not the end.
+
+[00:34:48] **JOSH**, And actually Sheridan lives long enough quote unquote in season five. Arguably he's fallen a little bit from the pedestal where he ends up right now. He's, the hero returning home. He was just elevated, to be the president of the galaxy. And then in season five, it's about how, being a leader and trying to keep the alliance together and playing politics is not the same job.
+
+[00:35:17] **JOSH**, And arguably he's not as good at that job as he was at the previous
+
+[00:35:24] **JOHN**, That's very, that's very true.
+
+[00:35:26] **JOSH**, so to be like, oh, you think that this is the finale? You think that this is the end of the story? Well, actually, it's not in the third segment, the 500 year segment is, I think the thing that people, had the most trouble with.
+
+[00:35:38] **JOSH**, The idea that 500 years after the events of this show, it all happens again, essentially. The , the earth, becomes, a fascist state and there's a civil war again. And it's, on some level, it's very easy to look at that and be like, okay, well then the story we just watched was all for nothing, if it's just gonna happen again.
+
+[00:35:59] **JOSH**, And that's a view that I was not unsympathetic to at the time. But now it seems super, super important. In some ways, I think that this segment is actually optimistic that it took 500 years because in our real
+
+[00:36:15] **JOHN**, Oh, that's dark.
+
+[00:36:16] **JOSH**, no, it's true. It's true. in the real world I think it took us about 70 because, really it's the lived memory of what that was and the fight to defeat it.
+
+[00:36:28] **JOSH**, Once that fades, it seems to come back.
+
+[00:36:31] **JOHN**, It, it's every time and more so with the news of the past few weeks, we are living through this again with that national security was the assessment of the strategy, I think is what it was called. It's very clear that the direct intention of this current administration is to undermine and eliminate all the forms of global cooperation that were taking place before. Certainly undermining the US's NATO alliance status, our allyship with Europe. , the criticism of Europe being largely on this idea of multiculturalism, that we can't be allied with Europe because they're becoming far too multicultural everything else while wanting to cozy up towards Russia, China and India, who are all themselves are or leaning heavily authoritarian in the case of India. It's a really interesting phenomenon. But the allegory here is that if the Interstellar Alliance is a stronger version of thea UN. And that is the point that Act three, 500 years in the future, it seems that on Earth there's huge divisions at that point that are turning a lot of the population against the ISA. Enough to foment a large conflict over it. So you're right, 500 years before there was a challenge within Earth to go against the Interstellar Alliance. And that's not to say we don't know what the state of the ISA is at that point is. Is it more flawed? Is it somewhat corrupted at that point in history?
+
+[00:37:57] **JOHN**, We don't. That was too much for the show to really detail about, but it's reasonable to assume that there were some valid grievances, but that it went to the extent of, well, it's time to destroy that institution. We're living that out right now. , the administration also was leaked yesterday, the day before. They're trying to advocate us interfering to break up the European Union. I believe they want Italy, Austria Poland and Hungary to leave the EU that our administration is saying that, , even though that was leaked, that is the policy. That's madness. But you look at that impulse now, that's what it is. Divide up the more liberal leaning institutions to weaken them, and instead have a three region series of more autocratic, , , , spheres. Basically all the Americas for the US, all of Asia, for China and Europe will be dominated by Russia. It's a fascinating view that I thought you could only write in a novel. I thought, I imagine this 10 years ago to say nothing of when the show aired in the 1990s, when it was all about, , Fukushima's idea, the end of history US's undeniable dominance over the world and a never ending hegemony. And we're seeing how that goes. I think the irony for us is that it's not coming from an outside force.
+
+[00:39:11] **JOHN**, This is coming from the inside. It is forces within this country that are saying, yeah, we don't wanna do that for, for valid reasons on the left and the right, I guess, but to actually abdicate it rather than have a separate power oppose us and fight us for it. We're just giving up on it.
+
+[00:39:28] **JOHN**, And I still struggle to completely understand that, but I do think back, and I do think back to the, the way that Earth Alliance was operating in this, is that they were withdrawing, they were less interested. The finale of season two, which we've discussed, where they sign, , an a, , a non-aggression pack of the Centuria.
+
+[00:39:43] **JOHN**, It wasn't because Earth was gonna do anything, the opposite. They didn't want to do anything. They wanted to benefit from some trade here and there, and then just focus on what was happening inside the Earth Alliance. Nothing else. It's an incredibly myopic small view of existence, but it's very common. And that's what we're seeing now. It's not imaginable to me because I'm thinking along the story lines of, well, wouldn't you want the Interstellar Alliance? And a quick note on what some of the comments are on this is that it seems that in 500 years in the future, that there's a struggle for, I think they mentioned like a struggle for resources happening on Earth or within the Earth Alliance. And that's interesting because we're used to Star Trek where despite all the, enemies that they face, whether it's gonna be the Klingons or the Borg or whatever, the Federation largely maintains its status as a post scarcity civilization. Nobody lacks for anything. That's not a motivation for it to cause problems in the Federation. That's never proposed as being a reality for humans in the timeline of Babylon 5. We're completely existing within a scarcity mindset and world at that point, it's things are still scarce, resources are still scarce. Maybe the bombardi have more, but even that's unclear. I doubt the Vorlons have any problem with that.
+
+[00:40:56] **JOHN**, They were able to manufacture a giant fleet in a matter of a year. But when you're still existing within scarcity, all the same old problems will manifest. And JMS never had any intention of writing a post scarcity world that sort of idea was what Star Trek was about. So naturally that conflict emerges, people start pinning blame. Oh, it must be the ISAI think back on Brexit. Oh, well, if we only weren't part of the EU, we'd have enough money to fund, , the National Health Service. Now we are nine years out of when Brexit was initiated. And guess how well the National Health Services funded? Oh, worse than ever. Worse than ever. Despite not having to send a penny over to the European Union anymore. It, those arguments never work in reality, but they really do work to convince people that's the reality. And so when you now start this act of the show with somebody who's, basically using a holodeck to try to recreate these images of the Babylon 5, , a cast and crew to be villains is absolutely fascinating to me. At the time, I didn't understand why it would be so relevant in the future. And then you realize, oh, this is the ultimate propaganda tool. Turn these characters, turn these people into historical, , , fascists to justify you being fascists, but from the opposite point of view strange.
+
+[00:42:14] **JOHN**, And that's how I think of like, well, how can you justify atrocities that you are committing? Frame the other side as atrocious, and then you can do the bad things
+
+[00:42:22] **JOHN**, as well. So now they recreate through creating what I'll call in modern terms, sort of like the, these simulated ais of , Sheridan Delenn Garibaldi, and everybody else. And they did it too good. I love that that was jms's hook was that they did it just as good as we mentioned earlier in the episode that it was Garibaldi who was programmed with all the personality traits, tweaked to be more of what obviously this guy Daniel wanted them to be, but he couldn't help but snoop. And as a result, Garibaldi figures out what's really going on. That they are simulations, that they are these people and he completely, derails what Daniel is trying to do, and releases the information to whatever other side is involved in this conflict on Earth that the first strike attack is about to happen. , and as a side note there, Daniel is wearing a pin or an insignia on his that is incredibly and deliberately reminiscent of the ss of the two lightning bolt Ss symbol like it's meant to be that it's meant to, like JMS was not trying to be subtle. He's being subtle with a capital B. It's right there in your face, the, these characters were meant to be that. You don't have to think too hard about, like, well, maybe they are. No, they are. They absolutely are. And the result of this scene of these simulations playing out, of seeing the horrible acts and the executions that were overseen by Sheridan, the horrific medical stuff done by Franklin, all of that. Oh, it's really hard to watch, even though it's not real.
+
+[00:43:53] **JOHN**, even though, you
+
+[00:43:53] **JOSH**, Yeah. I mean, first off, that speech that they make Sheridan give, once again, like I thought 30 years ago, maybe it was a little cartoonish and overtly villainous for it to be believable within this world. But I was watching it just earlier, and I was like, this sounds like, something Stephen Miller would say.
+
+[00:44:13] **JOHN**, Yeah, it sounds very close, though not in style to what Trump says. But you're right it's much closer to the way that Stephen Miller actually talks when he's doing these media moments.
+
+[00:44:26] **JOHN**, He's quite literally, and, close to the figures of the Third Reich and yeah, God, it wasn't it great to be innocent 30 years ago and think that this would never happen again.
+
+[00:44:38] **JOSH**, Yeah. I mean, maybe that was the folly of it all. Right. , to think that, it can't happen here. Like we even still had warnings like this and still thought that, we were smarter than the house or whatever. But
+
+[00:44:51] **JOHN**, Wouldn't you love to ask JMS if he thought back then that this was a likelihood for us? And I'm sure you can parse that from a lot, from his amazing, comments, throughout the years.
+
+[00:45:02] **JOHN**, I get the sense that he.
+
+[00:45:04] **JOSH**, Yeah, I think he was hopeful that it wouldn't happen, but I think he was aware of how much more possible it was or how much closer we were to that reality than people generally believed, myself included. Certainly. If we ever have an opportunity to ask him a single question, I think that's the question that we would have to ask him.
+
+[00:45:26] **JOSH**, Like
+
+[00:45:27] **JOHN**, it.
+
+[00:45:27] **JOSH**, completely but yeah, there is something about this segment, , that is really unnerving, beyond like the fascist politics of it all. Which is this idea of resurrecting in a digital form, these, personalities of historical figures and then, puppeteering them, like marionettes against their will, to say and do things that would horrify, the real iterations of them. I think the implication is that, to preserve the reality or the verisimilitude of the, simulations. I think that they do have that self-awareness, like while it's happening, like they see how they are being manipulated, and this idea that like, not to get too far down this road, but it, does remind me of this, kind of facile.
+
+[00:46:12] **JOSH**, Belief or even faith that a lot of people in Silicon Valley seem to have that at the end of the day, all of us are just reducible to information. And if you can copy the information that copy is just as alive and conscious and self-aware and valid as the biological entity.
+
+[00:46:33] **JOSH**, this idea that, we're all just information. So once we have computers that are fast enough and large enough, to copy and contain and run these programs essentially, again, I think it's a very myopic, , reductivist way of, thinking about it.
+
+[00:46:48] **JOSH**, But a lot of, powerful and influential people actually believe, So that said, if you have that in your mind, then this is actually the nightmare scenario of that. you can resurrect someone against their will
+
+[00:47:00] **JOHN**, Yeah.
+
+[00:47:00] **JOSH**, in a situation of your design and make them do whatever you want.
+
+[00:47:05] **JOSH**, That is a terrifying Black Mirror sort of a proposition, that I think like you can't really undersell how horrifying that is.
+
+[00:47:14] **JOHN**, Do there's, there, there's an author out there who I'm reading in this moment right now who really brilliantly is portraying this. Ian Banks, the Culture series
+
+[00:47:25] **JOHN**, book nine called Surface Detail, in which there's an afterlife that civilizations across the galaxy have created VR afterlife. Now he's writing this in the aughts at this point, late s and it still seems ahead of its time. That civilizations create an afterlife and they transcribe one's consciousness. But that word is very important. Transcribe. You're duplicating information. Is it continuous? or is it just really a copy? At which point, it's not really an afterlife, it's an after copy. And how civilizations go to extremes to actually create their own notions of heaven and hells. So you can actually be condemned, theoretically, to a hell of a VR because somebody else imposes it upon you because of their beliefs. Wild stuff. But it's still, is it a copy? Is it the real, but yeah, you could bring somebody into that, against their will and make them exist. And apparently in these civilizations as their sort side is that in many cases, after years or decades or centuries, the consciousness are just clamoring to, to, for permanent death, for true death. And they're granted it. Once the civilization figure out, oh, this is maybe not the best idea. It's a wild idea that you would, in theory, be able to resurrect somebody from the idea that they're there. There's no continuity. So they're not resurrecting, even if they have all the information, even if they could get a mental scan of Sheridan and Delenn and everybody else, it's not gonna, they didn't have that. So it is just reduce the information we know, which from the previous act, a hundred years in the future, we know is woefully incomplete.
+
+[00:48:51] **JOSH**, right. Well, even then it's like, essentially what they've created is like a large language model version of these personalities. and in that sense, I think it is quite delicious or ironic, the way that, Garibaldi can't help but behave the way Garibaldi behaves and the downfall of what's the character's name who's running all this,
+
+[00:49:13] **JOHN**, Daniel.
+
+[00:49:14] **JOSH**, right?
+
+[00:49:14] **JOSH**, Daniel's downfall is something that now that we have interacted for a couple of years with these quote unquote AI chatbots might be familiar to I think a lot of people where he can't help but be curious and the AI tells him exactly what he wants to hear,
+
+[00:49:32] **JOHN**, Mm-hmm.
+
+[00:49:33] **JOHN**, Mm-hmm. right? Yep.
+
+[00:49:34] **JOSH**, Which I noticed this time. Because, sort of, I think if you read any critiques about chat GPT and other LLMs, One of the critiques is that know, it's a product. It wants to please you. So it sometimes may elide, certain facts or realities just to tell you what you want to hear.
+
+[00:49:54] **JOSH**, So you'll keep the interaction going, which is exactly what happens here,
+
+[00:49:59] **JOHN**, Yes. Yes.
+
+[00:50:00] **JOSH**, which I thought was funny.
+
+[00:50:01] **JOHN**, Yeah. And I doubt that JMS is trying to be a tech
+
+[00:50:04] **JOHN**, prognosticator
+
+[00:50:05] **JOHN**, here. I think
+
+[00:50:06] **JOHN**, he was just like, well, this makes sense from a writer's perspective, from understanding technology as it seemed to be evolving for it to be so weirdly applicable in this exact moment. And we came into this podcast more about the politics and the global situation. And then we're like, oh yeah this is really apropos is part of the show because the rest of Babylon 5 doesn't spend too much time on the questions of AI. It's used as McGuffin and there are different things. There's The Great Machine, the interfaces with a human core. Shadow ships use a human core as their CPU, all these different notions, but they don't spend too much time on the idea of a intelligent, self-aware machine. This being essentially chat GPT only slightly more advanced. I mean, if even that, I mean, I think you, I think we could almost do what they're, what Daniel's doing this episode we can do now. We need better video technology. That's about the only thing. make, Make Sora a little bit better. But other than that, creating the personalities, creating a Sheridan and Garibaldi, that would sound our ear accurate. Well, all you would have to do is tell ChatGPT to, process all the scripts of the episodes and then spit out new content for this. And it would feel just real enough. That's say, well, yeah, that's the way Garibaldi speaks.
+
+[00:51:19] **JOHN**, That's the way it is. Is it really real that's the major question. But how it traps us in that loop of like, oh, it gets itself into that of creating a Garibaldi that's suspicious. But as a viewer, back watching this episode, I never was under the idea that, well, they were real. When he says sleep, rest easy, my friends.
+
+[00:51:37] **JOHN**, That was a very sentimental moment. But I wasn't in my mind being like, oh, well these are the resurrected souls and beings and consciousnesses of these characters. It was, they're close approximations and, and oh yeah, Garibaldi is being Garibaldi and then he really wants to put, to rest this idea.
+
+[00:51:55] **JOHN**, I like that. But I didn't confuse myself with it. I didn't confuse it with being real. Today, people are really confusing what they're seeing come up on, on these AI large language models with real things, and it's having profound effects and negative effects on people's psychology.
+
+[00:52:14] **JOSH**, I want to share something that is a little strange. I may cut this out of the episode, but what you just described, I actually experimented with and I try to create a Captain Kirk so I fed it. not every single episode but like I hit all of the key ones. some of the original series episodes, obviously all the movies. And I gave it the memory alpha entry on Captain Kirk. and then like I had to tweak it because it was like, well, that's not how Kirk would sound.
+
+[00:52:40] **JOSH**, Or he would never say that, or blah, blah, blah. was pleasantly surprised that it's actually much, much harder to make it sound right.
+
+[00:52:48] **JOHN**, There, there's a reason why the character of Daniel is wearing like a white scientist coat and why he's walking
+
+[00:52:53] **JOHN**, around. Like, with the analysis he is. The amount of work it does require to get it right and the human input to get it right for us. The AI don't care what they're interacting with each other, but for us and that it becomes almost an art form. Deep Space Nine had a similar use of this idea and technology when they're trying to fake a a meeting of a of
+
+[00:53:14] **JOHN**, What was the, it
+
+[00:53:15] **JOSH**, was just going to,
+
+[00:53:16] **JOHN**, war. Yep. And the levels to which they had to go to both create a believable forgery in terms of the technology, the imprints, everything else, but also, a near artist level technician who can create a believable holographic simulation. That's the reason why when we watch ai, it's not just a tech making something look like uncanny value. Our brains do a lot more than we recognize and can even have even fully explored. There's a reason why we see something we're that's slightly off when we see some something trying to approximate a person, it can be close enough that we don't care. So we may say, yeah, that's fine. Our brains may say that's good enough for me, but we'll still know and sometimes we will get really uncomfortable. Like, yeah, that's just not really good. So I can imagine there being like a market for the people that Daniels whatever, who would be able to really get it right and the amount of tweaking and effort it requires. And then I imagine that him broadcasting this is sort of in line with how propaganda is used. It doesn't have to be 100% believable. It has to be enough to reinforce the preexisting biases of those who it's being shown to.
+
+[00:54:23] **JOHN**, But it can't be, as a result, you can't have uncanny value. You can't have someone that's gonna kick your brain out of reality, even if you don't think this is what these people said. The vibe, the aesthetic, the nature of weathering has to be enough that your brain just goes along and says, yeah, but that looks like Sheridan. That talks like Sheridan. And nothing stands out to me
+
+[00:54:41] **JOHN**, as being off or jumps out, like, oh, they got that part wrong.
+
+[00:54:44] **JOSH**, What's really interesting is that to go back to the Deep Space nine example , the episode in the Pale Moonlight. Initially the forgery does not work.
+
+[00:54:52] **JOHN**, It's a.
+
+[00:54:54] **JOSH**, right, exactly. It's a Exactly. But Garak, the simple tailor knows it won't.
+
+[00:54:59] **JOSH**, So, he stages an assassination of the Romulan who discovered it was a forgery, and then what's left over the data rod of the forgery is so damaged, but what survives will look genuine because it's damaged. so I think you're exactly right. Like you just have to get it as close as you can.
+
+[00:55:20] **JOSH**, And then if you sort of layer on top of that, if you sort of scuff it up or obscure it. so because of the lack of fidelity, you circumvent the argument about authenticity.
+
+[00:55:32] **JOHN**, Yep. And then have it come from the right source,
+
+[00:55:34] **JOHN**, which is.
+
+[00:55:35] **JOHN**, oh, this was the ambassador from, was traveling with
+
+[00:55:38] **JOHN**, this. you It all starts
+
+[00:55:39] **JOSH**, render
+
+[00:55:40] **JOHN**, come together and
+
+[00:55:41] **JOSH**, So like, imagine like
+
+[00:55:42] **JOHN**, And in that episode, it seems pretty clear that Garak intended this from the very beginning.
+
+[00:55:48] **JOHN**, That he's leading Sisko along the breadcrumb trail of creating this forgery, knowing that exactly as you just framed everything brilliantly, that it wasn't just the data rod that mattered.
+
+[00:56:00] **JOHN**, It was the entire circumstance around it from it being scuffed and damaged to, to like who had it and them being assassinated to now, now it works. You needed every last part. And he
+
+[00:56:10] **JOHN**, certainly would not have gotten them on board with that plan from the beginning, but he was thinking 10 steps ahead, like, like
+
+[00:56:15] **JOHN**, a super spy and super manipulator would, and it made that, again, that was one of the best written episodes, both from the intensity perspective, but also that like layered approach,
+
+[00:56:27] **JOHN**, to that.
+
+[00:56:27] **JOHN**, And that leaves you with like, yeah, this is how the notion of trying to con how do you convince people of things. And 500 years in the future, like, why would they need to do this? Well, the same things are relevant, but also, is it just enough, like for the world of 500 years from now with Earth, is that just enough to make it
+
+[00:56:45] **JOHN**, work? And then what you just said about, with it being blown up in the assassination of the Romlulan Ambassador. Well, that's why Garibaldi's message is more believable, I wonder. Because
+
+[00:56:56] **JOHN**, Garibaldi hacks in, while he's ChatGPT'ing up Daniel, and then says,
+
+[00:57:01] **JOHN**, well, okay.
+
+[00:57:02] **JOHN**, And now I've just recorded everything and I just broadcast it to the other side. And the other side would be more than willing to believe that this happened now. And so as a result, the first strike gets reversed. The missiles are coming in to even this location, and the end of the scene is him saying Rest easy and the bright explosions. I mean, I, I love how there are parallels here, but also how it goes back to the playbooks of this is how propaganda works, this is how you manipulate information and how it is absolutely happening today. Today somebody can release an AI video of anybody. I've seen ones of Trump where it's meant to be, humorous or insulting depictions of him. They're quite believable, overall. And as they get better, they're more believable. But, But the question is, so why does some people believe one video is real and not, that's the art form involved in that. And so a character like Daniel is figuring out what do I have to do to sell this to my side?
+
+[00:57:57] **JOSH**, right. Exactly. And that's something that I don't think a lot people are taking into consideration. It's not just how, technically proficient the forgery is made or the AI rendering is made. It's also so you just said why do some believe this one or not?
+
+[00:58:11] **JOSH**, this one, it's because you want this one to be real.
+
+[00:58:14] **JOHN**, Mm-hmm. And who released it? Do you
+
+[00:58:16] **JOHN**, have trust in the person who released it?
+
+[00:58:19] **JOHN**, So now you put your confidence in that there's so many levels to how something takes place today. There are more photos being released. I don't know what they are, but I saw the headline more Epstein photos and that whole thing. What would've absolutely, had people going absolutely wild if it was for their side. Three or four years ago on the more Qanon side of like, oh, we gotta get these evil Democrats who are clearly running these rings across the planet to see that it's their own guy.
+
+[00:58:48] **JOHN**, Well, well that must be fake or just as valid for these people as it no longer matters.
+
+[00:58:54] **JOHN**, And that's also the art of propaganda, is you have to find out how do you get something out there that will matter to people. So I, my impression was always this was a simulation meant to be transmitted to whatever side that Daniel was on, not the other side.
+
+[00:59:07] **JOHN**, It was meant for his own
+
+[00:59:08] **JOHN**, people to consume
+
+[00:59:10] **JOHN**, to say, yep, we're about to do the first strike we're about to do is totally justified. We're the good guys. And leave it at that.
+
+[00:59:17] **JOSH**, I'm reminded of when Ivanova was plugged into The Great Machine and she found the smoking gun that,
+
+[00:59:24] **JOSH**, President Clark was behind the assassination, and how that still wasn't enough.
+
+[00:59:29] **JOHN**, Yeah.
+
+[00:59:30] **JOHN**, We discussed that. We discussed that. Yeah.
+
+[00:59:32] **JOSH**, they were questioning its validity and there were questions about where did this come from?
+
+[00:59:37] **JOSH**, what are the motives of the people? So,
+
+[00:59:39] **JOHN**, the question, where did it come from
+
+[00:59:41] **JOSH**, and also the fact that they couldn't say where it came from could imagine on another show or like a more simplistic version of this where like once that video clip is out there, I mean, that's the end of the story.
+
+[00:59:53] **JOSH**, It's like, okay, you
+
+[00:59:54] **JOHN**, that That could be a credits rule. Like yeah, we got the video out there. Problem solved.
+
+[00:59:58] **JOSH**, Right. But it's not about finding the truth. It's convincing people.
+
+[01:00:03] **JOHN**, Oh my God. This episode has so much more than I imagined,
+
+[01:00:06] **JOSH**, it's so dense. one thing I was thinking , briefly before we move on to the , I guess myth and religion segment. In that first segment, you said something about how, because Henry Ellis is there, it's clear that his side or the members of Clark's party were not purged.
+
+[01:00:22] **JOSH**, And they were welcomed into polite society or reintroduced in polite society again. I wonder, you could imagine all of the conspiracy theories about how Clark actually died, right? And like, well, he didn't turn the planetary defense grid on Earth itself why would he do that?
+
+[01:00:39] **JOSH**, that's crazy. I think for some, that was obviously a turning point where they were like, okay, it's
+
+[01:00:46] **JOHN**, might feel just more misinformation that .
+
+[01:00:49] **JOSH**, right? But all the people who weren't there. You could see somebody like a Henry Ellis being like, how do we even know that's really what happened?
+
+[01:00:56] **JOSH**, Like, these people they'll say anything to justify what Sheridan did, right?
+
+[01:01:01] **JOHN**, Right?
+
+[01:01:01] **JOSH**, when you plant the seed of doubt the viewpoint that, well, that's not what actually happened becomes a valid belief to hold.
+
+[01:01:10] **JOHN**, Yeah.
+
+[01:01:10] **JOSH**, And you can't ostracize or purge someone if they have a belief that's valid to hold.
+
+[01:01:15] **JOHN**, That itself is a really interesting question because it goes back into like, obviously what's the nature of truth? The postmodernist deconstruction of these falling stars. Like how do you create something that is believable? should you believe? How can you believe it? Why should you believe it? Everything else. But, know, we only tend to survive peaceably when we agree on a common framework of reality. These things exist and we have a small population to this day that doubt that planet is round. I mean, and they are absolute about it. Now it's a small fraction right now, but the Flat Earth Society is real.
+
+[01:01:45] **JOHN**, It has thousands of fo they're, they're adamant that this isn't, but we could really only function if 99.99% of us accept the planet is round and operate on the physical laws, that dictate such. What, when it's in question, that's when it's trickier. And sometimes I think you can give up too much.
+
+[01:02:03] **JOHN**, I think what you just said about Ellis is interesting, like that side is let back into polite society. The president of the Russian consortium when she becomes the defacto representative of Earth after Clark, and she's basically talking about like how the only way we're gonna get through this is to be peaceable, magnanimous to both sides, et cetera. and before we go into Act four, just I'll try to make this as quick as possible. That always struck me with like how Ellis comes out often this as the mistake we made after the Civil War, after recon. So, so you, and this is something that between some really interesting shows on Netflix, other things, if you wanna check them out, the death by Lightning is a cool little mini series about a president that no one really knows about, Garfield. What the reconstruction era was like. It's not what wasn't taught very much to me in AP US history and how important it was that for a brief time there was through force of Arms, the Union Army from the federal government was imposing a new world on the South. It was imposing equality. It was imposing the new amendments that were passed.
+
+[01:03:01] **JOHN**, Amendments were only passed as a condition of being readmitted to the union. And you had actually, if you watch this many series in Netflix, you see that in 1881, there is a black senator from the state of Mississippi. Duly elected. Now, the forced part was a union government enforcing the rules that said, people are free to vote, people are free to speak, and you cannot intimidate somebody for being black or a freed slave. Now, after reconstruction ends and the Jim Crow era begins, as the radical Republicans saw their influence wane, they were they were the abolitionists of that era. You saw the complete readmittance of all of the plantation owners into polite society as if nothing had ever happened. Well, we must go for the better angels of our nature, as Lincoln would say and reconcile, but that reconciliation without context or accountability, without going to the vicious extent. Was the balance point we didn't hit. I mean, Lincoln is assassinated. Johnson comes in. The whole history lesson is fascinating of how the reconstruction works and then fails. And it became this notion of like, oh, but we just completely accept that the war's over. We have new rules. And what? We're not gonna bother to really enforce. We're gonna withdraw the Union Army. We don't wanna be seen as carpet baggers anymore. Let's just let it all go. Well after that one, Senator I believe his name was, , Bruce k Blanche, something to that effect. I'll get the name for you. There was not another black senator in the US Senate for a hundred years after, from the north or south. So you don't want peace under the force of gun, of a gun. But what happened was the North lost its moral center. It became more convenient to worry about the economics putting the war behind us and just, who cares? I can just make more money doing it this way. We just want a life. We don't have to deal with this anymore. And what happened was it all came back. All the things that were, that we lost half a million lives for in both sides in the Civil War came back by the end of the 19th century under Jim Crow. Got worse in many ways. Except for the actual existence of slavery. And we are still, to this day, under our current regime, fighting that battle.
+
+[01:05:11] **JOHN**, The whole thing of being anti DEI and everything else is the same battle, the end of the 19th century. It is taking us backwards to a point where it is okay to look at these other groups and say, yeah, they're not equal. Look at the way people say, well, this, these people, we're gonna revoke their citizenship.
+
+[01:05:27] **JOHN**, Now we're gonna, we're gonna somehow find a way to nullify the 14th amendment. All these things are because we too quickly say, yeah, but they just had a different point of view. No, I don't think that Ellis should be in jail, but he's given the sense of respect and acknowledgement as if nothing happened under Clark.
+
+[01:05:46] **JOHN**, Nothing. That it's just, "cool, yup." The guy did all these heinous things and we're gonna challenge them or not, but what? We will treat you as if you are normal. There is the line of like, well, you were, and you were on that side. Like that's why, what you say. But it wasn't a tearing in to the extent of saying, have you no decency? Like where is your critique of Clark? Even if you agree with the principles of the party, maybe it's more conservative or liberal, whatever it is in their view. But there was no accountability held on a social level for somebody who was advocating for what was an incredibly oppressive authoritarian regime and our own history that was done in Germany. In Germany, the Nazi party was outlawed by its constitution and statute. And the very notion that we would say, well, that's not free speech. Well, they bounced it out pretty well in West Germany, and eventually they reunited Germany. And now they're weakening because it's becoming more acceptable, the a FD to allow for Nazi rhetoric to make its way back into the mainstream. So what's that line between how you manage all this? I don't think it's about a government imposed rule, but I think it is about the social rules that say we don't let you back with a sense of respect. you can do whatever you want, you're completely free. But that doesn't compel me to say, oh, but yeah, you're fine.
+
+[01:07:00] **JOHN**, And what? You just had a different point of view. I completely think that there's equal validity to that. It's saying, no, I'm
+
+[01:07:08] **JOHN**, still gonna oppose you. I'm still gonna stand up for that, and I'll call you out respectfully in that context. But in this, no one was calling Ellis out. They were just saying, well, you were part of the Clark regime that lost. Like, no, he wa he, he was part of a regime that committed heinous acts.
+
+[01:07:23] **JOHN**, How do you reconcile that? But even me saying this opens a whole can of worms to oppress
+
+[01:07:28] **JOHN**, If it's taken the wrong way, if.
+
+[01:07:29] **JOSH**, well, that's why I think this ends up happening because you don't want to become an oppressor give the appearance of that. And that's, why you do get things like I think, CNN does this particularly shamelessly where they include panelists who represent the extreme ludicrous fantastical views of the quote unquote other side for the sake of not only appearing fair and even handed as if they don't have an ideological, point of view or a moral point of view.
+
+[01:08:02] **JOSH**, They're sort of, neutral in every on every level but also because they need to put on a good show. So you want to have that person saying insane things so you can have the righteous indignation at having it out on tv. So there's something to watch. So, so the incentive structure is weird because, everything you just described.
+
+[01:08:24] **JOSH**, We just went through some version of this in and 2021. There were no consequences for anybody who worked in the Trump administration
+
+[01:08:33] **JOHN**, No. There, there were consequences only for the people who outright participated in the January 6th insurrection.
+
+[01:08:40] **JOSH**, even then,
+
+[01:08:41] **JOHN**, And even then, it was it, it, they certainly didn't go after the big kahuna when it came to that, they were so slow to go after Trump and his, and the immediate lieutenants there, that it never ended up coming to fruition.
+
+[01:08:53] **JOHN**, They went after the low hanging fruit. They went after, a Viking guy. They went after all these other people, but many people of consequence. And that's part of it because when, when people talk about the elite, they always get I always think people get the term wrong. The elitist people with power who acknowledge other people with power.
+
+[01:09:09] **JOHN**, But regardless of ideology, regardless of anything else.
+
+[01:09:11] **JOHN**, And the thing is it's seen as sort of, uncivil to go after. somebody who has a similar powered position, the Senate is notorious for that,
+
+[01:09:21] **JOHN**, which is why senators are always on these programs. In Babylon 5
+
+[01:09:24] **JOHN**, senators always like, oh, but it's decorum in this. And the leeway they give to somebody who could be doing something outrageous. And again, it's not about censuring them by law, it's about censuring them personally. Saying, sir, this is not acceptable. Now, maybe that works or doesn't, but no one says that anymore. They say, oh, but we have to maintain decorum. Well, without that, how would we have gotten past the McCarthy era? It took one person finally as the final break in the dam to say, have you no decency, sir, to a sitting US Senator. And to rip into him in a whole long speech. And finally people went, oh, yeah, no, he's being really indecent. But it was years before a single person was willing to stand up to McCarthy and say, Hey, jackass, what the hell are you doing? No one would do that. And not just because they were afraid of being called a communist. It's because they were afraid that they might be called out one day because oh, power doesn't call out power.
+
+[01:10:13] **JOHN**, A fellow senator never calls out a fellow senator. An elite never calls out an elite. A reporter never calls out another reporter. This would've been an instance where in an ideal world, in my view, somebody would've said, Hey, Ellis you were carrying water for a guy that did. Even if you don't believe this part, like, here's what we do know, and here's what you advocated for. So where's your accountability for that? And that's what we sort of miss in, in that dialogue. And again, maybe that's why it's cyclical and maybe why this is written to be so cyclical that you start off a hundred years, 10 year, at that point, then a hundred years, then 500 years, and then it all goes to shit. And we have to start all over again.
+
+[01:10:52] **JOSH**, It's funny JMS says in the JMS Speaks section on,
+
+[01:10:57] **JOSH**, the page for this episode on the Lurkers Guide. someone says basically that. Like, why is Henry Ellis on this show? And JMS explains it. He's like, well, if you look at speech writers in the Soviet Union after the fall of the Soviet Union, these people were reintroduced into polite society and still held similar positions.
+
+[01:11:15] **JOSH**, But then at the very end, he says, "The problem is some people don't hold grudges for nearly long enough."
+
+[01:11:21] **JOHN**, Oh, wow.
+
+[01:11:23] **JOHN**, Oh, he was thinking this the entire time. I love this.
+
+[01:11:27] **JOSH**, yeah, the problem with most people is that they don't hold a grudge near long enough.
+
+[01:11:30] **JOHN**, Yeah. I guess that's, what JMS said in that one sentence, what I just took 10 minutes to say. That's why he's a writer. That's why he's a writer. ? That's it. That's what it is. It's, yeah. Yeah. And that and there you go. That was why Reconstruction failed. Everybody forgot and was like, yeah, no, let's just go back.
+
+[01:11:48] **JOSH**, Arguably that's why we are living through a second Trump administration,
+
+[01:11:53] **JOHN**, that's a really good point.
+
+[01:11:54] **JOSH**, and as we have discussed many times, and we'll continue to the ramifications for the world will be far reaching and long lasting. So, I wish that the people who were in positions of power held a grudge.
+
+[01:12:10] **JOHN**, I mean, it's an interesting notion because we've always been taught that the grudges are what lead to unending conflicts. Which I think in one sense they are. But to hear this from him is that no, that there's a truth to it, which is, I guess put, put more civilly is those who remember history. If you don't remember history and make that at least part of the grudge, I mean, I think you have to do that so you don't get caught, again, locked in the same cycle.
+
+[01:12:37] **JOHN**, You have to remember this happened. How do we stop it from happening again, to this day? That is the, that is, what people refer to. never forget the Nazis and the Holocaust because it would happen again. You hold that grudge, if not against the living people.
+
+[01:12:52] **JOHN**, You hold against the ideas that led to the camps and when you forget and you're right. So, so now we have modern day, a different example, but the same cycle repeating itself of like people who shifted their vote in 2024 from 2020 because they were pissed off about the economy. They were pissed off at Biden for whatever reason, but they forgot what, these are people who are now outright suffering and being like, oh God, how is this happening? Especially in the case of people who are getting caught up in these sweeps, ? Well, you knew what he did in the first time when he was under control, when he when the institutional checks and balances were still strong. And the fact that you could have such a goldfish memory about it is no surprise to me.
+
+[01:13:35] **JOHN**, But it's depressing.
+
+[01:13:36] **JOHN**, It wasn't a surprise to everyone, but it was a surprise to just enough people to be like, yeah, well, maybe it's makes sense to try it again.
+
+[01:13:43] **JOSH**, well, I agree with you, but I also don't think it's goldfish memory. I think they were also taking cues from the people in charge, and he heard a lot of people say, well, if he really is guilty of those things, then he
+
+[01:13:56] **JOHN**, They would've got him. Right? Bingo. And you had the attorney general there, Merrick Garland, saying that, oh, well, I just wanna cross all my I and t's. What he really wanted, from everything that I've read in, long form journalism was he really didn't want to go after Trump. He didn't he and not out of a legalistic sense. It was, for him, it was a moral sense. You don't go after a previous president, which in general I agree with from the standpoint of you don't go after them politically. But the lack of accountability, which is part of the history of this country.
+
+[01:14:27] **JOHN**, There, there was an incredible lack of accountability when it came to previous presidents. There was a lack of accountability for Nixon in more recent history. all into this idea of, again, decorum. Well, what it really is, it's power acquiescing to
+
+[01:14:40] **JOHN**, power. Powerful people saying, well, listen, if this other guy with power is held accountable, then one day maybe I'm gonna be held accountable for my shit.
+
+[01:14:47] **JOHN**, And that's the last thing they want. So the, so generally speaking, the last people who are gonna enforce a rule against the previous president are gonna be the people who are in power because they know could be turned on them if they're pulling shenanigans and. And we're sort of locked into that at some point. A, a accountability is most powerful when it is social, not criminal. As much as you need the criminal aspect, and no one was held socially accountable, there should have been a continued effort to
+
+[01:15:15] **JOHN**, Deliberately expose the reality of what had happened and not let people forget to say, Hey, these people advocated for these things. They did these horrible things and you suffered because of them, and let's make that not acceptable in polite society anymore. Instead, those, all those people were invited right back into all the clubs, all the councils and all the meetings in the centers of power. And that's, I don't know how you, I don't know how you deal with that nature of power.
+
+[01:15:45] **JOHN**, How do you change the way that people wanna do that on that level? I don't know. that's something else to think about. Like, did the show ever deal with, the solution to that? Because obviously what happens next as well, we didn't get it right.
+
+[01:15:56] **JOHN**, We went cyclical so hard that that flash that, that ends act three turns out to be a near apocalyptic event.
+
+[01:16:03] **JOSH**, Though, as they do say at the beginning of the second segment, they talk about the hundred year piece,
+
+[01:16:08] **JOSH**, right? that's
+
+[01:16:09] **JOHN**, It's real. Yeah.
+
+[01:16:11] **JOHN**, That's pretty good.
+
+[01:16:12] **JOSH**, and that's a real thing.
+
+[01:16:14] **JOSH**, that's the idea that you could through some political action or through being victorious in some conflict.
+
+[01:16:21] **JOSH**, The idea that that would create peace forever
+
+[01:16:24] **JOHN**, Yeah. What it is crazy. And that leads into the next part as well as the very end of the episode, which I can't wait to get to because that's what really, that's what gives the meat of like the fanboying out
+
+[01:16:33] **JOHN**, for, For me. But when you start in Act four and you realize you think like, well, what has happened here?
+
+[01:16:38] **JOHN**, What, why are we in medieval Europe now? And you realize that you were in a monastery with a monk who's weirdly talking to a camera at first, that's hidden away. You realize, oh, we really fucked up.
+
+[01:16:51] **JOHN**, Like we really fucked this up. That conflict caused by those two sides, the 500 year mark was so devastating that it brought the planet Earth back to a pre medieval era. And I, so you see what is a really brilliant story and a fun, this for me is the most fun part of the show, to watch of this episode is you're in this monastery and there's a monk questioning is faith about things. And then you, as it unfolds, you realize what they're talking about is a faith on earth built around the characters of Babylon 5 as these sort of like, saint like characters, you're like, oh, this is getting kind of weird. And it goes and goes, but then you realize what's happening. And the jump, sort of the end realizing that Brother Alwyn is a Ranger, sets up something that blows my mind. And first the quick shout out to the actor who plays him who is I think is hilarious in the role and brilliant.
+
+[01:17:44] **JOHN**, Roy Brocksmith, who sadly died all the way back in 2001 was known for some horror movies and some usually like out there strange roles before. He's great with his high sort of voice and everything in this role and how frustrated he is with his younger monk being like yes, yes.
+
+[01:18:01] **JOHN**, Okay, fine. What's your crisis of faith this time? Let's talk it out. I mean, it is very entertaining to watch this scene unfold. But it's also really heartfelt.
+
+[01:18:11] **JOHN**, And it really debates again, JMS as an atheist writer, really exploring the nature of faith. And what it means to a human being and why it is important and what its limitations are. This scene is really good. And how the reveal is that Brother Alwyn is in fact a Ranger. He's Anla-shok. That there he is and he is requesting at the very end, oh yes, we're ready for the next level of things. Can have some gasoline, just end up somewhere near the monastery so you can start working the internal combustion engine. And that's when you realize that the Rangers are reconstructing earth. But they must have taken a very specific approach to it because one would think, okay, well if Earth blew itself up and there, and I think that in other commentary and other things about this, it's the implication is the Earth Alliance didn't blow themselves up necessary.
+
+[01:19:01] **JOHN**, There. There are seem to be other earth colonies out there, other parts, many humans out there, but Earth specifically was nuked back into the stone age. And as opposed to just riding in there on white horses, the Rangers and the Interstellar Alliance didn't come in to rebuild them and say, here you go.
+
+[01:19:17] **JOHN**, Here's everything back. Just try to get it right this time. They said, that's not gonna work. The same cycles repeat themselves. People will resent us, they'll do the same shit all over again. So they sort of let them on their own. Earth is on its own to rebuild from a pre-industrial, pre dark ages society, but the Rangers are covertly helping it along. Maybe accelerating it, but trying to get it right this time. That is a fascinating, idea to
+
+[01:19:43] **JOSH**, Sort of like Vorlons almost.
+
+[01:19:44] **JOHN**, It's very much like Vorlons. It's very much like, and again, here I am, I love reading things in, it's like reading that book series. I can't stop talking about. The Culture series, the way they are, the anti federation and constantly intervene, but usually on very subtle levels.
+
+[01:19:59] **JOHN**, Very manipulative levels.
+
+[01:20:00] **JOHN**, The Rangers are doing that here. They're doing so with, obviously they, they have a very long-term plan because it's been 500 years, they've been going very slowly. They're not jumping ahead of themselves here. They're being very disciplined about it. And I mean, imagine the temptation to say, yes, we're gonna just reintroduce all the antibiotics, we're gonna reintroduce all the technology that really saves lives. But they know that these people, this, our future selves got it wrong so badly that you can't risk it again. You have to shape it from the beginning. So maybe the Sheridan myth there, you, I mean, I'm uncomfortable, I'm uncomfortable with that. Like the illuminated tra the illuminated Bible that is effectively the mythos of what happened on Babylon 5.
+
+[01:20:36] **JOHN**, I'm like, Ooh, I don't know if I agree with this. Like, what does this mean for the people of earth?
+
+[01:20:42] **JOSH**, Completely, because once again, you can see the magic trick. And now it's on another timescale where we know that these mythological religious figures in their illuminations were just people
+
+[01:20:55] **JOSH**, with problems who, who did things and struggled. And success was not guaranteed. And. It's interesting you say, JMS is an atheist.
+
+[01:21:04] **JOSH**, He is. But I think what he's reminding us once again is that, try to keep that in mind, these myths, these figures who we canonize were flesh and blood people it's so interesting too, because I think when JMS is talking about faith, like my perspective on this scene from his, from his perspective is, , what you can have faith in is that regardless of the details, regardless how it happened, at the end of the day, have faith that people like this existed before they exist now and they will exist again.
+
+[01:21:41] **JOSH**, Good, kind and decent who are trying to do the right thing. And that's something you can have faith in.
+
+[01:21:47] **JOHN**, Yeah. And, And JMS, when talking about this episode in the Lurkers Guide, like this is his thing, his faith manages. This concept and idea of faith is very important to him, even if it's not in a specific deity. It's about going up against the naysayers. The mean spiritedness of those who say it can't be done only because of a mean spirit. which is what the Ellis character going back to him sort of has. And that's all of Babylon 5. You don't always get it right, but those who try to make things better, eventually, maybe it'll happen, and you'll prove those naysayers wrong. So here we are, like the naysayers seem to have won. We, the Earth, earth has been blasted back to the Stone Age, but here the Rangers are trying again. All over again. They have a faith in a different thing. And yes, they are arguably, to use the word, they are manipulating the situation on earth. They're trying to get it right this time. And that's what Brother Alwyn says, but this time we'll do it right. Maybe there were some, maybe there were previous attempts in that previous 500 years that didn't go so well.
+
+[01:22:45] **JOHN**, We don't, that, that would be an interesting story to explore as well. But, so here we go. And he ends it and it's char his ending there is charming. with the way he sort of signs off, Brother Alwyn, Ranger, signing off and you see him like looking at the Ranger outfit and you're like, ah, wait, that's the Rangers. That Earth will get. It will come Earth, earth will be rebuilt. There is hope and it will get there. And the uncomfortable part is that, wait, we just spent five years, or in our case four years watching these stories. We thought we won. We thought it all was gonna work out. The fairytale ending as it is to find out that, well, it's not that simple. We, we do go, we have, because you said a hundred years of peace, but then for all to fall apart again, felt like a betrayal watching this as a 20-year-old, oh God, I didn't say that out loud, did I? And it wasn't a betrayal. It was one of the most truthful things that could have been done that no, unfortunately we did get good work out of it.
+
+[01:23:42] **JOHN**, And some mean-spirited people turned it around the other way for a while, but then it did so again. We did rebuild. There is a future. Even if it takes, as Brother Alwyn says, another thousand years, they will rebuild the Earth.
+
+[01:23:57] **JOHN**, And that leads us to the sort of shocking ending of the episode. Which is, again, you have full opportunity to fanboy out
+
+[01:24:05] **JOSH**, Yeah. I mean, why do we turn into Vorlons? I don't it's, it's super cool. We've spoken about this before, but there's this idea that in a million years, we will ascend, become beings of pure energy, very similar to the Vorlons.
+
+[01:24:18] **JOSH**, And then at the end of this episode, our sun goes nova. Exactly what Sinclair was talking about in the first episode. And we take custody of the Vorlon home world. New Earth. I'm very interested why JMS has that happen. What is he trying to say with that? Because it is interesting too, like he alludes to lots of things in this episode.
+
+[01:24:40] **JOSH**, Some for events that would happen the very next season, some for stories that he thought he might one day be able to tell, but never got around to for one reason or another. He talks about the Telepath war. He talks about Sheridan and Delenn's son. He makes allusions to all of these things in, from the perspective of it having happened already.
+
+[01:24:59] **JOSH**, And we know that he knows what all of those mean.
+
+[01:25:02] **JOHN**, Yeah.
+
+[01:25:03] **JOSH**, So why in a million years, because our sun is not supposed to go nova in a million years,
+
+[01:25:07] **JOHN**, Right.
+
+[01:25:08] **JOSH**, Why are we leaving Earth and why are we going to the Vorlon home world? Like why can't we just be Vorlons on Earth, right?
+
+[01:25:15] **JOHN**, I think in one sense it's because JMS wanted a good bookend. He says in his own
+
+[01:25:20] **JOHN**, comments, he says, like, and what you brilliantly put in a couple episodes ago was about Sinclair's, is asked, why are we out here? And he says, well, he asked that 10 different scientists, et cetera, they all agree the sun's gonna go out at some point, probably billions of years. And so he bookends it, he bookends the whole show. There, there was critique that it was depressing. And well jms, I says the very first episode, well, very first episode as filmed is where he says that
+
+[01:25:45] **JOHN**, not the very first episode as aired. To be a nitpicker. , so for him, an author's, it's an author's bookend.
+
+[01:25:53] **JOHN**, And well, well done to that. There are a number of reasons I can see that making sense, that part of that 500 year conflict or the cycles that go through is the idea that maybe we did something to our sun that shortened its lifespan in order to harness energy.
+
+[01:26:08] **JOHN**, But we did it a stupid way,
+
+[01:26:09] **JOSH**, Oh, I like that.
+
+[01:26:10] **JOHN**, that's, that to me is a very believable notion. I think it's less, yeah I think it's less likely that it was an opponent that took out the sun than it was, this was just a consequence. And that now we're ready to move on to the Vorlon homeworld as Kosh makes that reference.
+
+[01:26:26] **JOHN**, Like, they do not go to the Vorlona home world, a after they're gone for a, you won't be ready for a million years. And then there's who is who was the transcendent character in the first season?
+
+[01:26:36] **JOSH**, Jason, I
+
+[01:26:36] **JOHN**, Jason Ironheart. I was about to say, Jeremy Irons, like very different.
+
+[01:26:40] **JOHN**, and he says, I'll see you in a million years. So he is setting up this idea of, in a million years we get to this next level or this other level. And it's a celebration because it's a celebration of New Earth. This is an optimistic, positive thing we've gotten there. We survived a million years into the future as a species transcending to something else now. And we got through all of it and man we were shaky at different points, but we did it. , and I thought that was such a great end point, because arguably that's the end of the series. Sleeping in Light is the end of the story of Babylon 5, the end of the series.
+
+[01:27:23] **JOHN**, Is that point.
+
+[01:27:24] **JOSH**, Yeah, that's true. That's a good way to put it.
+
+[01:27:27] **JOHN**, and man, it was it's so cool when you see the human who is looking at all this footage that makes up this episode, turn into a ball of light and then pop into what is very clearly a humanized version of a Vorlon encounter asuit, you're like, ah, oh wait. Oh wait. it's just cool. That's what it is. And you get to really have, just like I, I was basking in that from that part of the episode. It's like, oh man, I wonder what the Vorlon home world is like. Do we, ? And, And the big question is like, how much do we learn from the Vorlon Shadow conflict?
+
+[01:28:02] **JOHN**, You hope that this time around the heirs to the Vorlons they get it closer to right this time. And again, you don't expect perfection, but maybe they've learned something.
+
+[01:28:13] **JOSH**, Yeah. I mean that's why ultimately I think this is optimistic because it's like, yes, we will fall and stumble and make some huge mistakes. We'll we'll blow ourselves back to the stone Age along the way, but in the end we will become Vorlons. we will get there.
+
+[01:28:27] **JOSH**, And I think it is also like something, I think one of the characters in this show says it, but there's a thing that JMS has characters say several times. And the phrasing is what has always made it stand out, but the idea is important. This show's about hope and the possibility of hope and surrendering yourself to the possibility of hope.
+
+[01:28:48] **JOSH**, And ultimately, I think that's the point that JMS is making. Like there was always hope. I don't even know it. If the rangers that we see and the monks in this fourth segment, I don't even know if there's, ultimately successful. And I don't know that it even matters because the point is there's always hope that someone will be trying.
+
+[01:29:09] **JOSH**, And again, I think it's very much JMS's perspective that success isn't guaranteed. It is still up to the individuals to do the right thing, to make the right
+
+[01:29:21] **JOHN**, Yeah.
+
+[01:29:21] **JOSH**, choices but there is hope that someone will be trying and that someone will succeed.
+
+[01:29:28] **JOHN**, if you read JM S'S biography, autobiography, from a purely rationalist perspective, none of this should have been possible.
+
+[01:29:34] **JOSH**, No.
+
+[01:29:35] **JOHN**, ma the making of this show, his very career. And for him to say Faith manages it is an incredibly powerful statement because you read that in context of his autobiography, and it's a person who, oh man, has one hell of a journey, stumbles, foibles everything. But that the, it's not even that he's unwavering, it's that there is a faith and when it's broken, somebody else has faith and helps continue to the next level. That's sort of the brilliance of that notion and that not everyone makes it. He says himself, like, and this is obviously, this is his fictional future, but I've always, I've, I've always wanted to ask him more about what he said about this episode because somebody asked him on AOL or whatever it was back then, what about the other races?
+
+[01:30:14] **JOHN**, And he says, well, the Minbari they get there eventually. The Narn and the Centauri do not. They don't die out, but they just don't hit that level of First One. I think he calls the first one ishness. And that sort of sets me like, again, like it's optimistic, they survive, but they're, maybe they're not able to get
+
+[01:30:32] **JOHN**, past Yeah.
+
+[01:30:34] **JOHN**, certain things and that they are locked into that cycle within the show.
+
+[01:30:37] **JOHN**, To have season shows, a cycle of a Suntory going right back to where they were again and then having to break out of it again and then veer in the future books, helping them break out of it again, like. It's an interesting idea and yes, it is a little bit human centric to say that, humans make it.
+
+[01:30:51] **JOHN**, The Minbari make it, others make it to sort of a First One level. But not everybody will. And not every human, obviously, all the humans that die 500 years in the future don't make it.
+
+[01:30:59] **JOHN**, They And that, it.
+
+[01:31:00] **JOSH**, and that also goes all the way back to the first episode. I think the first episode aired. I think that this is at Midnight on the Firing Line. Sinclair. He goes to Kosh and he asks if he'll show up to a council session. And Kosh says something to the effect of like, they are a dead species. And Sinclair says, who? The Narn or the Centauri? And Kosh says, yes.
+
+[01:31:22] **JOHN**, Yes.
+
+[01:31:23] **JOSH**, so, so all the way back then whatever this notion of where everyone will end up in a million years, JMS was seeding that from episode one.
+
+[01:31:33] **JOSH**, It's wild. It's crazy.
+
+[01:31:35] **JOHN**, I've never encountered it with another show. I've never encountered that level of completeness of an idea. Authors do that regularly with a book series and everything else. To do it in television or in a more modern sense to do it with streaming is a herculean task. It's really amazing and you're dissuaded from doing it, certainly by studios.
+
+[01:31:56] **JOHN**, But I really respect that he had this framework, he had these notions set and knew how to write, knew how to pivot when necessary as well, and built in the trap doors and was adaptable himself. But I appreciate it because it's a complete work. It's a complete, , thing that, again, you usually only get from a well-developed novel or novel series. And we get to experience that on this and now go back and realize that it's there. And I think there might be some other shows with showrunners that can do that.
+
+[01:32:27] **JOHN**, I, I suspect most of them are adaptations of a book
+
+[01:32:31] **JOHN**, series. Game of Thrones. Again, going back to that fastened example of where that really worked well for about five seasons, then they actually went further than the written material because it was incomplete. Still incomplete by the way, 14 years later. No new books in 14 years. what? The showrunners for whom I have a lot of critiques, but without being cruel about it, they weren't up to the task. Very few if anybody could have been up to that task. Martin himself, the author of that series, wasn't up to completing his own book series. JMS completed this before necessarily filming it, if not in every little detail, but you're right.
+
+[01:33:05] **JOHN**, Things like that. You quoted like the Narn and Centauri they are dead races. Yes. That's something you don't come up with just spur of the moment. You may come up with it like, oh, I can't put this line and it fits my framework. But that framework pre-existed. He had this. And it's absolutely wonderful to get to experience that. I think that's why we enjoyed the show so much. Even watching it first round, we didn't understand this level of detail about it. And it's where the debate always, when we got into those debates back in those days with the Star Trek fandom, that was absolutely opposed to it. Star Trek is wonderful for what it is, but it was never designed to be this. It was purely episodic. You might build a mythology and reference back to it on occasion, but it was never this. And this was the first time I ever experienced that on television. And I hope to again one day.
+
+[01:33:53] **JOSH**, Yeah, and that's why no other show could do an episode like this. Because literally it was like a last minute, oh my God, I have to write a new finale for this season. What do I do? And he was like, oh, well I know what happens in the Babylon 5 universe, as he says, a million years in either direction.
+
+[01:34:07] **JOSH**, I'll just write that.
+
+[01:34:08] **JOHN**, Yep.
+
+[01:34:09] **JOSH**, And it's so good. A very final thing before we wrap up is that this episode is so weighty and so affecting, but it's a bare bones episode. It's a bottle show. The segments that you were talking about the academics that like really affected you is literally three actors sitting at a table against a black curtain.
+
+[01:34:25] **JOSH**, And the fact that you can be telling the story about the ultimate, fate of the human race in a million years with three actors at a table and a curtain and standing sets that already exist. Like it is incredible that this show works as well as it does. And because the ideas are so grand, you don't even realize how cheap this episode is.
+
+[01:34:49] **JOSH**, It's really cheap. It's great. It's great. I. But in the first segment, the news anchor he invokes the word, selah, which is a word that appears in the Old Testament that means to pause and reflect between passages. So this is almost certainly our final episode of our first year doing this podcast.
+
+[01:35:08] **JOSH**, This is episode 11. We started in March. So I think 11 episodes in nine months is pretty good. And , as we approach the end of the year here and the start of a new year I was just wondering if you had any thoughts about, doing this show so far, or things that we've experienced in the, in 2025 or just, I mean, just anything at all.
+
+[01:35:30] **JOSH**, Some closing reflections on 2025 doing this.
+
+[01:35:33] **JOHN**, the year is both worse and better than I expected it to be. Both those things are true. Having this show helped me make sense of a lot of things, especially in the first part of 2025. The process, what was happening in the country, in the world, without it being the sort of typical media spiral of being addicted to your screen and just doom scrolling this, this gave us an opportunity to really examine things using the lens of this 1990s sci-fi show. To really have some amazing conversations, in depth analysis go to some personal spaces with it. I found it very comforting in, in that regard. And it really, I think it helped keep me balanced and it gave me perspective and a bit of an internal peace, even as things continue to get more difficult.
+
+[01:36:23] **JOHN**, And I think they're only going to get more difficult. , leaving with an episode like this. When I see that phrase as it was written by JMS in his commentary, faith manages I think brings me there. No guarantees, no promises, but that somehow there is something in life to the idea that when you hold true and try to be the best of yourself, try you, you won't always be that by any measure. When you just try, sometimes things really do work out, and that's what I'm hopeful for in the future, is that like, as bad as things could get and I think are sort of likely to get. Especially for people who aren't us, really, it's for the people who are in really in the more dangerous crosshairs of this administration and of the population at large right now. So I don't wanna be Pollyanna about this that it, withdraws that or minimizes that suffering. I do think there's some hope, and I think, continuing to talk, continuing to examine and question ourselves. And maybe for anybody who's listening to say, yeah, may, maybe there is hope, maybe there is it by continuing that process of self-questioning, exploration and having that just enough faith also in situations that humanity at large. Yeah. Maybe we get to the other side of that maybe and just maybe it's in the timeframe of the show, that it takes only a couple seasons to get there for our lifetime. that's really what I'm hoping out of the future. With no delusions that we're on a TV schedule.
+
+[01:37:49] **JOHN**, But yeah, we got it. We have an interesting couple years ahead of us to see what other comparisons make, but this has been really helpful for framing what is happening and keeping it from going out into the abyss of hopelessness.
+
+[01:38:03] **JOSH**, Very well said. Yeah, I would echo everything that you just said and yeah, like this show has been really helpful personally. It's been just delightful to have a reason to come with you and have these conversations about this show, which I know is so important and so really foundational for both of us.
+
+[01:38:22] **JOSH**, I mean, this is really a treat and like, yeah, like we always end up having conversations and teasing things out of these episodes that, I never anticipated. And it's so, it's a bright spot in a dark year. Swallowed in fire, but not in darkness is another line that, that Vorlon had. Which is just so, is such a wonderful turn of phrase.
+
+[01:38:40] **JOSH**, I love that. And yeah, I agree with you. I think things are gonna get worse and I do wanna reiterate know, we are privileged enough to be safer than most. And that's I think, , we incur a certain amount of responsibility to do what we can to stand up and do the right thing.
+
+[01:38:58] **JOSH**, And it's not always clear exactly the best way to do that. But I think you're right. Like, just try to be good, kind and decent. No matter what else is going on. If that's your North Star, .
+
+[01:39:08] **JOSH**, As G'Kar said in another episode, when you approach the universe with good intentions, you will be rewarded, but just not always in the way you expect.
+
+[01:39:17] **JOHN**, Yes.
+
+[01:39:17] **JOHN**, there's another one of those quotes in the show.
+
+[01:39:21] **JOSH**, I love how you ended on the concept of faith manages. I'm gonna end on the note of, some people don't hold grudges for nearly long enough.
+
+[01:39:28] **JOHN**, Yeah.
+
+[01:39:29] **JOSH**, and, , yeah, that's 2025 next year. I definitely want to have some guests. I think we might start a Patreon potentially and, do fun stuff. I was thinking like, as a Patreon, maybe we should watch the original version of The Gathering and do an episode on that as like a, as Patreon exclusive.
+
+[01:39:46] **JOSH**, I think that'd be fun. Now that this show is not sort of a theoretical thing that, maybe will happen. It's become very important for me to make sure it keeps going. So, we're gonna try and expand a little bit in, , in 2026 and beyond.
+
+[01:40:00] **JOSH**, But, . John, thank you so much for, being on this journey with me. 'cause I needed it. I need it.
+
+[01:40:06] **JOHN**, I did too. Well, hey you're the nexus that started this, so, I'm grateful. I'm grateful to be part of it.
+
+[01:40:11] **JOSH**, No it's, it's, , I feel very lucky. So yeah, we're lastbesthopeb 5 on whatever social media. that's our handle. And, we wanna leave you with the idea that sometimes peace is just another word for surrender. What a supersized episode this turned out to be.
+
+[01:40:28] **JOHN**, Yeah.
