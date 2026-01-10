@@ -8,7 +8,7 @@ Build finished.
 
 === git commit ===
 
-[main 27f7506] Added transcript and links for Infection
+[main 8ef1ef2] Publish: rebuild site
  Committer: trickybee <trickybee@trickybees-MacBook-Air.local>
 Your name and email address were configured automatically based
 on your username and hostname. Please check that they are accurate.
@@ -22,12 +22,57 @@ After doing this, you may fix the identity used for this commit with:
 
     git commit --amend --reset-author
 
- 5 files changed, 1299 insertions(+), 198 deletions(-)
- create mode 100644 processed_transcripts/10-drunk-with-the-rest-of-the-aliens-infection.txt
+ 47 files changed, 11286 insertions(+), 19 deletions(-)
+ create mode 100644 dist/episodes/1-nothing-s-the-same-anymore-chrysalis.html
+ create mode 100644 dist/episodes/10-drunk-with-the-rest-of-the-aliens-infection.html
+ create mode 100644 dist/episodes/11-good-kind-and-decent-the-deconstruction-of-falling-stars.html
+ create mode 100644 dist/episodes/2-another-word-for-surrender-the-fall-of-night.html
+ create mode 100644 dist/episodes/3-who-are-you-comes-the-inquisitor.html
+ create mode 100644 dist/episodes/4-where-everyone-has-gone-before-voices-of-authority.html
+ create mode 100644 dist/episodes/5-stupid-enough-to-take-it-dust-to-dust-exogenesis.html
+ create mode 100644 dist/episodes/6-a-stormy-present-messages-from-earth.html
+ create mode 100644 dist/episodes/7-what-did-we-do-wrong-point-of-no-return.html
+ create mode 100644 dist/episodes/8-one-battle-after-another-by-any-means-necessary.html
+ create mode 100644 dist/episodes/9-rules-of-engagement-no-surrender-no-retreat.html
+ create mode 100644 dist/episodes/another-word-for-surrender-the-fall-of-night.html
+ create mode 100644 dist/episodes/index.html
+ create mode 100644 dist/episodes/nothing-s-the-same-anymore-chrysalis.html
+ create mode 100644 dist/episodes/nothings-the-same-anymore-chrysalis.html
+ create mode 100644 dist/index.html
+ create mode 100644 dist/static/LBH_site_background_3840x2160.jpg
+ create mode 100644 dist/static/LBH_site_background_3840x2160.webp
+ create mode 100644 dist/static/earth_horizon.webp
+ create mode 100644 dist/static/icons/icon-apple.svg
+ create mode 100644 dist/static/icons/icon-rss.svg
+ create mode 100644 dist/static/icons/icon-spotify.svg
+ create mode 100644 dist/static/placeholder.jpg
+ create mode 100644 dist/static/site.css
+ create mode 100644 dist/transcripts/1-nothing-s-the-same-anymore-chrysalis.html
+ create mode 100644 dist/transcripts/1-nothing-s-the-same-anymore-chrysalis.md
+ create mode 100644 dist/transcripts/10-drunk-with-the-rest-of-the-aliens-infection.html
+ create mode 100644 dist/transcripts/10-drunk-with-the-rest-of-the-aliens-infection.md
+ create mode 100644 dist/transcripts/11-good-kind-and-decent-the-deconstruction-of-falling-stars.html
+ create mode 100644 dist/transcripts/11-good-kind-and-decent-the-deconstruction-of-falling-stars.md
+ create mode 100644 dist/transcripts/2-another-word-for-surrender-the-fall-of-night.html
+ create mode 100644 dist/transcripts/2-another-word-for-surrender-the-fall-of-night.md
+ create mode 100644 dist/transcripts/3-who-are-you-comes-the-inquisitor.html
+ create mode 100644 dist/transcripts/3-who-are-you-comes-the-inquisitor.md
+ create mode 100644 dist/transcripts/4-where-everyone-has-gone-before-voices-of-authority.html
+ create mode 100644 dist/transcripts/4-where-everyone-has-gone-before-voices-of-authority.md
+ create mode 100644 dist/transcripts/5-stupid-enough-to-take-it-dust-to-dust-exogenesis.html
+ create mode 100644 dist/transcripts/5-stupid-enough-to-take-it-dust-to-dust-exogenesis.md
+ create mode 100644 dist/transcripts/6-a-stormy-present-messages-from-earth.html
+ create mode 100644 dist/transcripts/6-a-stormy-present-messages-from-earth.md
+ create mode 100644 dist/transcripts/7-what-did-we-do-wrong-point-of-no-return.html
+ create mode 100644 dist/transcripts/7-what-did-we-do-wrong-point-of-no-return.md
+ create mode 100644 dist/transcripts/8-one-battle-after-another-by-any-means-necessary.html
+ create mode 100644 dist/transcripts/8-one-battle-after-another-by-any-means-necessary.md
+ create mode 100644 dist/transcripts/9-rules-of-engagement-no-surrender-no-retreat.html
+ create mode 100644 dist/transcripts/9-rules-of-engagement-no-surrender-no-retreat.md
 
 
 === git push ===
 
 To github.com:speakhard/lbhb5-site.git
-   cfa81cb..27f7506  main -> main
+   27f7506..8ef1ef2  main -> main
 

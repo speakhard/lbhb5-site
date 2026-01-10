@@ -50,6 +50,12 @@
       <div class="container">
         
 
+
+
+
+  
+
+
 <main class="episode-page">
   <article class="episode-page-shell">
 
@@ -99,7 +105,6 @@
       
 
       
-      
         <section class="episode-description">
           <div class="episode-description-body">
             John and Josh discuss how sex and humor are both weapons in the fight against authoritarianism in their discussion of Babylon 5 Season 3, Episode 5: Voices of Authority.<br>
@@ -132,8 +137,7 @@
         </div>
 
         
-          
-          <div id="transcript-scroll" class="episode-transcript-scroll hide-timestamps hide-timecodes">
+          <div id="transcript-scroll" class="episode-transcript-scroll hide-timestamps">
             <div class="transcript-body">
   <p class="transcript-preface">JOHN: Foreign. Welcome to Last best Hope Babylon 5 podcast, where we discuss the greatness of the show as well as the stories and plotting in that show that seem oddly familiar to us today as we may or may not parallel Earth forces slide into authoritarian rule. Today we&#x27;re going to be going over Voices of Authority. I&#x27;m John, and with me is Josh. And this is an episode that I watched first right when I started going back through Babylon 5. And, you know, when these sort of parallels and the writing of the show hit us as, oh, it was warning of something real. It was taken from history. This is an episode that really just gives you the creeps about it because it&#x27;s not a military episode. It&#x27;s not a, you know, grand conflict episode. It&#x27;s the, oh, this is what the agents, you know, the political agents of these forces do. And they&#x27;re conniving and convincing. And I guess. Is that the. A plot line of this episode? The political officer assigned to Captain Sheridan in the form of Julius Vasante. Is the A scoring?</p>
   <p class="transcript-note">JOSH: Yeah, I think that would be considered the. The A plot. I think you could make a case for one of the other plots, but I think generally a rule of thumb is whatever plot occupies the most screen time. And I think that they spend the most scenes dealing with Julie Musante and the introduction of a political officer to Babylon 5 and the awkwardness of that. And also we get a lot of information through her about what is actually going on back home on Earth in terms of government policy. And it was also creepy in the sense I feel like she&#x27;s talking about.</p>
@@ -303,9 +307,24 @@
         
       </section>
 
-      <!-- Discussion -->
+      <!-- Discussion + Share -->
       <section class="episode-discussion">
         <h2 class="section-heading">Discuss this Episode</h2>
+
+        <div class="episode-share"
+             data-episode-url="https://www.lastbesthopeb5.com/episodes/4-where-everyone-has-gone-before-voices-of-authority"
+             data-episode-title="#4 – Where Everyone Has Gone Before (VOICES OF AUTHORITY)"
+             data-mastodon-base="https://mastodon.social/@lastbesthopeb5">
+          <a class="btn btn-ghost btn-xs" id="share-bluesky" target="_blank" rel="noopener">Post to Bluesky</a>
+
+          
+            <a class="btn btn-ghost btn-xs" id="share-mastodon" target="_blank" rel="noopener">Post to Mastodon</a>
+          
+
+          <button type="button" class="btn btn-ghost btn-xs" id="share-copy">Copy share text</button>
+
+          <span class="share-status" id="share-status" aria-live="polite"></span>
+        </div>
 
         
       </section>
@@ -322,19 +341,63 @@
     if (!scroll || !btn) return;
 
     const refresh = () => {
-      const hidden = scroll.classList.contains('hide-timestamps') || scroll.classList.contains('hide-timecodes');
+      const hidden = scroll.classList.contains('hide-timestamps');
       btn.textContent = hidden ? 'Show timecodes' : 'Hide timecodes';
       btn.setAttribute('aria-pressed', hidden ? 'false' : 'true');
     };
 
-    // Ensure initial UI matches DOM (default is hidden)
     refresh();
 
     btn.addEventListener('click', function () {
       scroll.classList.toggle('hide-timestamps');
-      scroll.classList.toggle('hide-timecodes');
       refresh();
     });
+  })();
+</script>
+
+<!-- Share buttons -->
+<script>
+  (function () {
+    const wrap = document.querySelector('.episode-share');
+    if (!wrap) return;
+
+    const url = wrap.getAttribute('data-episode-url') || window.location.href;
+    const title = wrap.getAttribute('data-episode-title') || document.title;
+    const mastodonBase = wrap.getAttribute('data-mastodon-base') || '';
+
+    const shareText = `New episode: ${title} — ${url}`;
+
+    const $bsky = document.getElementById('share-bluesky');
+    const $mast = document.getElementById('share-mastodon');
+    const $copy = document.getElementById('share-copy');
+    const $status = document.getElementById('share-status');
+
+    if ($bsky) {
+      $bsky.href = 'https://bsky.app/intent/compose?text=' + encodeURIComponent(shareText);
+    }
+
+    if ($mast && mastodonBase) {
+      try {
+        const origin = new URL(mastodonBase).origin;
+        $mast.href = origin + '/share?text=' + encodeURIComponent(shareText);
+      } catch (e) {
+        // If mastodon_base_url isn't a full URL, just hide the button quietly
+        $mast.style.display = 'none';
+      }
+    }
+
+    if ($copy) {
+      $copy.addEventListener('click', async function () {
+        try {
+          await navigator.clipboard.writeText(shareText);
+          if ($status) $status.textContent = 'Copied!';
+          setTimeout(() => { if ($status) $status.textContent = ''; }, 1200);
+        } catch (e) {
+          if ($status) $status.textContent = 'Copy failed (browser blocked it).';
+          setTimeout(() => { if ($status) $status.textContent = ''; }, 2000);
+        }
+      });
+    }
   })();
 </script>
 
