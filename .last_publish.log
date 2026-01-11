@@ -8,7 +8,7 @@ Build finished.
 
 === git commit ===
 
-[main 48f4a21] Publish updates
+[main f650b8e] Added Lurker's Guide links to episode pages
  Committer: trickybee <trickybee@trickybees-MacBook-Air.local>
 Your name and email address were configured automatically based
 on your username and hostname. Please check that they are accurate.
@@ -22,12 +22,19 @@ After doing this, you may fix the identity used for this commit with:
 
     git commit --amend --reset-author
 
- 16 files changed, 114 insertions(+), 81 deletions(-)
- create mode 100644 README_01-10-26.md
+ 27 files changed, 5815 insertions(+), 40 deletions(-)
+ create mode 100644 processed_transcripts/1-nothing-s-the-same-anymore-chrysalis.txt
+ create mode 100644 processed_transcripts/2-another-word-for-surrender-the-fall-of-night.txt
+ create mode 100644 processed_transcripts/3-who-are-you-comes-the-inquisitor.txt
+ create mode 100644 processed_transcripts/4-where-everyone-has-gone-before-voices-of-authority.txt
+ create mode 100644 processed_transcripts/5-stupid-enough-to-take-it-dust-to-dust-exogenesis.txt
+ create mode 100644 processed_transcripts/6-a-stormy-present-messages-from-earth.txt
+ create mode 100644 processed_transcripts/7-what-did-we-do-wrong-point-of-no-return.txt
+ create mode 100644 processed_transcripts/8-one-battle-after-another-by-any-means-necessary.txt
 
 
 === git push ===
 
 To github.com:speakhard/lbhb5-site.git
-   5bcb76f..48f4a21  main -> main
+   48f4a21..f650b8e  main -> main
 
