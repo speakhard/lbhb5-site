@@ -4,5 +4,14 @@
   "youtube_url": "",
   "apple_url": "",
   "spotify_url": "",
-  "links": []
+  "links": [
+    {
+      "label": "Lurker's Guide Entry \"Chrysalis\"",
+      "url": "http://www.midwinter.com/lurk/countries/us/guide/022.html"
+    }
+  ],
+  "bluesky_url": "",
+  "mastodon_url": "",
+  "reddit_url": "",
+  "bluesky_embed_html": ""
 }

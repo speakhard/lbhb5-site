@@ -4,5 +4,18 @@
   "youtube_url": "",
   "apple_url": "",
   "spotify_url": "",
-  "links": []
+  "links": [
+    {
+      "label": "Lurker's Guide Entry \"Dust to Dust\"",
+      "url": "http://www.midwinter.com/lurk/countries/us/guide/050.html"
+    },
+    {
+      "label": "Lurker's Guide Entry \"Exogenesis\"",
+      "url": "http://www.midwinter.com/lurk/countries/us/guide/051.html"
+    }
+  ],
+  "bluesky_url": "",
+  "mastodon_url": "",
+  "reddit_url": "",
+  "bluesky_embed_html": ""
 }

@@ -1,8 +1,17 @@
 {
   "title": "#2 – Another Word for Surrender (THE FALL OF NIGHT)",
-  "description": "John and Josh discuss the parallels between Earth/Centauri/Narn and U.S./Russia/Ukraine.\r\nLet us know what you think: lastbesthopeb5@gmail.com\r\n\r\n<*>",
+  "description": "John and Josh discuss the parallels between Earth/Centauri/Narn and U.S./Russia/Ukraine.",
   "youtube_url": "",
   "apple_url": "",
   "spotify_url": "",
-  "links": []
+  "links": [
+    {
+      "label": "Lurker's Guide Entry \"The Fall of Night\"",
+      "url": "http://www.midwinter.com/lurk/countries/us/guide/044.html"
+    }
+  ],
+  "bluesky_url": "",
+  "mastodon_url": "",
+  "reddit_url": "",
+  "bluesky_embed_html": ""
 }
