@@ -8,7 +8,7 @@ Build finished.
 
 === git commit ===
 
-[main f2c37e1] Publish updates
+[main da5242a] Episode 9 transcript
  Committer: trickybee <trickybee@trickybees-MacBook-Air.local>
 Your name and email address were configured automatically based
 on your username and hostname. Please check that they are accurate.
@@ -22,11 +22,12 @@ After doing this, you may fix the identity used for this commit with:
 
     git commit --amend --reset-author
 
- 7 files changed, 25 insertions(+), 23 deletions(-)
+ 2 files changed, 365 insertions(+), 11 deletions(-)
+ create mode 100644 processed_transcripts/9-rules-of-engagement-no-surrender-no-retreat.txt
 
 
 === git push ===
 
 To github.com:speakhard/lbhb5-site.git
-   f650b8e..f2c37e1  main -> main
+   f2c37e1..da5242a  main -> main
 
